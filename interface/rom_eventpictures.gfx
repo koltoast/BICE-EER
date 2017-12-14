@@ -1,0 +1,303 @@
+spriteTypes = {
+
+
+spriteType = {
+name = "GFX_news_event_rom_primaintrevedere"
+texturefile = "gfx/event_pictures/news_event_rom_primaintrevedere.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_germanmilitarymission"
+texturefile = "gfx/event_pictures/news_event_rom_germanmilitarymission.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_adouaintrevedere"
+texturefile = "gfx/event_pictures/news_event_rom_adouaintrevedere.dds"
+}
+
+
+spriteType = {
+name = "GFX_news_event_rom_unire"
+texturefile = "gfx/event_pictures/news_event_rom_unire.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_traditionalism"
+texturefile = "gfx/event_pictures/news_event_rom_traditionalism.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_taranism"
+texturefile = "gfx/event_pictures/news_event_rom_taranism.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_europenism"
+texturefile = "gfx/event_pictures/news_event_rom_europenism.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_colectivizare"
+texturefile = "gfx/event_pictures/news_event_rom_colectivizare.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_lovitura_de_stat_comunista"
+texturefile = "gfx/event_pictures/country_event_rom_lovitura_de_stat_comunista.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_asasinarea_lui_corneliu_zelea_codreanu"
+texturefile = "gfx/event_pictures/country_event_rom_asasinarea_lui_corneliu_zelea_codreanu.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_asasinarea_lui_armand_calinescu"
+texturefile = "gfx/event_pictures/country_event_rom_asasinarea_lui_armand_calinescu.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_masacrele_de_la_jilava"
+texturefile = "gfx/event_pictures/country_event_rom_masacrele_de_la_jilava.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_moartea_lui_nicolae_iorga"
+texturefile = "gfx/event_pictures/country_event_rom_moartea_lui_nicolae_iorga.dds"
+}
+
+
+spriteType = {
+name = "GFX_country_event_rom_Romania_mare"
+texturefile = "gfx/event_pictures/country_event_rom_Romania_mare.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_polish_r35"
+texturefile = "gfx/event_pictures/country_event_rom_polish_r35.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_german_military"
+texturefile = "gfx/event_pictures/country_event_rom_german_military.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_air_mision"
+texturefile = "gfx/event_pictures/country_event_rom_air_mision.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_army_recognation"
+texturefile = "gfx/event_pictures/country_event_rom_army_recognation.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_I.A.R80"
+texturefile = "gfx/event_pictures/country_event_I.A.R80.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_ira_primu_zbor"
+texturefile = "gfx/event_pictures/news_event_rom_ira_primu_zbor.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_trade_agreement"
+texturefile = "gfx/event_pictures/country_event_trade_agreement.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_austrian_bussnies"
+texturefile = "gfx/event_pictures/country_event_rom_austrian_bussnies.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_titulescu_removed"
+texturefile = "gfx/event_pictures/country_event_titulescu_removed.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_guvernul_goga"
+texturefile = "gfx/event_pictures/news_event_rom_guvernul_goga.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_carol2_regim_totalitar"
+texturefile = "gfx/event_pictures/country_event_rom_carol2_regim_totalitar.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_codreanu_13_morti"
+texturefile = "gfx/event_pictures/country_event_codreanu_13_morti.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_storm_clouds"
+texturefile = "gfx/event_pictures/country_event_rom_storm_clouds.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_Miron_Cristea"
+texturefile = "gfx/event_pictures/country_event_rom_Miron_Cristea.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_warsaw_falls"
+texturefile = "gfx/event_pictures/country_event_rom_warsaw_falls.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_entente_break"
+texturefile = "gfx/event_pictures/country_event_rom_entente_break.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_entente"
+texturefile = "gfx/event_pictures/country_event_rom_entente.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_balakan_pact"
+texturefile = "gfx/event_pictures/country_event_rom_balakan_pact.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_conflict_iminent"
+texturefile = "gfx/event_pictures/news_event_rom_conflict_iminent.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_tatarescu_revine"
+texturefile = "gfx/event_pictures/news_event_rom_tatarescu_revine.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.40"
+texturefile = "gfx/event_pictures/country_event_rom_romania.40.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.42"
+texturefile = "gfx/event_pictures/country_event_rom_romania.42.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.45"
+texturefile = "gfx/event_pictures/country_event_rom_romania.45.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.47"
+texturefile = "gfx/event_pictures/country_event_rom_romania.47.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.49"
+texturefile = "gfx/event_pictures/country_event_rom_romania.49.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.50"
+texturefile = "gfx/event_pictures/country_event_rom_romania.50.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.51"
+texturefile = "gfx/event_pictures/country_event_rom_romania.51.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.52"
+texturefile = "gfx/event_pictures/country_event_rom_romania.52.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.56"
+texturefile = "gfx/event_pictures/country_event_rom_romania.56.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.57"
+texturefile = "gfx/event_pictures/country_event_rom_romania.57.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.58"
+texturefile = "gfx/event_pictures/country_event_rom_romania.58.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.59"
+texturefile = "gfx/event_pictures/country_event_rom_romania.59.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_romania.61"
+texturefile = "gfx/event_pictures/country_event_rom_romania.61.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_intoarcerea_armelor_1"
+texturefile = "gfx/event_pictures/country_event_intoarcerea_armelor_1.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_intoarcerea_armelor_2"
+texturefile = "gfx/event_pictures/country_event_intoarcerea_armelor_2.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_intrebare"
+texturefile = "gfx/event_pictures/country_event_intrebare.dds"
+}
+
+
+
+spriteType = {
+name = "GFX_news_event_rom_romania.46"
+texturefile = "gfx/event_pictures/news_event_rom_romania.46.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_romania.48"
+texturefile = "gfx/event_pictures/news_event_rom_romania.48.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_romania.54"
+texturefile = "gfx/event_pictures/news_event_rom_romania.54.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_romania.55"
+texturefile = "gfx/event_pictures/news_event_rom_romania.55.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_romania.60"
+texturefile = "gfx/event_pictures/news_event_rom_romania.60.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_romania.62"
+texturefile = "gfx/event_pictures/news_event_rom_romania.62.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_romania.18"
+texturefile = "gfx/event_pictures/news_event_rom_romania.18.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_rom_romania.96"
+texturefile = "gfx/event_pictures/news_event_rom_romania.96.dds"
+}
+
+spriteType = {
+name = "GFX_country_event_rom_monarchy"
+texturefile = "gfx/event_pictures/country_event_rom_monarchy.dds"
+}
+
+}

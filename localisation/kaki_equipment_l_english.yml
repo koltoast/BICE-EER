@@ -1,0 +1,12 @@
+﻿l_english:
+ 
+ #Romanian Tanks
+ ROM_medium_tank_equipment_1:0 " Vânătorul de Care "
+ ROM_medium_tank_equipment_2:0 " T-40 "
+ ROM_medium_tank_equipment_2_short:0 " T-40 "
+ ROM_medium_tank_equipment_3:0 " R-40M Turan "
+ ROM_medium_tank_equipment_3_short:0 "R-40M"
+ ROM_modern_tank_equipment_1:0 " TR-77-580 "
+ ROM_modern_tank_equipment_1_short:0 " TR-77-580 "
+ ROM_light_tank_equipment_3:0 " T-41 "
+

@@ -458,6 +458,12 @@ create_field_marshal = {
 	skill = 4
 }
 create_corps_commander = {
+	name = "Ioan Mihail Racovita"
+	gfx = GFX_Portrait_romania_ioan_mihail_racovita
+	traits = { Competent_General  hill_fighter_CC }
+	skill = 3
+}
+create_corps_commander = {
 	name = "Aldea"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Decent_General }
@@ -470,6 +476,94 @@ create_corps_commander = {
 	traits = { Decent_General defensive_doctrine_CC fortress_buster_CC }
 	skill = 2
 }
+
+create_corps_commander = {
+	name = "Nicolae Ciupercă"
+	picture = "Portrait_romania_ciuperca.tga"
+	traits = { }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Corneliu Dragalina"
+	picture = "Portrait_romania_dragalina.tga"
+	traits = { }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Gheorghe Manoliu"
+	picture = "Portrait_romania_manoliu.tga"
+	traits = { }
+	skill = 1
+}
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+
+create_corps_commander = {
+		name = "Gheorghe Avramescu"
+		gfx = GFX_Portrait_romania_gheorghe_avramescu
+		traits = { }
+		skill = 3
+	}
+
+create_navy_leader = {
+		name = "Horia Macellariu"
+		gfx = "GFX_Portrait_romania_horia_macellariu"
+		traits = { spotter }
+		skill = 2
+	}
+}
+	create_corps_commander = {
+	name = "Constantin Constantinescu"
+	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Constantin_Constantinescu_Claps.tga"
+	traits = {}
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Nicolae Macici"
+	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Nicolae_Macici.tga"
+	traits = {}
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Constantin Pantazi"
+	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Constantin_Pantazi.tga"
+	traits = {}
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Ion Glogojanu"
+	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Ion_Glogojanu.tga"
+	traits = {}
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Leonard Mociulschi"
+	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Leonard_Mociulschi.tga"
+	traits = {}
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Constantin Tobescu"
+	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Constantin_Tobescu.tga"
+	traits = {}
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Dumitru Popescu"
+	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Dumitru_Popescu.tga"
+	traits = {
+		old_guard
+	}
+	skill = 1
+}	
 
 create_corps_commander = {
 	name = "Antonescu  I.A."
@@ -970,12 +1064,6 @@ create_corps_commander = {
 	skill = 1
 }
 
-create_corps_commander = {
-	name = "Ioan Mihail Racovita"
-	gfx = GFX_Portrait_romania_ioan_mihail_racovita
-	traits = { Competent_General  hill_fighter_CC }
-	skill = 3
-}
 
 create_corps_commander = {
 	name = "Radescu"
@@ -1165,93 +1253,7 @@ create_corps_commander = {
 	traits = { Decent_General engineer_CC }
 	skill = 3
 }
-create_corps_commander = {
-	name = "Nicolae Ciupercă"
-	picture = "Portrait_romania_ciuperca.tga"
-	traits = { }
-	skill = 1
-}
-create_corps_commander = {
-	name = "Corneliu Dragalina"
-	picture = "Portrait_romania_dragalina.tga"
-	traits = { }
-	skill = 2
-}
-create_corps_commander = {
-	name = "Gheorghe Manoliu"
-	picture = "Portrait_romania_manoliu.tga"
-	traits = { }
-	skill = 1
-}
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
 
-create_corps_commander = {
-		name = "Gheorghe Avramescu"
-		gfx = GFX_Portrait_romania_gheorghe_avramescu
-		traits = { }
-		skill = 3
-	}
-
-create_navy_leader = {
-		name = "Horia Macellariu"
-		gfx = "GFX_Portrait_romania_horia_macellariu"
-		traits = { spotter }
-		skill = 2
-	}
-}
-	create_corps_commander = {
-	name = "Constantin Constantinescu"
-	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Constantin_Constantinescu_Claps.tga"
-	traits = {}
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Nicolae Macici"
-	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Nicolae_Macici.tga"
-	traits = {}
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Constantin Pantazi"
-	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Constantin_Pantazi.tga"
-	traits = {}
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Ion Glogojanu"
-	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Ion_Glogojanu.tga"
-	traits = {}
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Leonard Mociulschi"
-	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Leonard_Mociulschi.tga"
-	traits = {}
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Constantin Tobescu"
-	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Constantin_Tobescu.tga"
-	traits = {}
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Dumitru Popescu"
-	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Dumitru_Popescu.tga"
-	traits = {
-		old_guard
-	}
-	skill = 1
-}	
 create_navy_leader = {
 	name = "Caranfil"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"

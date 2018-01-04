@@ -611,7 +611,7 @@
  DOD_romania.83.t:0 "King throws lavish party"
  DOD_romania.83.desc:0 "Despite being vetted by the King himself, the official coverage of the recent feast at the Royal palace has caused great public dissent. Pictures of the King's mistress in an expensive French evening gown and detailed descriptions of the 7 course meal eaten from golden plates have further inflammed the population, who are still suffering from the after-effects of the Great Depression.\n\nThe King demands that we make a public statement of support at once."
  DOD_romania.83.a:0 "The King must be allowed to be representative."
- DOD_romania.83.b:0 "The King's private matters are not of government concern."
+ DOD_romania.83.b:0 "The King's private matters not of government concern."
  DOD_romania.84.t:0 "King's Mistress spotted in Paris"
  DOD_romania.84.desc:0 "French newspapers have been full of the exploits of Magda Lupescu in Paris, where she has reportedly been indulging in an extensive shopping spree.\n\nWhile this is not unusual in itself, reports that she enlisted help from the Romanian embassy to move her purchases and told stores to send the bill to the Romanian government have been picked up by the national press. We have been asked to comment on these reports."
  DOD_romania.84.a:0 "Miss Lupuscus acted at the request of the King."

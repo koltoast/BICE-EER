@@ -463,19 +463,6 @@ create_corps_commander = {
 	traits = { Competent_General  hill_fighter_CC }
 	skill = 3
 }
-create_corps_commander = {
-	name = "Aldea"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Decent_General }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Alexiu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Decent_General defensive_doctrine_CC fortress_buster_CC }
-	skill = 2
-}
 
 create_corps_commander = {
 	name = "Nicolae Ciupercă"
@@ -564,6 +551,20 @@ create_corps_commander = {
 	}
 	skill = 1
 }	
+
+create_corps_commander = {
+	name = "Aldea"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { Decent_General }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Alexiu"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { Decent_General defensive_doctrine_CC fortress_buster_CC }
+	skill = 2
+}
 
 create_corps_commander = {
 	name = "Antonescu  I.A."

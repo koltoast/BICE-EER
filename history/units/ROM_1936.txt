@@ -61,7 +61,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Regiment Blindat" 				# Armor Regiment
+	name = "Divizie Blindată" 				# Armor Regiment
 	# Note: 2nd regiment created and merged with motorized inf to create Armor Division in 1940
 	regiments = {
 		light_armor_axis = { x = 0 y = 0 }
@@ -184,9 +184,9 @@ units = {
 
 	}
 	division = {
-		name = "Regimentul Blindat 1"
+		name = "Divizia 1 Blindată"
 		location = 9617
-		division_template = "Regiment Blindat"
+		division_template = "Divizie Blindată"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.8
 

@@ -153,7 +153,7 @@ set_convoys = 250
 
 	add_political_power = 1198
 	
-if = {
+	if = {
 		limit = {
 			has_dlc = "Death or Dishonor"
 		}
@@ -187,7 +187,7 @@ if = {
 		create_country_leader = {
 			name = "Carol II"
 			desc = "POLITICS_CAROL_II_DESC"
-			picture = GFX_Portrait_romania_Carol_II			
+			picture = GFX_Portrait_romania_Carol_II	
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
@@ -195,7 +195,7 @@ if = {
 				hedonist
 				camarilla_leader
 			}
-			id = 550
+			id = 551 ##or maybe 550?
 		}
 		#ROM = {
 		#	#Pick from list of the sane events first
@@ -361,6 +361,7 @@ create_country_leader = {
 	traits = {
 		#
 	}
+	id = 552
 }
 create_country_leader = {
 	name = "Corneliu Zelea Codreanu"
@@ -371,6 +372,7 @@ create_country_leader = {
 	traits = {
 		fascist
 	}
+	id = 553
 }
 create_country_leader = {
 	name = "Gheorghe Gheorghiu-Dej"
@@ -381,6 +383,7 @@ create_country_leader = {
 	traits = {
 		#
 	}
+	id = 554
 }
 
 create_country_leader = {
@@ -392,6 +395,7 @@ create_country_leader = {
 	traits = {
 		socialist
 	}
+	id = 555
 }
 create_country_leader = {
 	name = "Armand Călinescu"
@@ -402,13 +406,14 @@ create_country_leader = {
 	traits = {
 		conservative
 	}
+	id = 556
 }
 create_country_leader = {
 	name = "Ion Antonescu"
 	desc = "POLITICS_ION_ANTONESCU_DESC"
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = military_dictatorship
 	traits = {
 		#
 	}
@@ -422,6 +427,7 @@ create_country_leader = {
 	traits = {
 		#
 	}
+	id = 557
 }
 create_country_leader = {
 	name = "Horia Sima"
@@ -442,20 +448,22 @@ create_country_leader = {
 	traits = {
 		#
 	}
+	id = 558
 }
-
-
+###ARMY / AIRFORCE / NAVY
 create_field_marshal = {
 	name = "Petre Dumitrescu"
 	gfx = GFX_Portrait_romania_petre_dumitrescu
 	traits = { offensive_doctrine_FM logistics_wizard_FM }
 	skill = 4
+	id = 559
 }
 create_field_marshal = {
 	name = "Ion Antonescu"
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
 	traits = { offensive_doctrine_FM }
 	skill = 4
+	id = 560
 }
 create_corps_commander = {
 	name = "Ioan Mihail Racovita"
@@ -557,6 +565,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Decent_General }
 	skill = 3
+	id = 561
 }
 
 create_corps_commander = {
@@ -564,6 +573,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { Decent_General defensive_doctrine_CC fortress_buster_CC }
 	skill = 2
+	id = 562
 }
 
 create_corps_commander = {
@@ -571,6 +581,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Bad_General }
 	skill = 1
+	id = 563
 }
 
 create_corps_commander = {
@@ -578,6 +589,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	traits = { Awesome_General }
 	skill = 4
+	id = 564
 }
 
 create_corps_commander = {
@@ -585,6 +597,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	traits = { Bad_General fortress_buster_CC }
 	skill = 1
+	id = 565
 }
 
 create_corps_commander = {
@@ -592,6 +605,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Decent_General }
 	skill = 2
+	id = 566
 }
 
 create_corps_commander = {
@@ -599,6 +613,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { Bad_General }
 	skill = 1
+	id = 567
 }
 
 create_corps_commander = {
@@ -606,6 +621,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Competent_General offensive_doctrine_CC }
 	skill = 3
+	id = 568
 }
 
 create_corps_commander = {
@@ -613,6 +629,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	traits = { Bad_General }
 	skill = 1
+	id = 569
 }
 
 create_corps_commander = {
@@ -620,6 +637,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	traits = { Decent_General }
 	skill = 3
+	id = 570
 }
 
 create_corps_commander = {
@@ -627,6 +645,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Competent_General }
 	skill = 2
+	id = 571
 }
 
 create_corps_commander = {

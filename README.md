@@ -4,7 +4,10 @@
 	https://steamcommunity.com/sharedfiles/filedetails/?id=1137372539
 	https://steamcommunity.com/sharedfiles/filedetails/?id=707136443
 	https://steamcommunity.com/workshop/filedetails/?id=842834893
+	
+	Currently using BICE v2.5.8 files
 
 
-	list of things taken from turning point: ~events~, ~common/ideas~, ~gfx/event_pictures~. history, interface and loc still to be checked
+	list of things taken from turning point: ~events~, ~common/ideas~, ~gfx/event_pictures~, ~history~, ~interface~ and ~loc~ 
+	likely nothing from turning point left??
 	("~" means already removed from this mod)

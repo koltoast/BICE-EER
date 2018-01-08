@@ -384,7 +384,7 @@ units = {
 
 	##### NAVAL UNITS #####
 	navy = {				
-		name = "Flota Romana de Mare"			
+		name = "Flota Românã de Mare"			
 		base = 657 
 		location = 657 # Constanta
 		ship = { name = "NMS Mărăşti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }

@@ -5,7 +5,8 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_codrea"
 	texturefile = "gfx/interface/goals/focus_codrea.tga"			
-	}	SpriteType = {
+	}	
+	SpriteType = {
 	name = "GFX_goal_garda"
 	texturefile = "gfx/interface/goals/focus_garda.tga"			
 	}	SpriteType = {

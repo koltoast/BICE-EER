@@ -1,0 +1,51 @@
+spriteTypes = {	
+
+
+	
+	SpriteType = {
+	name = "GFX_goal_codrea"
+	texturefile = "gfx/interface/goals/focus_codrea.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_garda"
+	texturefile = "gfx/interface/goals/focus_garda.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_horia"
+	texturefile = "gfx/interface/goals/focus_horia.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_librom"
+	texturefile = "gfx/interface/goals/goal_librom.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_anto"
+	texturefile = "gfx/interface/goals/goal_anto.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_b1"
+	texturefile = "gfx/interface/goals/goal_b1.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_b2"
+	texturefile = "gfx/interface/goals/goal_b2.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_step"
+	texturefile = "gfx/interface/goals/goal_step.dds"			
+	}	
+	
+	
+	
+	
+	
+	
+	
+}

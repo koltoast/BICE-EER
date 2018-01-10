@@ -1,14 +1,48 @@
 ﻿l_english:
  VICTORY_POINTS_TOOLTIP:0 "§G$NAME$§! victory points = §Y$POINTS$§!"
- VICTORY_POINTS_6706:0 "Galaţi"
- VICTORY_POINTS_3645:0 "Craiova"
- VICTORY_POINTS_646:0 "Timişoara"
- VICTORY_POINTS_9617:0 "Bucharest"
+ ###ROMANIA###
+ ####special characters: ăâşŞţŢ
+ VICTORY_POINTS_577:0 "Cernăuţi"
+ VICTORY_POINTS_637:0 "Slatina"
+ VICTORY_POINTS_646:0 " "
+ VICTORY_POINTS_657:0 "Constanţa" ##moved from unsorted VPs##
+ VICTORY_POINTS_662:0 "Lugoj"
+ VICTORY_POINTS_676:0 "Alba Iulia"
+ VICTORY_POINTS_687:0 "Tulcea"
  VICTORY_POINTS_690:0 "Braşov"
+ VICTORY_POINTS_3076:0 "Brăila"
+ VICTORY_POINTS_3407:0 "Hotin" ##add to northern bukovina state##
+ VICTORY_POINTS_3639:0 "Piteşti"
+ VICTORY_POINTS_3645:0 " "
  VICTORY_POINTS_3663:0 "Ploieşti"
- VICTORY_POINTS_646:0 "Timişoara"
- VICTORY_POINTS_6711:0 "Cluj"
+ VICTORY_POINTS_3665:0 "Petroşani" ##add to transylvania state##?
+ VICTORY_POINTS_3676:0 "Făgăraş"
+ VICTORY_POINTS_3694:0 "Turda"
+ VICTORY_POINTS_3696:0 "Oradea"
+ VICTORY_POINTS_3704:0 "Ismail"
+ VICTORY_POINTS_3728:0 "Piatra Neamţ"
+ VICTORY_POINTS_6584:0 "Botoşani"
+ VICTORY_POINTS_6600:0 "Bălţi"
+ VICTORY_POINTS_6652:0 "Craiova"
+ VICTORY_POINTS_6679:0 "Sibiu"
+ VICTORY_POINTS_6682:0 "Arad"
+ VICTORY_POINTS_6706:0 "Galaţi"
+ VICTORY_POINTS_6711:0 "Cluj" ##renamed to Cluj-Napoca in the 50s##
+ VICTORY_POINTS_6727:0 "Cetatea Albă" ##Bilhorod-Dnistrovsky in ukranian##
+ VICTORY_POINTS_6731:0 "Bistriţa"
+ VICTORY_POINTS_9548:0 "Rădăuţi"
+ VICTORY_POINTS_9606:0 "Timişoara"
+ VICTORY_POINTS_9617:0 "Bucharest"
+ VICTORY_POINTS_9619:0 "Caransebeş"
+ VICTORY_POINTS_9668:0 " "
+ VICTORY_POINTS_9683:0 "Comrat"
  VICTORY_POINTS_9716:0 "Iaşi"
+ VICTORY_POINTS_11592:0 "Reşiţa"
+ VICTORY_POINTS_11597:0 "Dobrici" ##Dobritsch in bulgarian##
+ VICTORY_POINTS_11639:0 "Sighişoara"
+ VICTORY_POINTS_11672:0 "Bacău"
+ VICTORY_POINTS_11676:0 "Baia Mare"
+ VICTORY_POINTS_11686:0 "Chişinău"
  
  
  

@@ -4,6 +4,10 @@ oob = "ROM_1936"
 
 set_research_slots = 4
 
+set_cosmetic_tag = ROM_MONARCHY
+
+#special characters: ăâşŞţŢ
+
 # Starting tech
 set_technology = {
 	BICE_sub_balance = 1
@@ -357,22 +361,11 @@ create_country_leader = {
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = center_right
 	traits = {
 		#
 	}
 	id = 552
-}
-create_country_leader = {
-	name = "Corneliu Zelea Codreanu"
-	desc = "Leader of the Fascists"
-	picture = "gfx/leaders/ROM/Portrait_Corneliu_Zelea_Codreanu.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		fascist
-	}
-	id = 553
 }
 create_country_leader = {
 	name = "Gheorghe Gheorghiu-Dej"
@@ -430,11 +423,22 @@ create_country_leader = {
 	id = 557
 }
 create_country_leader = {
+	name = "Corneliu Zelea Codreanu"
+	desc = "Leader of the Fascists"
+	picture = "gfx/leaders/ROM/Portrait_Corneliu_Zelea_Codreanu.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		fascist
+	}
+	id = 553
+}
+create_country_leader = {
 	name = "Horia Sima"
 	desc = "POLITICS_ION_ANTONESCU_DESC"
 	picture = "Portrait_Romania_Horia_Sima.tga"
 	expire = "1965.3.3"
-	ideology = fascism_ideology
+	ideology = legionnairism
 	traits = {
 		#
 	}
@@ -444,7 +448,7 @@ create_country_leader = {
 	desc = "POLITICS_CORNELIU_CODREANU_DESC"
 	picture = "Portrait_Romania_Corneliu_Zelea_Codreanu.tga"
 	expire = "1938.11.11"
-	ideology = fascism_ideology
+	ideology = legionnairism
 	traits = {
 		#
 	}
@@ -466,7 +470,7 @@ create_field_marshal = {
 	id = 560
 }
 create_corps_commander = {
-	name = "Ioan Mihail Racovita"
+	name = "Ioan Mihail Racoviţă"
 	gfx = GFX_Portrait_romania_ioan_mihail_racovita
 	traits = { Competent_General  hill_fighter_CC }
 	skill = 3
@@ -502,12 +506,6 @@ create_corps_commander = {
 		skill = 3
 	}
 
-create_navy_leader = {
-		name = "Horia Macellariu"
-		gfx = "GFX_Portrait_romania_horia_macellariu"
-		traits = { spotter }
-		skill = 2
-	}
 }
 	create_corps_commander = {
 	name = "Constantin Constantinescu"
@@ -1328,6 +1326,18 @@ create_navy_leader = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+}
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+
+create_navy_leader = {
+		name = "Horia Macellariu"
+		gfx = "GFX_Portrait_romania_horia_macellariu"
+		traits = { spotter }
+		skill = 2
+	}
 }
 ### Ship Variants ###
 ####################################################

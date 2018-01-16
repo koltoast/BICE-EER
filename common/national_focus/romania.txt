@@ -14,7 +14,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = -650 y = 920 }
 
 #	focus = {
 #		id = ROM_
@@ -97,9 +97,9 @@ focus_tree = {
 	focus = {
 		id = ROM_a_deal_with_the_devil
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = ROM_preserve_greater_romania }
+		prerequisite = { focus = ROM_flexible_foreign_policy }
 		x = -2
-		y = 1
+		y = 2
 		relative_position_id = ROM_preserve_greater_romania
 
 		cost = 10
@@ -333,9 +333,9 @@ focus_tree = {
 	focus = {
 		id = ROM_trade_treaty_with_germany
 		icon = GFX_goal_generic_trade
-		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = 0
-		y = 1
+		prerequisite = { focus = ROM_flexible_foreign_policy }
+		x = 16
+		y = 2
 		relative_position_id = ROM_preserve_greater_romania
 
 		cost = 10
@@ -609,8 +609,8 @@ focus_tree = {
 		id = ROM_renew_the_romanian_polish_alliance
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = ROM_preserve_greater_romania
 
 		cost = 10
@@ -1920,8 +1920,8 @@ focus_tree = {
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 11
-		y = 1
+		x = 8
+		y = 2
 
 		cost = 10
 
@@ -1931,8 +1931,14 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			monarchism > 0.02
-			#monarchy as constitutional law
+			monarchism > 0.05
+			OR = {
+				has_country_flag = constitutional_monarchy
+				has_country_flag = constitutional_monarchy2
+			}
+			NOT = {
+				has_government = communism
+			}
 		}
 
 		bypass = {
@@ -1965,6 +1971,13 @@ focus_tree = {
 				ruling_party = monarchism
 				elections_allowed = no
 			}
+			add_popularity = {
+				popularity = 0.35
+				ideology = monarchism
+			}
+			set_cosmetic_tag = ROM
+			set_cosmetic_tag = ROM_MONARCHY
+			
 		}
 	}
 
@@ -2069,7 +2082,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = ROM_fortify_the_borders }
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ROM_fortify_the_borders
 
@@ -2270,10 +2283,10 @@ focus_tree = {
 	focus = {
 		id = ROM_flexible_foreign_policy
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 0
+		prerequisite = { focus = ROM_preserve_greater_romania }
+		x = 3
 		y = 1
-		relative_position_id = ROM_revise_the_constitution
+		relative_position_id = ROM_preserve_greater_romania
 
 		cost = 10
 
@@ -2283,6 +2296,12 @@ focus_tree = {
 
 		available = {
 			is_subject = no
+			OR = {
+					has_war = yes
+					threat > 0.15
+					has_government = neutrality
+					has_government = monarchism
+			}
 		}
 
 		bypass = {
@@ -2299,16 +2318,17 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ROM_flexible_foreign_policy
+			remove_ideas = neutrality_idea
 		}
 	}
 
 	focus = {
 		id = ROM_appoint_soviet_friendly_government
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = -1
+		prerequisite = { focus = ROM_join_comintern }
+		x = 0
 		y = 1
-		relative_position_id = ROM_flexible_foreign_policy
+		relative_position_id = ROM_join_comintern
 
 		cost = 10
 
@@ -2433,10 +2453,10 @@ focus_tree = {
 	focus = {
 		id = ROM_appoint_german_friendly_government
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 1
-		y = 1
-		relative_position_id = ROM_flexible_foreign_policy
+		prerequisite = { focus = ROM_join_axis }
+		x = 0
+		y = 2
+		relative_position_id = ROM_join_axis
 
 		cost = 10
 
@@ -2595,11 +2615,10 @@ focus_tree = {
 	focus = {
 		id = ROM_force_abdication
 		icon = GFX_focus_rom_abdicate
-		prerequisite = { focus = ROM_iron_guard focus = ROM_securitate }
-		mutually_exclusive = { focus = ROM_handle_the_king }
-		x = -1
-		y = 2
-		relative_position_id = ROM_appoint_german_friendly_government
+		prerequisite = { focus = ROM_securitate }
+		x = 0
+		y = 1
+		relative_position_id = ROM_securitate
 
 		cost = 10
 
@@ -2608,7 +2627,10 @@ focus_tree = {
 		}
 
 		available = {
-			has_idea = ROM_king_carol_ii_hedonist
+			OR = {
+				has_country_flag = constitutional_monarchy
+				has_country_flag = constitutional_monarchy2
+			}
 			OR = {
 				conservatism > 0.35
 				socialism > 0.35
@@ -2632,6 +2654,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = constitutional_republic
 			#Removes king carol and makes the most popular party the ruling one
 			if = {
 				limit = { has_country_leader = { id = 550 } }
@@ -2693,6 +2716,8 @@ focus_tree = {
 			remove_ideas = ROM_the_sentinel_of_the_motherland
 			#add_political_power = -120
 			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 360 }
+			set_cosmetic_tag = ROM
+			set_cosmetic_tag = ROM_REPUBLIC
 			hidden_effect = {
 				news_event = { id = news.323 days = 1 }
 			}
@@ -2702,10 +2727,10 @@ focus_tree = {
 	focus = {
 		id = ROM_appoint_allied_friendly_government
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 3
-		y = 1
-		relative_position_id = ROM_flexible_foreign_policy
+		prerequisite = { focus = ROM_join_allies }
+		x = 0
+		y = 2
+		relative_position_id = ROM_join_allies
 
 		cost = 10
 
@@ -2831,7 +2856,6 @@ focus_tree = {
 		id = ROM_handle_the_king
 		icon = GFX_focus_rom_handle_king
 		prerequisite = { focus = ROM_constitutional_guarantees }
-		mutually_exclusive = { focus = ROM_force_abdication }
 		x = 0
 		y = 2
 		relative_position_id = ROM_appoint_allied_friendly_government
@@ -2843,6 +2867,10 @@ focus_tree = {
 		}
 
 		available = {
+			OR = {
+				has_country_flag = constitutional_monarchy
+				has_country_flag = constitutional_monarchy2
+			}
 			is_subject = no
 			OR = {
 				custom_trigger_tooltip = {

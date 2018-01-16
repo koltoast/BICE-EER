@@ -84,7 +84,6 @@ set_technology = {
 
  #Ideas
 add_ideas = { 	
-		constitutional_monarchy
 		export_focus
 		tax_average
 		tariffs_average
@@ -132,7 +131,6 @@ if = {
 		}
 	}
 }
-set_country_flag = constitutional_monarchy
 set_country_flag = export_focus
 set_country_flag = tax_average
 set_country_flag = tariffs_average
@@ -287,10 +285,10 @@ set_politics = {
 			popularity = 16
 		}
 		communism = {
-			popularity = 0
+			popularity = 2
 		}
 		monarchism = { 
-			popularity = 14
+			popularity = 12
 		}
 		neutrality = { 
 			popularity = 9			
@@ -344,7 +342,19 @@ create_country_leader = {
 		hedonist
 		camarilla_leader
 	}
-	id = 550 ##maybe 551??
+	id = 550
+}
+create_country_leader = {
+	name = "Carol II"
+	desc = "POLITICS_CAROL_II_DESC"
+	picture = GFX_Portrait_romania_Carol_II			
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		hedonist
+		camarilla_leader
+	}
+	id = 551
 }
 create_country_leader = {
 	name = "Gheorghe Tătărescu"

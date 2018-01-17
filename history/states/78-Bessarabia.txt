@@ -13,7 +13,14 @@ state={
 			arms_factory = 3
 
 		}
+		victory_points = { 414 1 }
+		victory_points = { 565 1 }
+		victory_points = { 3577 1 }
+		victory_points = { 3707 1 }
+		victory_points = { 3724 1 }
+		victory_points = { 6600 1 }
 		victory_points = { 11686 1 }
+		victory_points = { 11705 1 }
 
 	}
 

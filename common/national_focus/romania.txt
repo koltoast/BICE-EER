@@ -90,7 +90,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ROM_preserve_greater_romania
+		
 		}
 	}
 
@@ -247,7 +247,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_romanian_volunteer_brigades
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_librom
 		prerequisite = { focus = ROM_basing_rights_for_soviet_union }
 		x = -1
 		y = 3
@@ -608,7 +608,7 @@ focus_tree = {
 	focus = {
 		id = ROM_renew_the_romanian_polish_alliance
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = ROM_preserve_greater_romania }
+		prerequisite = {  }
 		x = 0
 		y = 2
 		relative_position_id = ROM_preserve_greater_romania
@@ -2283,9 +2283,8 @@ focus_tree = {
 	focus = {
 		id = ROM_flexible_foreign_policy
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = 3
-		y = 1
+		x = 2
+		y = 0
 		relative_position_id = ROM_preserve_greater_romania
 
 		cost = 10
@@ -2452,7 +2451,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_appoint_german_friendly_government
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_anto
 		prerequisite = { focus = ROM_join_axis }
 		x = 0
 		y = 2
@@ -2551,7 +2550,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_iron_guard
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_garda
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
 		x = 0
 		y = 1

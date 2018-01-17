@@ -1,0 +1,50 @@
+ideas = {
+      #romania eastern europe rework
+	country = {
+		ROM_eer_codreanu_alive = {
+
+			#picture = anti_soviet_pact
+			
+			removal_cost = -1
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				fascism_drift = 0.3
+			}
+		}
+		
+		ROM_eer_codreanu_arrested = {
+
+			#picture = anti_soviet_pact
+			
+			removal_cost = -1
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				fascism_drift = 0.2
+			}
+		}
+		
+		ROM_eer_codreanu_dead = {
+
+			#picture = anti_soviet_pact
+			
+			removal_cost = -1
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+	}
+
+}

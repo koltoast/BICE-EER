@@ -113,6 +113,9 @@ if = {
 	}
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
+		ROM_preserve_greater_romania
+		#
+		ROM_eer_codreanu_alive
 	}
 	give_guarantee = CZE
 	give_guarantee = GRE

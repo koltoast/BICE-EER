@@ -1,5 +1,4 @@
 ﻿l_english:
- VICTORY_POINTS_TOOLTIP:0 "§G$NAME$§! victory points = §Y$POINTS$§!"
  ###ROMANIA###
  ####special characters: ăâşŞţŢ
  VICTORY_POINTS_577:0 "Cernăuţi"
@@ -43,6 +42,3 @@
  VICTORY_POINTS_11672:0 "Bacău"
  VICTORY_POINTS_11676:0 "Baia Mare"
  VICTORY_POINTS_11686:0 "Chişinău"
- 
- 
- 

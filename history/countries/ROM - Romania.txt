@@ -115,7 +115,8 @@ if = {
 		ROM_king_carol_ii_hedonist
 		ROM_preserve_greater_romania
 		#
-		ROM_eer_codreanu_alive
+		ROM_eer_codreanu_alive ##will need something to remove it later on ##TODO
+		ROM_eer_marzescu_law ##will need something to remove it later on ##TODO
 	}
 	give_guarantee = CZE
 	give_guarantee = GRE

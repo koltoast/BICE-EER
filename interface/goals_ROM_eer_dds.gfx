@@ -1,7 +1,11 @@
 spriteTypes = {	
 
+	SpriteType = {
+	name = "GFX_focus_rom_flexible_foreign_policy"
+	texturefile = "gfx/interface/goals/focus_rom_flexible_foreign_policy.dds"			
+	}	
 
-	
+	##Stapanu focuses
 	SpriteType = {
 	name = "GFX_goal_codrea"
 	texturefile = "gfx/interface/goals/focus_codrea.dds"			

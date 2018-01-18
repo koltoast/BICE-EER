@@ -1,7 +1,9 @@
 ﻿l_english:
  ROM_eer_codreanu_alive:0 "Codreanu alive"
- ROM_eer_codreanu_alive_desc:0 "Corneliu Zelea Codreanu, the leader of Romania's largest fascist party (the Iron Guard) is a very dangerous and divisive character. He employs ultra-nationalistic rhetoric and actively threatens the powers in charge. Perhaps it would be best to dispose of him."
+ ROM_eer_codreanu_alive_desc:0 "Corneliu Zelea Codreanu, the leader of Romania's largest fascist movement (the Iron Guard) is a very dangerous and divisive character. He employs ultra-nationalistic rhetoric and actively threatens the powers in charge. Perhaps it would be best to dispose of him."
  ROM_eer_codreanu_arrested:0 "Codreanu arrested" ##maybe Codreanu behind bars??##
  ROM_eer_codreanu_arrested_desc:0 "The dangerous and divisive character that is Corneliu Zelea Codreanu has been put behind bars, thus his influence on Romanian politics is now diminished. He might escape or be pardoned at some point..."
  ROM_eer_codreanu_dead:0 "Codreanu dead"
- ROM_eer_codreanu_dead_desc:0 "Corneliu Zelea Codreanu, who was the leader of Romania's largest fascist party, is no longer alive, yet he has reached a legend-like status where his death continues to inspire Romanian fascists even from beyond the grave."
+ ROM_eer_codreanu_dead_desc:0 "Corneliu Zelea Codreanu, who was the leader of Romania's largest fascist movement, is no longer alive, yet he has reached a legend-like status where his death continues to inspire Romanian fascists even from beyond the grave."
+ ROM_eer_marzescu_law:0 "Mârzescu Law"
+ ROM_eer_marzescu_law_desc:0 "The Mârzescu Law is a law enacted in 1921 banning communist activities in Romania." ##After the 1921 bombing of the Romanian Parliament and the 1924 Tatarbunary Uprising, it was clear that the Comintern was a hostile force towards Greater Romania, thus the Mârzescu Law was enacted to prevent their actions."

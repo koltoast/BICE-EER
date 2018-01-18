@@ -682,17 +682,17 @@
  ####special characters: ăâşŞţŢ
  VICTORY_POINTS_414:0 "Soroca"
  VICTORY_POINTS_565:0 "Făleşti"
- VICTORY_POINTS_577:0 "Sadagura" ##Sadgor/Sadhor in ukrainian##
+ VICTORY_POINTS_577:0 "Sadagura" ##Sadhora in ukrainian##
  VICTORY_POINTS_637:0 "Drăgăşani"
- VICTORY_POINTS_646:0 "SânNicolau(l) Mare / Biled / Jimbolia"
+ VICTORY_POINTS_646:0 "Sânnicolau Mare"
  VICTORY_POINTS_657:0 "Constanţa" ##moved from unsorted VPs##
  VICTORY_POINTS_660:0 "Piteşti"
  VICTORY_POINTS_662:0 "Lugoj"
  VICTORY_POINTS_674:0 "Buzău"
  VICTORY_POINTS_676:0 "Alba Iulia"
  VICTORY_POINTS_687:0 "Sulina"
- VICTORY_POINTS_690:0 "Braşov"
- VICTORY_POINTS_693:0 "Câmpeni / Iara"
+ VICTORY_POINTS_690:0 "Braşov"  ##renamed to Oraşul Stalin on 22 august 1950 (Stalin City); renamed back to Braşov on 24 december 1960##
+ VICTORY_POINTS_693:0 "Câmpeni"
  VICTORY_POINTS_696:0 "Beiuş"
  VICTORY_POINTS_711:0 "Gheorgheni"
  VICTORY_POINTS_713:0 "Carei"
@@ -702,28 +702,28 @@
  VICTORY_POINTS_746:0 "Satu Mare"
  VICTORY_POINTS_818:0 "Turnu Măgurele"
  VICTORY_POINTS_3076:0 "Tulcea"
- VICTORY_POINTS_3407:0 "Hotin"
- VICTORY_POINTS_3577:0 "Răşcani"
+ VICTORY_POINTS_3407:0 "Hotin" ##Khotyn/Khotin in ukrainian##
+ VICTORY_POINTS_3577:0 "Bălţi"
  VICTORY_POINTS_3630:0 "Băileşti"
  VICTORY_POINTS_3636:0 "Târgovişte"
  VICTORY_POINTS_3639:0 "Slatina"
  VICTORY_POINTS_3645:0 "Strehaia"
  VICTORY_POINTS_3649:0 "Oraviţa"
- VICTORY_POINTS_3663:0 "Ploeşti" ##renamed to Ploieşti in ??##
+ VICTORY_POINTS_3663:0 "Ploeşti" ##renamed to Ploieşti sometime between 1950-1966##
  VICTORY_POINTS_3665:0 "Petroşani"
  VICTORY_POINTS_3676:0 "Şercaia"
- VICTORY_POINTS_3689:0 "Miercurea Ciuc"
+ VICTORY_POINTS_3689:0 "Miercurea Ciuc" ##maybe rename to Miercurea-Ciuc later on??##
  VICTORY_POINTS_3694:0 "Turda"
  VICTORY_POINTS_3696:0 "Oradea"
  VICTORY_POINTS_3701:0 "Chilia Nouă"
  VICTORY_POINTS_3704:0 "Ismail"
- VICTORY_POINTS_3707:0 "Călăraşi-Târg"
+ VICTORY_POINTS_3707:0 "Călăraşi-Târg" ##maybe renamed to Călăraşi later on??##
  VICTORY_POINTS_3709:0 "Huedin"
  VICTORY_POINTS_3724:0 "Cahul"
  VICTORY_POINTS_3728:0 "Piatra Neamţ"
  VICTORY_POINTS_3741:0 "Roman"
  VICTORY_POINTS_6584:0 "Botoşani"
- VICTORY_POINTS_6600:0 "Bălţi"
+ VICTORY_POINTS_6600:0 "Rezina"
  VICTORY_POINTS_6652:0 "Craiova"
  VICTORY_POINTS_6658:0 "Giurgiu"
  VICTORY_POINTS_6667:0 "Târgu-Jiu"
@@ -731,7 +731,7 @@
  VICTORY_POINTS_6679:0 "Sibiu"
  VICTORY_POINTS_6682:0 "Arad"
  VICTORY_POINTS_6695:0 "Câmpulung"
- VICTORY_POINTS_6697:0 " "
+ VICTORY_POINTS_6697:0 "Ineu"
  VICTORY_POINTS_6706:0 "Galaţi"
  VICTORY_POINTS_6709:0 "Făgăraş"
  VICTORY_POINTS_6711:0 "Cluj" ##renamed to Cluj-Napoca on 16 october 1974##
@@ -739,16 +739,16 @@
  VICTORY_POINTS_6727:0 "Cetatea Albă" ##Bilhorod-Dnistrovsky in ukranian?##
  VICTORY_POINTS_6729:0 "Bârlad"
  VICTORY_POINTS_6731:0 "Bistriţa"
- VICTORY_POINTS_6743:0 "Volintiri" ##should be in bessarabia, not budjak, and called Tighina##
+ VICTORY_POINTS_6743:0 "Volintiri" ##should be in bessarabia, not budjak, and called Tighina/Bender##
  VICTORY_POINTS_6747:0 "Vaslui"
  VICTORY_POINTS_6761:0 "Suceava"
  VICTORY_POINTS_9614:0 "Silistra"
- VICTORY_POINTS_9548:0 "Cernăuţi"
+ VICTORY_POINTS_9548:0 "Cernăuţi" ##Chernivtsi in ukrainian##
  VICTORY_POINTS_9606:0 "Timişoara"
  VICTORY_POINTS_9617:0 "Bucharest"
  VICTORY_POINTS_9619:0 "Deva"
- VICTORY_POINTS_9635:0 "Hârşova / Babadag"
- VICTORY_POINTS_9640:0 " "
+ VICTORY_POINTS_9635:0 "Babadag"
+ VICTORY_POINTS_9640:0 "Săvârşin"
  VICTORY_POINTS_9651:0 "Râmnicu-Sărat"
  VICTORY_POINTS_9668:0 "Sfântu Gheorghe"
  VICTORY_POINTS_9670:0 "Târgu Mureş"
@@ -757,9 +757,9 @@
  VICTORY_POINTS_9685:0 "Topliţa"
  VICTORY_POINTS_9687:0 "Şimleul Silvaniei"
  VICTORY_POINTS_9701:0 "Tecuci"
- VICTORY_POINTS_9704:0 "Sighet"
+ VICTORY_POINTS_9704:0 "Sighet" ##probably renamed to Sighetul Marmaţiei some time##
  VICTORY_POINTS_9716:0 "Iaşi"
- VICTORY_POINTS_11534:0 "Ştefăneşti / Săveni"
+ VICTORY_POINTS_11534:0 "Ştefăneşti" ##maybe change to Săveni after 1950 or so??##
  VICTORY_POINTS_11588:0 "Caracal"
  VICTORY_POINTS_11592:0 "Reşiţa"
  VICTORY_POINTS_11597:0 "Bazargic" ##? in bulgarian##
@@ -767,15 +767,15 @@
  VICTORY_POINTS_11605:0 "Râmnicu-Vâlcea"
  VICTORY_POINTS_11608:0 "Lipova"
  VICTORY_POINTS_11619:0 "Sinaia"
- VICTORY_POINTS_11622:0 "Brad / Abrud"
+ VICTORY_POINTS_11622:0 "Brad"
  VICTORY_POINTS_11636:0 "Brăila"
  VICTORY_POINTS_11639:0 "Sighişoara"
  VICTORY_POINTS_11652:0 "Focşani"
- VICTORY_POINTS_11655:0 "Moineşti / Târgu Ocna / Băile Slănic"
- VICTORY_POINTS_11657:0 "Turnu Severin" ##renamed to Drobeta Turnu Severin in ??##
+ VICTORY_POINTS_11655:0 "Târgu Ocna" ##name Moineşti after 1952 or so##
+ VICTORY_POINTS_11657:0 "Turnu Severin" ##renamed to Drobeta-Turnu Severin in 1972##
  VICTORY_POINTS_11672:0 "Bacău"
  VICTORY_POINTS_11676:0 "Baia Mare"
- VICTORY_POINTS_11686:0 "Chişinău"
+ VICTORY_POINTS_11686:0 "Chişinău" ##Kishinev in russian/ukrainian and maybe english too##
  VICTORY_POINTS_11689:0 "Câmpulung-Moldovenesc"
  VICTORY_POINTS_11705:0 "Orhei"
  

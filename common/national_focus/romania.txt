@@ -61,46 +61,45 @@ focus_tree = {
 	##### PRESERVE G ROM #######
 	############################
 
-	focus = {
-		id = ROM_preserve_greater_romania
-		icon = GFX_focus_rom_preserve_romania
-		x = 3
-		y = 0
+	#focus = {#replaced by re-localised flexible foreign policy since this was already the default position of romania since way before 1936. the only purpose of this focus was being mutually exclusive to the utterly ridiculous balkan dominance path. the completion reward was a national spirit that romania now starts with by default
+		#id = ROM_preserve_greater_romania
+		#icon = GFX_focus_rom_preserve_romania
+		#x = 3
+		#y = 0
 
-		cost = 10
+		#cost = 10
 
-		ai_will_do = {
-			factor = 9
-		}
+		#ai_will_do = {
+			#factor = 9
+		#}
 
-		available = {
+		#available = {
 
-		}
+		#}
 
-		bypass = {
+		#bypass = {
 
-		}
+		#}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
 
-		complete_tooltip = {
+		#complete_tooltip = {
 
-		}
+		#}
 
-		completion_reward = {
+		#completion_reward = {
 		
-		}
-	}
+		#}
+	#}
 
 	focus = {
 		id = ROM_a_deal_with_the_devil
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = -2
-		y = 2
-		relative_position_id = ROM_preserve_greater_romania
+		x = 1
+		y = 1
 
 		cost = 10
 
@@ -335,8 +334,7 @@ focus_tree = {
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = ROM_flexible_foreign_policy }
 		x = 16
-		y = 2
-		relative_position_id = ROM_preserve_greater_romania
+		y = 1
 
 		cost = 10
 
@@ -609,9 +607,8 @@ focus_tree = {
 		id = ROM_renew_the_romanian_polish_alliance
 		icon = GFX_goal_anschluss
 		prerequisite = {  }
-		x = 0
-		y = 2
-		relative_position_id = ROM_preserve_greater_romania
+		x = 4
+		y = 1
 
 		cost = 10
 
@@ -957,10 +954,8 @@ focus_tree = {
 	focus = {
 		id = ROM_civil_works
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = 20
-		y = 1
-		relative_position_id = ROM_preserve_greater_romania
+		x = 23
+		y = 0
 
 		cost = 10
 
@@ -997,7 +992,6 @@ focus_tree = {
 	focus = {
 		id = ROM_national_defense_industry
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ROM_preserve_greater_romania }
 		x = 2
 		y = 0
 		relative_position_id = ROM_civil_works
@@ -1921,7 +1915,7 @@ focus_tree = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
 		x = 8
-		y = 2
+		y = 1
 
 		cost = 10
 
@@ -2045,10 +2039,9 @@ focus_tree = {
 	focus = {
 		id = ROM_fortify_the_borders
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = 4
+		prerequisite = { focus = ROM_flexible_foreign_policy }
+		x = 12
 		y = 1
-		relative_position_id = ROM_institute_royal_dictatorship
 
 		cost = 10
 
@@ -2057,7 +2050,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			date < 1948.6.1
 		}
 
 		bypass = {
@@ -2073,18 +2066,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ROM_fortify_the_borders
+			add_timed_idea = { idea = ROM_fortify_the_borders days = 2000 }
 		}
 	}
 
 	focus = {
 		id = ROM_his_majestys_loyal_government
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = ROM_fortify_the_borders }
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 0
-		y = 1
-		relative_position_id = ROM_fortify_the_borders
+		x = 10
+		y = 3
 
 		cost = 10
 
@@ -2249,7 +2240,7 @@ focus_tree = {
 		id = ROM_the_royal_foundation
 		icon = GFX_focus_research
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
@@ -2282,10 +2273,9 @@ focus_tree = {
 
 	focus = {
 		id = ROM_flexible_foreign_policy
-		icon = GFX_goal_generic_improve_relations
-		x = 2
+		icon = GFX_focus_rom_flexible_foreign_policy
+		x = 3
 		y = 0
-		relative_position_id = ROM_preserve_greater_romania
 
 		cost = 10
 
@@ -2307,8 +2297,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		complete_tooltip = {

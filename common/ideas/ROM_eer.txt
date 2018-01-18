@@ -12,7 +12,7 @@ ideas = {
 			}
 			
 			modifier = {
-				fascism_drift = 0.3
+				fascism_drift = 0.03
 			}
 		}
 		
@@ -27,7 +27,7 @@ ideas = {
 			}
 			
 			modifier = {
-				fascism_drift = 0.2
+				fascism_drift = 0.02
 			}
 		}
 		
@@ -42,7 +42,22 @@ ideas = {
 			}
 			
 			modifier = {
-				fascism_drift = 0.1
+				fascism_drift = 0.01
+			}
+		}
+		
+		ROM_eer_marzescu_law = {
+
+			picture = anti_soviet_pact
+			
+			removal_cost = -1
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				communism_drift = -0.1
 			}
 		}
 	}

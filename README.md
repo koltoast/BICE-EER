@@ -5,9 +5,10 @@
 	https://steamcommunity.com/sharedfiles/filedetails/?id=707136443
 	https://steamcommunity.com/workshop/filedetails/?id=842834893
 	
-	Currently using BICE v2.5.8 files
+	Currently using BICE v2.5.9beta files
 
-
+	list of things taken from stapanu's files: common/names; aces; focus icons; portraits; generals; and some loc adjusts for dod_events
+	
 	list of things taken from turning point: ~events~, ~common/ideas~, ~gfx/event_pictures~, ~history~, ~interface~ and ~loc~ 
 	likely nothing from turning point left??
 	("~" means already removed from this mod)

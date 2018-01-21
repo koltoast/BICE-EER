@@ -1,55 +1,59 @@
 spriteTypes = {	
 
 	SpriteType = {
-	name = "GFX_focus_rom_flexible_foreign_policy"
-	texturefile = "gfx/interface/goals/focus_rom_flexible_foreign_policy.dds"			
+	name = "GFX_focus_ROM_preservationist_foreign_policy"
+	texturefile = "gfx/interface/goals/focus_ROM_preservationist_foreign_policy.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_focus_ROM_iar"
+	texturefile = "gfx/interface/goals/focus_ROM_iar.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_focus_ROM_iar_80"
+	texturefile = "gfx/interface/goals/focus_ROM_iar_80.dds"
 	}	
 
 	##Stapanu focuses
 	SpriteType = {
-	name = "GFX_goal_codrea"
-	texturefile = "gfx/interface/goals/focus_codrea.dds"			
+	name = "GFX_focus_ROM_codrea"
+	texturefile = "gfx/interface/goals/focus_ROM_codrea.dds"
 	}	
 	
 	SpriteType = {
-	name = "GFX_goal_garda"
-	texturefile = "gfx/interface/goals/focus_garda.dds"			
+	name = "GFX_focus_ROM_garda"
+	texturefile = "gfx/interface/goals/focus_ROM_garda.dds"
 	}	
 	
 	SpriteType = {
-	name = "GFX_goal_horia"
-	texturefile = "gfx/interface/goals/focus_horia.dds"			
+	name = "GFX_focus_ROM_horia"
+	texturefile = "gfx/interface/goals/focus_ROM_horia.dds"
 	}	
 	
 	SpriteType = {
-	name = "GFX_goal_librom"
-	texturefile = "gfx/interface/goals/goal_librom.dds"			
+	name = "GFX_focus_ROM_librom"
+	texturefile = "gfx/interface/goals/focus_ROM_librom.dds"
 	}	
 	
 	SpriteType = {
-	name = "GFX_goal_anto"
-	texturefile = "gfx/interface/goals/goal_anto.dds"			
+	name = "GFX_focus_ROM_anto"
+	texturefile = "gfx/interface/goals/focus_ROM_anto.dds"
 	}	
 	
 	SpriteType = {
-	name = "GFX_goal_b1"
-	texturefile = "gfx/interface/goals/goal_b1.dds"			
+	name = "GFX_focus_ROM_b1"
+	texturefile = "gfx/interface/goals/focus_ROM_b1.dds"
 	}	
 	
 	SpriteType = {
-	name = "GFX_goal_b2"
-	texturefile = "gfx/interface/goals/goal_b2.dds"			
+	name = "GFX_focus_ROM_b2"
+	texturefile = "gfx/interface/goals/focus_ROM_b2.dds"
 	}	
 	
 	SpriteType = {
-	name = "GFX_goal_step"
-	texturefile = "gfx/interface/goals/goal_step.dds"			
-	}	
-	
-	
-	
-	
-	
-	
+	name = "GFX_focus_ROM_step"
+	texturefile = "gfx/interface/goals/focus_ROM_step.dds"
+	}		
 	
 }

@@ -246,7 +246,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_romanian_volunteer_brigades
-		icon = GFX_goal_librom
+		icon = GFX_focus_ROM_librom
 		prerequisite = { focus = ROM_basing_rights_for_soviet_union }
 		x = -1
 		y = 3
@@ -1387,7 +1387,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_invest_in_the_iar
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_focus_ROM_iar
 		prerequisite = { focus = ROM_invite_foreign_motor_companies focus = ROM_malaxa }
 		x = 2
 		y = 4
@@ -2273,7 +2273,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_flexible_foreign_policy
-		icon = GFX_focus_rom_flexible_foreign_policy
+		icon = GFX_focus_ROM_preservationist_foreign_policy
 		x = 3
 		y = 0
 
@@ -2441,7 +2441,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_appoint_german_friendly_government
-		icon = GFX_goal_anto
+		icon = GFX_focus_ROM_anto
 		prerequisite = { focus = ROM_join_axis }
 		x = 0
 		y = 2
@@ -2540,7 +2540,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_iron_guard
-		icon = GFX_goal_garda
+		icon = GFX_focus_ROM_garda
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
 		x = 0
 		y = 1
@@ -3353,7 +3353,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_iar_80
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_focus_ROM_iar_80
 		prerequisite = { focus = ROM_air_superiority }
 		x = -1
 		y = 1

@@ -2072,7 +2072,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_his_majestys_loyal_government
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_ROM_his_majestys_loyal_government
 		prerequisite = { focus = ROM_revise_the_constitution }
 		x = 10
 		y = 3

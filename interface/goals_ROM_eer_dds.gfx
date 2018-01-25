@@ -16,8 +16,8 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-	name = "GFX_focus_ROM_his_majestys_royal_government"
-	texturefile = "gfx/interface/goals/focus_ROM_his_majestys_royal_government.tga"
+	name = "GFX_focus_ROM_carol"
+	texturefile = "gfx/interface/goals/focus_ROM_carol.dds"
 	}	
 
 	##Stapanu focuses

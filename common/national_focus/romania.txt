@@ -170,9 +170,9 @@ focus_tree = {
 	focus = {
 		id = ROM_form_peasant_militias
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = ROM_a_deal_with_the_devil }
-		x = -1
-		y = 1
+		prerequisite = { focus = ROM_basing_rights_for_soviet_union }
+		x = 1
+		y = 3
 		relative_position_id = ROM_a_deal_with_the_devil
 
 		cost = 10
@@ -182,7 +182,11 @@ focus_tree = {
 		}
 
 		available = {
-
+			SOV = { has_country_flag = Trotsky_government }
+			OR = {
+				has_government = communism
+				communism > 0.7
+			}
 		}
 
 		bypass = {
@@ -259,7 +263,12 @@ focus_tree = {
 		}
 
 		available = {
-
+			SOV = { has_country_flag = Trotsky_government }
+			#war support greater than 90%
+			OR = {
+				has_government = communism
+				communism > 0.7
+			}
 		}
 
 		bypass = {
@@ -333,7 +342,7 @@ focus_tree = {
 		id = ROM_trade_treaty_with_germany
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 16
+		x = 19
 		y = 1
 
 		cost = 10
@@ -607,7 +616,7 @@ focus_tree = {
 		id = ROM_renew_the_romanian_polish_alliance
 		icon = GFX_goal_anschluss
 		prerequisite = {  }
-		x = 4
+		x = 6
 		y = 1
 
 		cost = 10
@@ -1914,7 +1923,7 @@ focus_tree = {
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 8
+		x = 11
 		y = 1
 
 		cost = 10
@@ -2040,7 +2049,7 @@ focus_tree = {
 		id = ROM_fortify_the_borders
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 12
+		x = 16
 		y = 1
 
 		cost = 10
@@ -2074,7 +2083,7 @@ focus_tree = {
 		id = ROM_his_majestys_loyal_government
 		icon = GFX_focus_ROM_carol
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 10
+		x = 13
 		y = 3
 
 		cost = 10
@@ -2090,6 +2099,9 @@ focus_tree = {
 				tooltip = ROM_carol_current_leader_trigger
 				has_country_leader = { id = 550 }
 			}
+			monarchism > 0.99
+			has_national_unity > 89
+			#has_war_support > 99
 		}
 
 		bypass = {

@@ -1,0 +1,313 @@
+﻿###########################
+# Hungarian Events
+###########################
+
+add_namespace = hungary
+
+country_event = {
+	id = hungary.8
+	title = hungary.8.t
+	desc = hungary.8.desc
+	picture = GFX_report_event_german_soldier_deployment
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+		tag = SER
+		tag = CRO
+		}
+		is_ai = yes
+		CRO = { is_in_faction_with = GER }
+		HUN = {
+		any_owned_state = {
+		is_core_of = SER
+		}}
+	}
+	
+	option = {
+		name = hungary.7.a
+		CRO = {
+		set_country_flag = HUN_expansion
+		}
+	}
+}
+country_event = {
+	id = hungary.16
+	title = hungary.16.t
+	desc = hungary.16.desc
+	picture = GFX_report_event_german_soldier_deployment
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.16.a
+		add_national_unity = -0.05
+		
+	}
+	option = {
+		name = hungary.16.b
+		set_global_flag = war_after_barbarossa
+	}
+}
+#Event for members to join the pact
+country_event = {
+	id = hungary.12
+	title = hungary.12.t
+	desc = hungary.12.desc
+	picture = GFX_report_event_german_soldier_deployment
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.12.a
+		set_country_flag = anti_hungary
+		add_ideas = HUN_anti_hungary
+		HUN = { add_opinion_modifier = { target = ROOT modifier = hun_pact_against_us } }
+	}
+	option = {
+		name = hungary.12.b
+		add_national_unity = -0.05
+	}
+}
+#Event if Hun attacks a member
+country_event = {
+	id = hungary.13
+	title = hungary.13.t
+	desc = hungary.13.desc
+	picture = GFX_report_event_german_soldier_deployment
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = anti_hungary
+		OR = {
+		AND = {
+		HUN = { has_offensive_war_with = ROM }
+		ROM = { has_country_flag = anti_hungary }
+		}
+		AND = {
+		HUN = { has_offensive_war_with = SLO }
+		SLO = { has_country_flag = anti_hungary }
+		}
+		AND = {
+		HUN = { has_offensive_war_with = CRO }
+		CRO = { has_country_flag = anti_hungary }
+		}
+		}
+	}
+	option = {
+		name = hungary.13.a
+		trigger = { HUN = { has_offensive_war_with = ROM }
+					ROM = { has_global_flag = anti_hungary }}
+		add_to_war = { targeted_alliance = ROM enemy = HUN }
+	}
+	option = {
+		name = hungary.13.b
+		trigger = { HUN = { has_offensive_war_with = SLO }
+					SLO = { has_global_flag = anti_hungary }}
+		add_to_war = { targeted_alliance = SLO enemy = HUN }
+	}
+	option = {
+		name = hungary.13.c
+		trigger = { HUN = { has_offensive_war_with = SER }
+					SER = { has_global_flag = anti_hungary }}
+		add_to_war = { targeted_alliance = SER enemy = HUN }
+	}
+	option = {
+		name = hungary.13.e
+		trigger = { HUN = { has_offensive_war_with = CRO }
+					CRO = { has_global_flag = anti_hungary }}
+		add_to_war = { targeted_alliance = CRO enemy = HUN }
+	}
+	option = {
+		name = hungary.13.f
+		add_national_unity = -0.10
+	}
+}
+country_event = {
+	id = hungary.14
+	title = hungary.14.t
+	desc = hungary.14.desc
+	picture = GFX_report_event_german_soldier_deployment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	#Complete pact
+	option = {
+		name = hungary.14.a
+		trigger = {
+		CRO = { has_country_flag = anti_hungary }
+		SLO = { has_country_flag = anti_hungary }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 76 }
+			}
+			ROM = { transfer_state = 76 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 963 }
+			}
+			ROM = { transfer_state = 963 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 83 }
+			}
+			ROM = { transfer_state = 83 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 84  }
+			}
+			ROM = { transfer_state = 84 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 45 }
+			}
+			CRO = { transfer_state = 45 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 906 }
+			SER = { is_puppet_of = GER }
+			}
+			SER = { transfer_state = 906 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 914 }
+			}
+			CRO = { transfer_state = 914 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 664 }
+			}
+			SLO = { transfer_state = 664 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 73 }
+			}
+			SLO = { transfer_state = 73 }
+		}
+	}
+	#Only rom and cro
+	option = {
+		name = hungary.14.b
+		trigger = {
+		CRO = { has_country_flag = anti_hungary }
+		NOT = { SLO = { has_country_flag = anti_hungary }}
+		}
+		HUN = { country_event = hungary.15 }
+		if = {
+			limit = {
+			HUN = { controls_state = 76 }
+			}
+			ROM = { transfer_state = 76 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 963 }
+			}
+			ROM = { transfer_state = 963 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 83 }
+			}
+			ROM = { transfer_state = 83 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 84  }
+			}
+			ROM = { transfer_state = 84 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 45 }
+			}
+			CRO = { transfer_state = 45 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 914 }
+			}
+			CRO = { transfer_state = 914 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 906 }
+			}
+			SER = { transfer_state = 914 }
+		}
+	}
+	#only rom and slo
+	option = {
+		name = hungary.14.c
+		trigger = { 
+		SLO = { has_country_flag = anti_hungary }
+		NOT = { CRO = { has_country_flag = anti_hungary }}
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 76 }
+			}
+			ROM = { transfer_state = 76 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 963 }
+			}
+			ROM = { transfer_state = 963 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 83 }
+			}
+			ROM = { transfer_state = 83 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 84  }
+			}
+			ROM = { transfer_state = 84 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 664 }
+			}
+			SLO = { transfer_state = 664 }
+		}
+		if = {
+			limit = {
+			HUN = { controls_state = 73 }
+			}
+			SLO = { transfer_state = 73 }
+		}
+	}
+	# do nothing
+	option = {
+		name = hungary.14.d
+		ROM = { country_event = hungary.16 }
+		HUN = { add_opinion_modifier = large_increase }
+		if = {
+			limit = {
+			has_country_flag = anti_hungary
+			}
+			GER = { add_opinion_modifier = large_decrease }
+		}
+	}
+}
+
+
+### EOF ###

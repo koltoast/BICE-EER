@@ -1,0 +1,5 @@
+﻿###########################
+# Romanian Eastern Europe Rework Decisions
+###########################
+
+#decision for turning arms against germany, only if the current power does it, whatever that power may be i guess

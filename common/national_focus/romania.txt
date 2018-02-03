@@ -66,31 +66,31 @@ focus_tree = {
 		#icon = GFX_focus_rom_preserve_romania
 		#x = 3
 		#y = 0
-
+#
 		#cost = 10
-
+#
 		#ai_will_do = {
 			#factor = 9
 		#}
-
+#
 		#available = {
-
+#
 		#}
-
+#
 		#bypass = {
-
+#
 		#}
-
+#
 		#cancel_if_invalid = yes
 		#continue_if_invalid = no
 		#available_if_capitulated = no
-
+#
 		#complete_tooltip = {
-
+#
 		#}
-
+#
 		#completion_reward = {
-		
+		#
 		#}
 	#}
 
@@ -2554,7 +2554,7 @@ focus_tree = {
 		id = ROM_iron_guard
 		icon = GFX_focus_ROM_garda
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ROM_appoint_german_friendly_government
 
@@ -4713,6 +4713,128 @@ focus_tree = {
 				uses = 2
 				category = tp_tech
 				category = marine_tech
+			}
+		}
+	}
+
+	#Anti Hungary Pact
+	focus = {
+		id = ROM_croatian_slovakian_friendship
+		icon = GFX_goal_anschluss
+		will_lead_to_war_with = HUN
+		prerequisite = { focus = ROM_appoint_german_friendly_government }
+		x = 18
+		y = 8
+		cost = 10
+		available = {
+			is_in_faction_with = GER
+			CRO = { is_in_faction_with = GER }
+			SLO = { is_in_faction_with = GER }
+			OR = {
+			has_country_flag = HUN_expansion
+			HUN = {
+			any_owned_state = {
+			is_core_of = ROM }
+			}}
+			OR = {
+			CRO = { has_country_flag = HUN_expansion }
+			SLO = { has_country_flag = HUN_expansion }
+			HUN = {
+			any_owned_state = {
+			is_core_of = CRO } }			
+			HUN = {
+			any_owned_state = {
+			is_core_of = SLO } }
+			}
+			
+		}
+			
+		completion_reward = {
+			if = {
+				limit = {
+				OR = {
+				CRO = { has_country_flag = HUN_expansion }
+				HUN = {
+				any_owned_state = {
+				is_core_of = CRO } }
+				} }
+			CRO = { country_event = hungary.12 }
+			}
+			if = {
+				limit = {
+				OR = { 
+				SLO = { has_country_flag = HUN_expansion }
+				HUN = {
+				any_owned_state = {
+				is_core_of = SLO }}
+				}}
+			SLO = { country_event = hungary.12 }
+			}
+		}
+	}	
+	focus = {
+		id = ROM_demand_return
+		icon = GFX_goal_generic_political_pressure
+		will_lead_to_war_with = HUN
+		prerequisite = { focus = ROM_croatian_slovakian_friendship }
+		x = 18
+		y = 9
+		cost = 10
+		available = {
+			has_country_flag = anti_hungary
+			is_in_faction_with = GER
+			OR = {
+			CRO = { has_country_flag = anti_hungary
+					is_in_faction_with = GER }
+			SLO = { has_country_flag = anti_hungary
+					is_in_faction_with = GER }
+			}
+			
+		}
+	
+			
+		completion_reward = {
+			GER = { country_event = hungary.14 }
+			
+		
+		}
+	}
+	focus = {
+		id = ROM_hypothesis_u
+		icon = GFX_goal_generic_attack_allies
+		will_lead_to_war_with = HUN
+		prerequisite = { focus = ROM_demand_return }
+		x = 18
+		y = 10
+		cost = 10
+		available = {
+			GER = { has_country_flag = demands_declined }
+			has_global_flag = war_after_barbarossa
+			is_in_faction_with = GER
+			OR = {
+			CRO = { has_country_flag = anti_hungary
+					is_in_faction_with = GER
+					has_capitulated = no }
+			SLO = { has_country_flag = anti_hungary
+					is_in_faction_with = GER
+					has_capitulated = no }
+			}
+			OR = {
+			HUN = {
+			any_owned_state = {
+			is_core_of = CRO } }
+			HUN = {
+			any_owned_state = {
+			is_core_of = SLO } }
+			}
+			
+		}
+	
+			
+		completion_reward = {
+			if = {
+				limit = { has_country_flag = anti_hungary }
+				country_event = hungary.17
 			}
 		}
 	}

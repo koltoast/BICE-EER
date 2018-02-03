@@ -1,0 +1,38 @@
+﻿###########################
+# Romanian Eastern Europe Rework Events
+###########################
+
+add_namespace = rom_eer
+
+#event for mihai stelescu's death
+
+#event for death of the queen mom
+
+#event for the inauguration of the arch of triumph, sep 1936
+
+#event for ion mota and vasile marin funerals; triggered by SCW and gives ROM_eer_majadahonda spirit
+
+#event for the inauguration of the infinite colon
+
+#event for arresting codreanu (calomny against iorga?)
+
+#event for killing codreanu
+
+#event for the 10 november 1940 vrancea earthquake
+
+#event for the 26 november 1940 jilava prison massacre; cells 1-19 only if fascism support not ridiculously high. if fascism support really high then more cells get "cleaned" and ceausescu dies
+
+#event for antonescu asking hitler for support in case of legionary rebellion
+
+#event for legionary rebellion (may include iorga and madgearu's deaths?)
+
+#event for ending the legionary rebellion
+
+#event for being asked to join barbarossa (one before and one after barbarossa starts) (add franz liszt barbarossa theme for barbarossa event)
+
+#event for joining barbarossa with special sound for antonescu speech
+
+#event for 23 august 1944 coup (NOT triggered by decision, but by not being able to control the internal situation and getting arrested by michael) (also anniversary event that would become the new national day)
+
+
+### EOF ###

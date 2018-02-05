@@ -124,18 +124,18 @@ if = {
 }
 add_ideas = neutrality_idea
 
-#Kick off kings crazy life
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	ROM = {
-		#Pick from list of the sane events first
-		random_list = {
-			100 = { country_event = { id = DOD_romania.81 days = 2 random = 20 } }
-		}
-	}
-}
+#Kick off kings crazy life #removed since events are too random and the king wasn't really hated THAT much
+#if = {
+#	limit = {
+#		has_dlc = "Death or Dishonor"
+#	}
+#	ROM = {
+#		#Pick from list of the sane events first
+#		random_list = {
+#			100 = { country_event = { id = DOD_romania.81 days = 2 random = 20 } }
+#		}
+#	}
+#}
 set_country_flag = constitutional_monarchy
 set_country_flag = export_focus
 set_country_flag = tax_average

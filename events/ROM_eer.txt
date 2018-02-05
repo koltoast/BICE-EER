@@ -4,23 +4,33 @@
 
 add_namespace = rom_eer
 
+#introductory event explaining the 1937 election mechanics
+
 #event for mihai stelescu's death
 
 #event for death of the queen mom
 
-#event for the inauguration of the arch of triumph, sep 1936
+#event for the inauguration of the new arch of triumph facade, sep, maybe 1 december 1936
 
 #event for ion mota and vasile marin funerals; triggered by SCW and gives ROM_eer_majadahonda spirit
 
 #event for the inauguration of the infinite colon
 
+#event chain for 1937 election, first the electoral pact
+
+#event for goga's death triggered by royal dictatorship focus after a  few days
+
 #event for arresting codreanu (calomny against iorga?)
 
 #event for killing codreanu
 
+#event for miron cristea's death
+
+#event for armand calinescu's assassination and its retaliation
+
 #event for the 10 november 1940 vrancea earthquake
 
-#event for the 26 november 1940 jilava prison massacre; cells 1-19 only if fascism support not ridiculously high. if fascism support really high then more cells get "cleaned" and ceausescu dies
+#event for the 26 november 1940 jilava prison massacre; supposed to be a 2-year anniversary of codreanu's death??; cells 1-19 only if fascism support not ridiculously high. if fascism support really high then more cells get "cleaned" and ceausescu dies
 
 #event for antonescu asking hitler for support in case of legionary rebellion
 
@@ -34,5 +44,4 @@ add_namespace = rom_eer
 
 #event for 23 august 1944 coup (NOT triggered by decision, but by not being able to control the internal situation and getting arrested by michael) (also anniversary event that would become the new national day)
 
-
-### EOF ###
+#event for 1946 frauded election; might be unfrauded if tatarescu is not corrupted???

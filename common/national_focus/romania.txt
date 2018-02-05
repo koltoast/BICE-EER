@@ -170,10 +170,9 @@ focus_tree = {
 	focus = {
 		id = ROM_form_peasant_militias
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = ROM_basing_rights_for_soviet_union }
+		prerequisite = { focus = ROM_force_abdication }
 		x = 1
-		y = 3
-		relative_position_id = ROM_a_deal_with_the_devil
+		y = 9
 
 		cost = 10
 
@@ -250,9 +249,9 @@ focus_tree = {
 
 	focus = {
 		id = ROM_romanian_volunteer_brigades
-		icon = GFX_focus_ROM_librom
+		icon = GFX_goal_focus_communist_army
 		prerequisite = { focus = ROM_basing_rights_for_soviet_union }
-		x = -1
+		x = 1
 		y = 3
 		relative_position_id = ROM_a_deal_with_the_devil
 
@@ -655,87 +654,87 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ROM_the_cordon_sanitaire
-		icon = GFX_goal_generic_alliance
-		prerequisite = { focus = ROM_renew_the_romanian_polish_alliance }
-		x = 1
-		y = 1
-		relative_position_id = ROM_renew_the_romanian_polish_alliance
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_in_faction = no
-			is_subject = no
-			OR = {
-				country_exists = POL
-				country_exists = CZE
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			create_faction = ROM_CORDON_SANITAIRE_FACTION
-			set_country_flag = cordon_sanitaire_leader
-			set_country_flag = in_cordon_sanitaire
-			if = {
-				limit = {
-					CZE = { 
-						exists = yes 
-						is_subject = no
-						is_puppet = no
-						is_in_faction = no
-					}
-				}
-				CZE = { country_event = DOD_romania.10 }
-			}
-			if = {
-				limit = {
-					POL = { 
-						exists = yes 
-						is_subject = no
-						#is_puppet = no
-						is_in_faction = no
-					}
-				}
-				POL = { country_event = DOD_romania.10 }
-			}
-			if = {
-				limit = {
-					POL = {
-						is_faction_leader = yes #Poland did own faction
-					}
-				}
-				POL = {
-						country_event = generic.2
-					}
-			}
-			hidden_effect = {
-				news_event = { id = news.317 days = 1 }
-			}
-		}
-	}
+#	focus = {#creating your own faction and easily getting POL and CZE to join it is unrealistic and OP
+#		id = ROM_the_cordon_sanitaire
+#		icon = GFX_goal_generic_alliance
+#		prerequisite = { focus = ROM_renew_the_romanian_polish_alliance }
+#		x = 1
+#		y = 1
+#		relative_position_id = ROM_renew_the_romanian_polish_alliance
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#			is_in_faction = no
+#			is_subject = no
+#			OR = {
+#				country_exists = POL
+#				country_exists = CZE
+#			}
+#		}
+#
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#			set_rule = { can_create_factions = yes }
+#			create_faction = ROM_CORDON_SANITAIRE_FACTION
+#			set_country_flag = cordon_sanitaire_leader
+#			set_country_flag = in_cordon_sanitaire
+#			if = {
+#				limit = {
+#					CZE = { 
+#						exists = yes 
+#						is_subject = no
+#						is_puppet = no
+#						is_in_faction = no
+#					}
+#				}
+#				CZE = { country_event = DOD_romania.10 }
+#			}
+#			if = {
+#				limit = {
+#					POL = { 
+#						exists = yes 
+#						is_subject = no
+#						#is_puppet = no
+#						is_in_faction = no
+#					}
+#				}
+#				POL = { country_event = DOD_romania.10 }
+#			}
+#			if = {
+#				limit = {
+#					POL = {
+#						is_faction_leader = yes #Poland did own faction
+#					}
+#				}
+#				POL = {
+#						country_event = generic.2
+#					}
+#			}
+#			hidden_effect = {
+#				news_event = { id = news.317 days = 1 }
+#			}
+#		}
+#	}
 
 	focus = {
 		id = ROM_demand_a_western_guarantee
-		icon = GFX_goal_generic_defence
+		icon = GFX_focus_ENG_alliance
 		prerequisite = { focus = ROM_renew_the_romanian_polish_alliance }
 		x = 0
 		y = 2
@@ -2915,7 +2914,8 @@ focus_tree = {
 			}
 		}
 	}
-
+#focus for FRN
+#focus for PN
 	############################
 	######## AIR BRANCH ########
 	############################
@@ -4838,6 +4838,9 @@ focus_tree = {
 			}
 		}
 	}
+	
+	#add focus for 1945 government
+	
 	#######################################################
 	# requistion trucks
 	focus = {

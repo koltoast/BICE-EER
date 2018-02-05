@@ -4150,8 +4150,8 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-					has_tech = basic_medium_tank_axis 
-					has_tech = tech_recon
+						has_tech = basic_medium_tank_axis 
+						has_tech = tech_recon
 					}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } 

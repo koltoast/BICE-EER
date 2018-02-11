@@ -4,44 +4,122 @@
 
 add_namespace = rom_eer
 
+####make sure romania doesn't join the allies
+
 #introductory event explaining the 1937 election mechanics
 
-#event for mihai stelescu's death
+##mon dictatorship focuses should cost and require a lot of PP
 
-#event for death of the queen mom
+#event for 1936 demotion of Titulescu
+
+#event for Mihai Stelescu's assassination (16 july 1936) https://en.wikipedia.org/wiki/Iron_Guard_death_squads
 
 #event for the inauguration of the new arch of triumph facade, sep, maybe 1 december 1936
 
-#event for ion mota and vasile marin funerals; triggered by SCW and gives ROM_eer_majadahonda spirit
+#############1937############
 
-#event for the inauguration of the infinite colon
+#event for Ion Mota and Vasile Marin's deaths in SCW (13 january 1937) and funerals (13 february 1937); triggered by SCW and gives ROM_eer_majadahonda spirit between those 2 dates
 
-#event chain for 1937 election, first the electoral pact
+#event for local elections 26-30 may 1937
 
-#event for goga's death triggered by royal dictatorship focus after a  few days
+#maybe an event for michael becoming a sublieutenant on 25 october 1937?
 
-#event for arresting codreanu (calomny against iorga?)
+#event chain for 1937 election, first the electoral pact, electoral campaign officialy starts on 19 november, elections take place on 20 december; results published on 30 december
 
-#event for killing codreanu
+############1938############
 
-#event for miron cristea's death
+#goga gov lasted 44 days
 
-#event for armand calinescu's assassination and its retaliation
+#mon dictatorship, 10 feb new gov, 24 feb plebiscite, 27 feb new constitution
+
+#event for arresting Codreanu on 16 april 1938 (calumny letter against Iorga and other officials supporting carol, like Miron Cristea; sent to Iorga on 26 march 1938; sentenced on 19 april 1938 to 6 months in jail, then to 10 years)
+
+#11 march 1938 anschluss increases tension and is important
+
+#event for banning all parties on 30 march 1938
+
+#beginning of april, diosti village of romanati region is destroyed in a fire, carol and calinescu arrive on 6 april
+
+#event for Goga's death triggered by royal dictatorship focus after ~90 days?? (was it really a suspect death?) (died on 7 may 1938)
+
+#event for parade for 8th anniversary of carol's reign in june (8?)
+
+#event for death of the queen mom 18 july 1938
+
+#Averescu dies in early october 1938
+
+#event for the inauguration of the endless column and other Brancusi works (27 october 1938)
+
+#maybe an 18-day focus between 10-28 november 1938 for Carol going to britain, then france, then germany, negotiating for guarantees or such)
+
+#event for killing Codreanu (29-30 night november 1938) (maybe triggered by 3-day focus starting on 28?)
+
+################1939###################
+
+#event for Miron Cristea's 2 heart attacks (january 1939) retirement (1 february 1938), arrival in france and contracting pneumonia on the same day (24 february 1939) and death (6 march 1939)
+
+#february 1939 meeting of the balkan pact coucil in bucharest; carol considered that turkey should become romania's new czechoslovakia somehow
+
+#the king had a parade for a 1-year anniversary of the new constitution
+
+#maybe a focus for corporatism?? (maybe unlocking a new minister, mihai ralea??)
+
+#economic treaty of 23 march 1939 with germany; Neubacher
+
+#maybe an event for 9 may 1939 inauguration of the Carol I statue?
+
+#carol ii hesitated to sign some german cooperation contracts and had a dual position on france/britain and germany
+
+#maybe a special event for M-R Pact? according to that pact, bessarabia (secretly, and nobody in romania knew about it) belonged to the USSR
+
+#maybe event for polish refugees and polish request for romania to store their gold, hitler finds out and doesn't like it; carol and calinescu allow the gold to get sent a way through Constanta port
+
+#event for Armand Calinescu's assassination (then the perpertrators force the entry to the national radio and try to announce it but get cut out, after which they surrender to the authorities) and its retaliation, killing 352 legionnaires across the country without sentencing and arresting many others, all on the same day (21 september 1939); Calinescu was the prime minister when Codreanu was killed so maybe that should be a requirement; https://en.wikipedia.org/wiki/Iron_Guard_death_squads
+
+#4 dec 1939 inauguration of a new (bar? building? section? HQ?) of the war school
+
+###########1940##########
+
+#12 march 1940; Romanian Mineral Oil Gmbh is founded in germany
+
+#29 march 1940 molotov declares that the bessarabia issue is still an unsolved issue between USSR and Romania
+
+#27 may 1940 weaponry-petrol pact with germany, also signed by Neubacher
+
+#22 june 1940 capitulation of france is concerning and important; on the same day carol ii signs a decree declaring "defence of unique and totalitarian order of the romanian state" and turning FRN into PN; turning from authoritarian monarchy to royal dictatorship?
+
+#26 june 1940 USSR sends ultimatum asking for evacuation of bessarabia and bukovina; king asks germany but germany suggests that romania accepts (link this to M-R Pact?) after a new ultimative note on 27, the crown council votes to accept; romania takes some of the refugees; occupied/invaded on 28 june(-3 july???)
+#carol makes 180 degree turn in politics; renounces the anglo-french guarantees and declares orientation towars axis; in order to improve relations with germany he reconciles with the legionnaires and Sima is introduced in the govt. on 28 june
+#after ceding bessarabia hungary intensifies their territorial claims
+
+#romania accepts ceding southern dobruja on 21 august 1940; signs the treaty on 7 sept; population transfer
+
+#29 august second vienna award in belvedere palace in vienna; ceded after 30 august
+
+#the events for ceding territory give war support, decrease stability and ruling party support and include refugees/population transfers; in less than 3 months romania loses almost 100.000 km2 and 6.8 million inhabitants, over a third of the surface and population; mass demonstrations and carol is seen as the guilty one; the king has no other choice but to choose the one man with good relations with the army and the legion, antonescu
+#antonescu accepts on 4 september; gets full power on 5 september and forces carol to abdicate on 6 september when mihai becomes king; carol leaves romania on 7 september miraculously escaping the legionnaires who shot at his train
+#don't forget to use a pic of the new smaller romania as an event picture
 
 #event for the 10 november 1940 vrancea earthquake
 
-#event for the 26 november 1940 jilava prison massacre; supposed to be a 2-year anniversary of codreanu's death??; cells 1-19 only if fascism support not ridiculously high. if fascism support really high then more cells get "cleaned" and ceausescu dies
+#event for the (26-27 night november 1940) jilava prison massacre; supposed to be a 2-year anniversary of codreanu's death??; cells 1-19 only if fascism support not ridiculously high. if fascism support really high then more cells get "cleaned" and ceausescu dies
 
-#event for antonescu asking hitler for support in case of legionary rebellion
+##############1941######################
 
-#event for legionary rebellion (may include iorga and madgearu's deaths?)
+#event for Antonescu asking hitler for support in case of legionary rebellion
 
-#event for ending the legionary rebellion
+#event for legionary rebellion (may include iorga and madgearu's deaths?) (21 january 1941)
+
+#event for ending the legionary rebellion (23-24 january 1941?)
 
 #event for being asked to join barbarossa (one before and one after barbarossa starts) (add franz liszt barbarossa theme for barbarossa event)
 
 #event for joining barbarossa with special sound for antonescu speech
 
+##############1944#####################
+
 #event for 23 august 1944 coup (NOT triggered by decision, but by not being able to control the internal situation and getting arrested by michael) (also anniversary event that would become the new national day)
 
-#event for 1946 frauded election; might be unfrauded if tatarescu is not corrupted???
+##############1946######################
+
+#event for 1946 frauded election; might be unfrauded if Tatarescu is not corrupted???

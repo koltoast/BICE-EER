@@ -210,7 +210,7 @@ focus_tree = {
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = ROM_a_deal_with_the_devil }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ROM_a_deal_with_the_devil
 
 		cost = 10
@@ -252,7 +252,7 @@ focus_tree = {
 		icon = GFX_goal_focus_communist_army
 		prerequisite = { focus = ROM_basing_rights_for_soviet_union }
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = ROM_a_deal_with_the_devil
 
 		cost = 10
@@ -341,7 +341,7 @@ focus_tree = {
 		id = ROM_trade_treaty_with_germany
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 19
+		x = 20
 		y = 1
 
 		cost = 10
@@ -378,7 +378,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = ROM_trade_treaty_with_germany }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 10
@@ -417,9 +417,9 @@ focus_tree = {
 		id = ROM_license_german_equipment
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_invite_german_advisors }
-		x = 1
-		y = 3
-		relative_position_id = ROM_trade_treaty_with_germany
+		x = 2
+		y = 0
+		relative_position_id = ROM_join_axis
 
 		cost = 10
 
@@ -457,7 +457,7 @@ focus_tree = {
 	focus = {
 		id = ROM_join_axis
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ROM_invite_german_advisors }
+		prerequisite = { focus = ROM_iron_guard }
 		x = 0
 		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
@@ -510,7 +510,7 @@ focus_tree = {
 		id = ROM_german_romanian_oil_exploitation_company
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_join_axis }
-		x = -1
+		x = 2
 		y = 5
 		relative_position_id = ROM_trade_treaty_with_germany
 
@@ -522,6 +522,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_full_control_of_state = 46
 			is_in_faction_with = GER
 			GER = {
 				exists = yes
@@ -542,10 +543,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
+			46 = {
 				add_resource = {
 					type = oil
 					amount = 8
@@ -554,7 +552,7 @@ focus_tree = {
 			GER = {
 				random_owned_controlled_state = {
 					limit = {
-						GER = { has_full_control_of_state = PREV }
+						GER = { has_full_control_of_state = PREV } #should probably be off-site??
 					}
 					add_resource = {
 						type = oil
@@ -569,7 +567,7 @@ focus_tree = {
 		id = ROM_demand_transnistria
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = ROM_join_axis }
-		x = 1
+		x = 0
 		y = 5
 		relative_position_id = ROM_trade_treaty_with_germany
 
@@ -615,7 +613,7 @@ focus_tree = {
 		id = ROM_renew_the_romanian_polish_alliance
 		icon = GFX_goal_anschluss
 		prerequisite = {  }
-		x = 6
+		x = 4
 		y = 1
 
 		cost = 10
@@ -735,9 +733,9 @@ focus_tree = {
 	focus = {
 		id = ROM_demand_a_western_guarantee
 		icon = GFX_focus_ENG_alliance
-		prerequisite = { focus = ROM_renew_the_romanian_polish_alliance }
-		x = 0
-		y = 2
+		prerequisite = { focus = ROM_flexible_foreign_policy }
+		x = 2
+		y = 0
 		relative_position_id = ROM_renew_the_romanian_polish_alliance
 
 		cost = 10
@@ -807,8 +805,8 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = ROM_demand_a_western_guarantee }
 		x = 1
-		y = 3
-		relative_position_id = ROM_renew_the_romanian_polish_alliance
+		y = 1
+		relative_position_id = ROM_demand_a_western_guarantee
 
 		cost = 10
 
@@ -859,8 +857,8 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = ROM_demand_a_western_guarantee }
 		x = 0
-		y = 4
-		relative_position_id = ROM_renew_the_romanian_polish_alliance
+		y = 2
+		relative_position_id = ROM_demand_a_western_guarantee
 
 		cost = 10
 
@@ -917,8 +915,8 @@ focus_tree = {
 		prerequisite = { focus = ROM_join_allies }
 		prerequisite = { focus = ROM_military_modernization }
 		x = 1
-		y = 5
-		relative_position_id = ROM_renew_the_romanian_polish_alliance
+		y = 3
+		relative_position_id = ROM_demand_a_western_guarantee
 
 		cost = 10
 
@@ -1922,10 +1920,10 @@ focus_tree = {
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 11
+		x = 9
 		y = 1
 
-		cost = 10
+		cost = 6.3 #44 days; 29 december-10 february 1938
 
 		ai_will_do = {
 			factor = 9
@@ -1986,10 +1984,10 @@ focus_tree = {
 	focus = {
 		id = ROM_king_michaels_coup
 		icon = GFX_focus_rom_coup
-		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = 2
+		prerequisite = { focus = ROM_revise_the_constitution }
+		x = 6
 		y = 1
-		relative_position_id = ROM_institute_royal_dictatorship
+		relative_position_id = ROM_revise_the_constitution
 
 		cost = 10
 
@@ -2046,10 +2044,11 @@ focus_tree = {
 
 	focus = {
 		id = ROM_fortify_the_borders
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 16
+		icon = GFX_goal_generic_construct_military_purple
+		prerequisite = { focus = ROM_revise_the_constitution }
+		x = 4
 		y = 1
+		relative_position_id = ROM_revise_the_constitution
 
 		cost = 10
 
@@ -2082,8 +2081,9 @@ focus_tree = {
 		id = ROM_his_majestys_loyal_government
 		icon = GFX_focus_ROM_carol
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 13
-		y = 3
+		x = 2
+		y = 2
+		relative_position_id = ROM_institute_royal_dictatorship
 
 		cost = 10
 
@@ -2215,7 +2215,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
-		cost = 10
+		cost = 2.43 #17 days; 10-27 feb 1938
 
 		ai_will_do = {
 			factor = 1
@@ -2249,7 +2249,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_the_royal_foundation
-		icon = GFX_focus_research
+		icon = GFX_focus_research_purple
 		prerequisite = { focus = ROM_revise_the_constitution }
 		x = 0
 		y = 1
@@ -2453,9 +2453,10 @@ focus_tree = {
 	focus = {
 		id = ROM_appoint_german_friendly_government
 		icon = GFX_focus_ROM_anto
-		prerequisite = { focus = ROM_join_axis }
+		prerequisite = { focus = ROM_revise_the_constitution }
+		prerequisite = { focus = ROM_invite_german_advisors }
 		x = 0
-		y = 2
+		y = -2
 		relative_position_id = ROM_join_axis
 
 		cost = 10
@@ -2553,7 +2554,7 @@ focus_tree = {
 		id = ROM_iron_guard
 		icon = GFX_focus_ROM_garda
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ROM_appoint_german_friendly_government
 
@@ -4722,9 +4723,10 @@ focus_tree = {
 		id = ROM_croatian_slovakian_friendship
 		icon = GFX_goal_anschluss
 		will_lead_to_war_with = HUN
-		prerequisite = { focus = ROM_appoint_german_friendly_government }
-		x = 18
-		y = 8
+		prerequisite = { focus = ROM_join_axis }
+		x = -2
+		y = 1
+		relative_position_id = ROM_join_axis
 		cost = 10
 		available = {
 			is_in_faction_with = GER
@@ -4777,8 +4779,9 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		will_lead_to_war_with = HUN
 		prerequisite = { focus = ROM_croatian_slovakian_friendship }
-		x = 18
-		y = 9
+		x = -2
+		y = 2
+		relative_position_id = ROM_join_axis
 		cost = 10
 		available = {
 			has_country_flag = anti_hungary
@@ -4804,8 +4807,9 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		will_lead_to_war_with = HUN
 		prerequisite = { focus = ROM_demand_return }
-		x = 18
-		y = 10
+		x = -2
+		y = 3
+		relative_position_id = ROM_join_axis
 		cost = 10
 		available = {
 			GER = { has_country_flag = demands_declined }

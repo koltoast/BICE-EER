@@ -1,0 +1,23 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_focus_research_purple"
+	texturefile = "gfx/interface/goals/focus_research_purple.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_focus_research_purple"
+	texturefile = "gfx/interface/goals/focus_research_purple.tga"
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_generic_construct_military_purple"
+	texturefile = "gfx/interface/goals/goal_generic_construct_military_purple.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_goal_generic_construct_military_purple"
+	texturefile = "gfx/interface/goals/goal_generic_construct_military_purple.tga"
+	}	
+
+}

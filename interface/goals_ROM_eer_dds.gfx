@@ -27,8 +27,13 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-	name = "GFX_focus_ROM_garda"
-	texturefile = "gfx/interface/goals/focus_ROM_garda.dds"
+	name = "GFX_focus_ROM_iron_guard"
+	texturefile = "gfx/interface/goals/focus_ROM_iron_guard.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_focus_ROM_iron_guard_coalition"
+	texturefile = "gfx/interface/goals/focus_ROM_iron_guard_coalition.dds"
 	}	
 	
 	SpriteType = {

@@ -431,7 +431,7 @@ create_country_leader = {
 	name = "Horia Sima"
 	desc = "POLITICS_ION_ANTONESCU_DESC"
 	picture = "Portrait_Romania_Horia_Sima.tga"
-	expire = "1965.3.3"
+	expire = "1993.5.25"
 	ideology = legionnairism
 	traits = {
 		#

@@ -339,7 +339,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_trade_treaty_with_germany
-		icon = GFX_goal_generic_trade
+		icon = GFX_goal_trade_pact
 		prerequisite = { focus = ROM_flexible_foreign_policy }
 		x = 20
 		y = 1
@@ -375,7 +375,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_invite_german_advisors
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_goal_military_agreement_germany
 		prerequisite = { focus = ROM_trade_treaty_with_germany }
 		x = 0
 		y = 1
@@ -911,7 +911,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_joint_allied_staff_college
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		prerequisite = { focus = ROM_join_allies }
 		prerequisite = { focus = ROM_military_modernization }
 		x = 1
@@ -1920,6 +1920,7 @@ focus_tree = {
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = ROM_eer_1937_general_election }
 		x = 9
 		y = 1
 
@@ -2552,7 +2553,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_iron_guard
-		icon = GFX_focus_ROM_garda
+		icon = GFX_focus_ROM_iron_guard
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
 		x = 0
 		y = 1
@@ -4718,6 +4719,9 @@ focus_tree = {
 		}
 	}
 
+	############################
+	####### BICE FOCUSES ########
+	############################
 	#Anti Hungary Pact
 	focus = {
 		id = ROM_croatian_slovakian_friendship
@@ -4842,7 +4846,42 @@ focus_tree = {
 			}
 		}
 	}
-	
+
+	#eer_focuses
+	#
+	focus = {
+		id = ROM_eer_1937_general_election
+		icon = GFX_goal_support_democracy
+		x = 0
+		y = -1
+		relative_position_id = ROM_institute_royal_dictatorship
+
+		cost = 1.29 #9 days
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		
+		}
+	}
 	#add focus for 1945 government
 	
 	#######################################################

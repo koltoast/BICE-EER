@@ -1,10 +1,13 @@
 ﻿l_english:
 
+ ROM_eer_1937_general_election:0 "1937 General Election"
+ ROM_eer_1937_general_election_desc:0 "The 1937 General Election is programmed to take place on 20 December 1937. 387 Chamber members and 113 Senate members will be elected. If no party manages to get more than 40% of the votes then the Head of State (the King) can freely choose his Prime Minister and program new elections. We could choose a less-capable Prime Minister to prepare the grounds for a more authoritarian monarchy."
+ 
 ##HandsomeJack focuses:
  ROM_croatian_slovakian_friendship:0 "Croatian - Romanian - Slovak Friendship"
  ROM_croatian_slovakian_friendship_desc:0 "Hungary has expanded quite fast during the course of WW2 which led to Romania seeking a pact with Croatia and Slovakia against any further Hungarian Expansion."
  ROM_demand_return:0 "Demand Northern Trasylvania"
- ROM_demand_return_desc:0 "With allies by our side we have enough political power to pressure Germany into reevaluating their territorial decisions they made."
+ ROM_demand_return_desc:0 "With allies by our side we have enough political power to pressure Germany into reevaluating the territorial decisions they've made."
  ROM_hypothesis_u:0 "Hypothesis "U""
- ROM_hypothesis_u_desc:0 "Now that Nazi Germany was won the war and we are at peace we can finally retake Northern Transylvania from Hungary"
+ ROM_hypothesis_u_desc:0 "Now that Nazi Germany was won the war and we are at peace we can finally retake Northern Transylvania from Hungary."
  

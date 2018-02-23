@@ -6997,90 +6997,10 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	
 	is_triggered_only = yes
-	immediate = { 
-		if = { 
-			limit = { 
-				NOT = { OR = { has_war_with = ENG has_war_with = FRA } }
-			}
-			set_country_flag = recent_major_land_acquisition
-		}
-	}
-	option = {
-		name = germany.98.a
-		ai_chance = { 
-			factor = 25
-			modifier =  { # historical mod, speeding up germany
-				factor = 0 
-				is_historical_focus_on = yes
-			}
-		}
-
-		if = {
-			limit = {
-				YUG = {
-					OR = {
-						is_in_faction = yes
-						any_other_country = {
-							has_guaranteed = YUG								
-						}
-					}
-				}
-			}
-			YUG = { country_event = yugoslavia.7 }
-			custom_effect_tooltip = germany.98_tt
-			effect_tooltip = {
-				add_political_power = -75
-				add_named_threat = { threat = 7 name = GER_fate_of_yugoslavia }
-				annex_country = { target = YUG transfer_troops = no }
-			}
-		}
-
-		#If no guarantee or faction Yug has no choice
-		if = {
-			limit = {
-				YUG = { 
-					is_in_faction = no
-					NOT = {
-						any_other_country = {
-							has_guaranteed = YUG								
-						}
-					}
-				}
-			}
-			add_political_power = -75
-			add_named_threat = { threat = 7 name = GER_fate_of_yugoslavia }
-			annex_country = { target = YUG transfer_troops = no }
-
-			hidden_effect = {
-				set_global_flag = GER_fate_of_yugoslavia_annex_YUG
-				news_event = { hours = 6 id = news.169 }
-			}
-		}
-	}
 
 	option = {
 		name = germany.98.b
-		ai_chance = { factor = 75 }
-
-		trigger = {
-			YUG = { 
-				OR = { 
-					owns_state = 103
-					owns_state = 104
-					owns_state = 109
-					owns_state = 901
-					owns_state = 902
-					owns_state = 903
-					owns_state = 904
-					owns_state = 905
-					owns_state = 906
-					owns_state = 907
-					owns_state = 908
-					owns_state = 915
-					owns_state = 917
-				} 
-			} 
-		}
+		ai_chance = { factor = 100 }
 
 		if = {
 			limit = {
@@ -7093,47 +7013,12 @@ country_event = {
 					}
 				}
 			}
-			YUG = { country_event = yugoslavia.8 } 
+			YUG = { country_event = yugoslavia.8 }
 			custom_effect_tooltip = germany.98_tt
 			effect_tooltip = {
 				add_political_power = -25
 				add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 103 } }
-					transfer_state = 103
-				}
-				if = {
-					limit = { YUG = { owns_state = 104 } }
-					transfer_state = 104
-				}
-				if = {
-					limit = { YUG = { owns_state = 109 } }
-					transfer_state = 109
-				}
-				if = {
-					limit = { YUG = { owns_state = 901 } }
-					transfer_state = 901
-				}
-				if = {
-					limit = { YUG = { owns_state = 902 } }
-					transfer_state = 902
-				}
-				if = {
-					limit = { YUG = { owns_state = 908 } }
-					transfer_state = 908
-				}
-				if = {
-					limit = { YUG = { owns_state = 915 } }
-					transfer_state = 915
-				}	
-				if = {
-					limit = { YUG = { owns_state = 917 } }
-					transfer_state = 917
-				}				
-			}
-				puppet = CRO
-				annex_country = { target = YUG transfer_troops = no }
+			
 			}
 		}
 
@@ -7152,46 +7037,65 @@ country_event = {
 			add_political_power = -25
 			add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
 			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 103 } }
-					transfer_state = 103
-				}
-				if = {
-					limit = { YUG = { owns_state = 104 } }
-					transfer_state = 104
-				}
-				if = {
-					limit = { YUG = { owns_state = 109 } }
-					transfer_state = 109
-				}
-				if = {
-					limit = { YUG = { owns_state = 901 } }
-					transfer_state = 901
-				}
-				if = {
-					limit = { YUG = { owns_state = 902 } }
-					transfer_state = 902
-				}
-				if = {
-					limit = { YUG = { owns_state = 908 } }
-					transfer_state = 908
-				}
-				if = {
-					limit = { YUG = { owns_state = 915 } }
-					transfer_state = 915
-				}	
-				if = {
-					limit = { YUG = { owns_state = 917 } }
-					transfer_state = 917
-				}				
+				transfer_state = 103
+				transfer_state = 104  
+				transfer_state = 109
+				transfer_state = 902
+				transfer_state = 908
+				transfer_state = 917
+				transfer_state = 901
+				transfer_state = 915
+				transfer_state = 900
 			}
-			puppet = CRO
-			annex_country = { target = YUG transfer_troops = no }
+			GER = {
+				puppet = CRO
+				transfer_state = 102
+					transfer_state = 907
+					transfer_state = 108
+					transfer_state = 107
+					transfer_state = 906
+			}
+			HUN = {
+					transfer_state = 914
+					transfer_state = 45
+				}
+				BUL = {
+					transfer_state = 106
+					transfer_state = 905
+				}
+				ITA = {
+					transfer_state = 913
+					transfer_state = 916
+				}
+				if = {
+					limit = {
+						ITA = { controls_state = 44 }
+						}
+					ITA = {
+						transfer_state = 105
+						transfer_state = 904
+						transfer_state = 903
+					}
+				}
+				if = {
+					limit = {
+						ITA = { NOT = { controls_state = 44 }}
+						}
+					GER = {
+						transfer_state = 105
+						transfer_state = 904
+						transfer_state = 903
+					}
+				}
+			}
+			
 
 			hidden_effect = {
 				set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_annex_YUG
 				news_event = { hours = 6 id = news.169 }
-			}
+				GER = {
+				annex_country = { target = YUG transfer_troops = no }
+				}
 		}
 
 	}
@@ -7199,147 +7103,12 @@ country_event = {
 	option = {
 		name = germany.98.c
 		ai_chance = { 
-			factor = 5
-			modifier = { 
-				factor = 0
-				is_historical_focus_on = yes 
-			}
-		}
-
-	
-		if = {
-			limit = {
-				YUG = {
-					OR = {
-						is_in_faction = yes
-						any_other_country = {
-							has_guaranteed = YUG								
-						}
-					}
-				}
-			}
-			YUG = { country_event = yugoslavia.9 }
-			custom_effect_tooltip = germany.98_tt
-			effect_tooltip = {
-				add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
-				
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 103 } }
-					transfer_state = 103
-				}
-				if = {
-					limit = { YUG = { owns_state = 104 } }
-					transfer_state = 104
-				}
-				if = {
-					limit = { YUG = { owns_state = 109 } }
-					transfer_state = 109
-				}
-				if = {
-					limit = { YUG = { owns_state = 901 } }
-					transfer_state = 901
-				}
-				if = {
-					limit = { YUG = { owns_state = 902 } }
-					transfer_state = 902
-				}
-				if = {
-					limit = { YUG = { owns_state = 908 } }
-					transfer_state = 908
-				}
-				if = {
-					limit = { YUG = { owns_state = 915 } }
-					transfer_state = 915
-				}	
-				if = {
-					limit = { YUG = { owns_state = 917 } }
-					transfer_state = 917
-				}				
-			}
-				puppet = CRO
-				puppet = YUG
-
-
-				hidden_effect = {
-					set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_YUG
-					news_event = { hours = 6 id = news.169 }
-				}
-			}
-		}
-
-		#If no guarantee or faction Yug has no choice
-		if = {
-			limit = {
-				YUG = { 
-					is_in_faction = no
-					NOT = {
-						any_other_country = {
-							has_guaranteed = YUG								
-						}
-					}
-				}
-			}
-			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
-			
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 103 } }
-					transfer_state = 103
-				}
-				if = {
-					limit = { YUG = { owns_state = 104 } }
-					transfer_state = 104
-				}
-				if = {
-					limit = { YUG = { owns_state = 109 } }
-					transfer_state = 109
-				}
-				if = {
-					limit = { YUG = { owns_state = 901 } }
-					transfer_state = 901
-				}
-				if = {
-					limit = { YUG = { owns_state = 902 } }
-					transfer_state = 902
-				}
-				if = {
-					limit = { YUG = { owns_state = 908 } }
-					transfer_state = 908
-				}
-				if = {
-					limit = { YUG = { owns_state = 915 } }
-					transfer_state = 915
-				}	
-				if = {
-					limit = { YUG = { owns_state = 917 } }
-					transfer_state = 917
-				}				
-			}
-			puppet = CRO
-			puppet = YUG
-
-
-			hidden_effect = {
-				set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_YUG
-				news_event = { hours = 6 id = news.169 }
-			}
+			factor = 0
 		}
 	}
-
-option = {
-		name = germany.98.e
-		ai_chance = { factor = 100 }
-	trigger = {
-		and = {
-			ITA = { is_ai = yes }
-			GER = { is_ai = yes }
-				not = { country_exists = YUG }
-				}
-			}
-		}
+}
 	
-	}
+	
 # Germany: Carve up Greece - Give land to Italy?
 country_event = {
 	id = germany.99
@@ -12146,7 +11915,7 @@ country_event = {
 			GER = {
 				create_wargoal = {
 					type = take_state_focus
-					target = HUN
+					target = YUG
 					generator = { 102 913 }
 				}
 			}
@@ -14637,373 +14406,7 @@ country_event = {
     }
 	
 }
-country_event = {
-    id = germany.447
-    title = germany.447.t
-    desc = germany.447.d
- picture = GFX_report_event_panzer_and_infantry_advance
-    
-	fire_only_once = yes
-	
-	trigger = {
-		tag = GER
-		is_puppet = no
-			is_ai = yes
-			has_completed_focus = GER_demand_slovenia
-			NOT = { has_completed_focus = GER_fate_of_yugoslavia }
-			has_country_flag = impossible
-			NOT = { has_war_with = YUG }
-			NOT = { is_in_faction_with = YUG }
-			strength_ratio = { tag = YUG ratio > 1.1 }
-			hidden_trigger = {
-				if = { limit = { is_ai = yes }
-					if = { limit = { has_war_with = FRA }
-						FRA = { has_capitulated = yes }
-						}
-					if = { limit = { has_war_with = POL }
-						POL = { has_capitulated = yes }
-						}
-					if = { limit = { has_war_with = SOV }
-						SOV = { has_capitulated = yes }
-					}
-					if = { limit = { has_war_with = HUN }
-						HUN = { has_capitulated = yes }
-					}
-				}
-			}
-			if = {
-				limit = { has_country_flag = recent_major_land_acquisition }
-				has_war_with = ENG
-			}
-	}
-	
-	 option = {
-        name = germany.447.a 
-        ai_chance = { factor = 100 }
-		country_event = { id = germany.98 }
-		unlock_national_focus = GER_fate_of_yugoslavia
-    }
-   
-	
-}
-country_event = {
-    id = germany.448
-    title = germany.448.t
-    desc = germany.448.d
- picture = GFX_report_event_panzer_and_infantry_advance
-    
-	fire_only_once = yes
-	mean_time_to_happen = {
-		days = 14
-	}
-	trigger = {
-		tag = GER
-		is_puppet = no
-		is_ai = yes
-		has_country_flag = impossible
-		has_completed_focus = GER_fate_of_yugoslavia
-		NOT = { has_completed_focus = GER_second_ljubljana_award }
-			GRE = { 
-				has_war = no 
-				owns_state = 731
-				owns_state = 186
-				owns_state = 185
-				owns_state = 47 
-			}
-	}
-	
-	 option = {
-        name = germany.448.a 
-        ai_chance = { factor = 100 }
-		
-			add_named_threat = { threat = 2 name = GER_second_ljubljana_award }
-			if = {
-				limit = {
-					GRE = {
-						OR = {
-							owns_state = 185
-							owns_state = 186
-							owns_state = 47
-						} 
-					}
-					ITA = {
-						NOT = { has_war_with = GRE }
-						country_exists = ITA
-						has_completed_focus = ITA_greece_war_goal
-						OR = {
-							is_in_faction_with = GER
-							is_in_faction = no							
-						}
-					}
-				}
-				set_global_flag = GER_second_ljubljana_award_ITA_event
-				country_event = { id = germany.99 }
-			}
-			if = {
-				limit = {
-					GRE = { owns_state = 184 }
-					BUL = {
-						NOT = { has_war_with = GRE }
-						country_exists = BUL
-						OR = {
-							is_in_faction_with = GER
-							is_in_faction = no							
-						}
-					}
-				}
-				set_global_flag = GER_second_ljubljana_award_BUL_event
-				country_event = { id = germany.100 }
-			}
-			if = {
-				limit = {
-					any_neighbor_country = {
-						tag = GRE
-					}
-					OR = {
-						NOT = { country_exists = ITA }
-						AND = {
-							ITA = {
-								NOT = { is_in_faction_with = GER }
-								is_in_faction = yes
-							}
-						}
-					}
-					OR = {
-						NOT = { country_exists = BUL }
-						AND = {
-							BUL = {
-								NOT = { is_in_faction_with = GER }
-								is_in_faction = yes
-							}
-						}
-					}
-				}
-				set_global_flag = GER_second_ljubljana_award_GER_event
-				country_event = { id = germany.101 }
-			}
-			custom_effect_tooltip = GER_second_ljubljana_award_tt
-			unlock_national_focus = GER_second_ljubljana_award
-    }
-   
-	
-}
-country_event = {
-    id = germany.449
-    title = germany.449.t
-    desc = germany.449.d
- picture = GFX_report_event_panzer_and_infantry_advance
-    
-	fire_only_once = yes
-	mean_time_to_happen = {
-		days = 14
-	}
-	trigger = {
-		tag = GER
-		is_puppet = no
-			is_ai = yes
-			has_completed_focus = GER_second_ljubljana_award
-			NOT = { has_completed_focus = GER_first_ljubljana_award }
-			NOT = { is_in_faction_with = YUG }
-			OR = {
-				AND = {
-					country_exists = YUG
-					NOT = { has_war_with = YUG }
-					#owns_state = 102
-				}
-				AND = {
-					NOT = { country_exists = YUG }
-					owns_state = 102
-					owns_state = 45
-					owns_state = 106
-					owns_state = 103
-					owns_state = 105
-				}
-				AND = {
-					NOT = { country_exists = YUG }
-					ITA = {owns_state = 102}
-					ITA = {owns_state = 45}
-					ITA = {owns_state = 106}
-					ITA = {owns_state = 103}
-					ITA = {owns_state = 105}
-				}
-				AND = {
-					NOT = { country_exists = YUG }
-					or = {
-					SER = {owns_state = 102}
-					SER = {owns_state = 45}
-					SER = {owns_state = 106}
-					SER = {owns_state = 103}
-					SER = {owns_state = 105}
-					CRO = {owns_state = 102}
-					CRO = {owns_state = 45}
-					CRO = {owns_state = 106}
-					CRO = {owns_state = 103}
-					CRO = {owns_state = 105}}
-				}
-			}
-			OR = {
-				YUG = {
-					is_puppet = no
-				}
-				YUG = {
-					is_puppet_of = GER
-				}
-				
-			}
-	}
-	
-	 option = {
-        name = germany.449.a 
-        ai_chance = { factor = 100 }
-		if = {
-				limit = {
-					NOT = { 
-						has_war_with = ENG
-						has_war_with = FRA
-					}
-				}
-				increase_allied_anger = yes
-				custom_effect_tooltip = allied.anger.plus.1
-			}
-			
-			if = {
-				limit = {
-					HUN = {
-						is_friend_or_potential_friend_of_GER = yes
-						NOT = { is_in_faction_with = YUG }
-					}
-				}
-				hidden_effect = {
-					if = {
-						limit = { 
-							OR = {
-								45 = { is_owned_by = YUG }
-								45 = { is_owned_by = GER }
-							}
-						}
-						HUN = {
-							country_event = { id = hungary.6 days = 1 }
-							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-							set_country_flag = GER_first_ljubljana_award
-						}
-					}
-				}
-				effect_tooltip = {
-					if = {
-						limit = {
-								OR = {
-									45 = { is_owned_by = YUG }
-									45 = { is_owned_by = GER }
-								}
-						}
-						HUN = {
-							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-							transfer_state = 45
-						}					
-					}
-				}
-				every_other_country = {
-					limit = { 
-						is_faction_leader = yes
-						NOT = { tag = GER }
-					}
-					reverse_add_opinion_modifier = { target = HUN modifier = GER_second_vienna_award_other }
-				}				
-			}
-			if = {
-				limit = {
-					BUL = {
-						is_friend_or_potential_friend_of_GER = yes
-						NOT = { is_in_faction_with = YUG }
-					}
-				}
-				hidden_effect = {
-					if = {
-						limit = {
-							OR = {
-								106 = { is_owned_by = YUG }
-								106 = { is_owned_by = GER }
-							}
-						}
-						BUL = { 
-							country_event = { id = bulgaria.3 days = 1 } 
-							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-							set_country_flag = GER_first_ljubljana_award
-						}
-					}
-				}
-				effect_tooltip = {
-					if = {
-						limit = {
-							OR = {
-								106 = { is_owned_by = YUG }
-								106 = { is_owned_by = GER }
-							}
-						}
-						BUL = {
-							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-							transfer_state = 106
-						}						
-					}
-				}
-				every_other_country = {
-					limit = { 
-						is_faction_leader = yes
-						NOT = { tag = GER }
-					}
-					reverse_add_opinion_modifier = { target = BUL modifier = GER_second_vienna_award_other }
-				}				
-			}
-			if = {
-				limit = {
-					ITA = {
-						OR = {
-							has_completed_focus = ITA_slovenia_dalmatia_claims
-							owns_state = 44
-						}
-						is_friend_or_potential_friend_of_GER = yes
-						NOT = { is_in_faction_with = YUG }
-					}
-				}
-				hidden_effect = {
-					ITA = { country_event = { id = italy.13 days = 1 } 
-						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-					}
-					set_country_flag = GER_first_ljubljana_award
-				}
-				effect_tooltip = {
-					ITA = {
-						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-						if = {
-							limit = { has_completed_focus = ITA_slovenia_dalmatia_claims }
-							transfer_state = 900
-							transfer_state = 913
-							transfer_state = 916
-						}
-						if = {
-							limit = { owns_state = 44 }
-							transfer_state = 105
-							transfer_state = 903
-							transfer_state = 904
-						}	
-					}
-				}
-				every_other_country = {
-					limit = { 
-						is_faction_leader = yes
-						NOT = { tag = GER }
-					}
-					reverse_add_opinion_modifier = { target = ITA modifier = GER_second_vienna_award_other }
-				}				
-			}
-			unlock_national_focus = GER_first_ljubljana_award
-			#hidden_effect = {
-			#	news_event = { hours = 6 id = news.208 }
-			#}
-    }
-   
-	
-}
+
 #Herman Goering panzer
 country_event = {
     id = germany.450
@@ -15031,5 +14434,319 @@ country_event = {
        
     }
 	
+}
+
+country_event = {
+    id = germany.451
+    title = germany.451.t
+    desc = germany.451.d
+  picture = GFX_report_event_panzer_and_infantry_advance
+    
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = GER
+		has_country_flag = first
+		has_country_flag = second
+		date > 1943.6.26
+		}
+	
+	 option = {
+        		name = germany.452.a #
+        		ai_chance = { factor = 100 }
+				set_cosmetic_tag = GER_GROß
+    
+    }
+    option = {
+        name = germany.452.b #
+        ai_chance = { factor = 0 }
+        
+       
+    }
+	
+}
+country_event = {
+    id = germany.452
+    title = germany.452.t
+    desc = germany.452.d
+  picture = GFX_report_event_panzer_and_infantry_advance
+    
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		controls_state = 85
+		controls_state = 86
+		controls_state = 98
+		controls_state = 87
+		controls_state = 929
+		controls_state = 72
+		}
+	
+	 option = {
+        		name = germany.452.a 
+        		ai_chance = { factor = 100 }
+				transfer_state = 85
+				transfer_state = 86
+				transfer_state = 87
+				transfer_state = 98
+				transfer_state = 929
+				transfer_state = 72
+				set_country_flag = first
+    
+    }
+    option = {
+        name = germany.452.b 
+        ai_chance = { factor = 0 }
+        
+       
+    }
+	
+}
+country_event = {
+    id = germany.453
+    title = germany.453.t
+    desc = germany.453.d
+  picture = GFX_report_event_panzer_and_infantry_advance
+    
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		controls_state = 887
+		controls_state = 8
+		controls_state = 28 
+		}
+	
+	 option = {
+        		name = germany.453.a 
+        		ai_chance = { factor = 100 }
+				transfer_state = 887
+				transfer_state = 8
+				transfer_state = 28
+				set_country_flag = second
+    }
+    option = {
+        name = germany.453.b 
+        ai_chance = { factor = 0 }
+        
+       
+    }
+	
+}
+country_event = {
+	id = germany.455
+	title = germany.455.t
+	desc = germany.455.d
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.455.a	#We have no choice...
+		GER = { country_event = germany.456 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = germany.455.b	#Hell no!
+		ai_chance = {
+			factor = 0
+			
+		}
+		effect_tooltip = {
+			GER = {
+				declare_war_on = { target = YUG type = annex_everything }
+			}
+			if = {
+				limit = {
+					ITA = { is_in_faction_with = GER }
+				}
+			ITA = { add_to_war = { targeted_alliance = GER enemy = YUG }}
+		}
+			if = {
+				limit = {
+					HUN = { is_in_faction_with = GER }
+				}
+			HUN = { add_to_war = { targeted_alliance = GER enemy = YUG }}
+		}
+		if = {
+				limit = {
+					ROM = { is_in_faction_with = GER }
+				}
+			ROM = { add_to_war = { targeted_alliance = GER enemy = YUG }}
+		}
+		if = {
+				limit = {
+					BUL = { is_in_faction_with = GER }
+				}
+			BUL = { add_to_war = { targeted_alliance = GER enemy = YUG }}
+		}
+		if = {
+				limit = {
+					GRE = { is_in_faction_with = GER }
+				}
+			GRE = { add_to_war = { targeted_alliance = GER enemy = YUG }}
+		}
+		}
+		GER = { country_event = germany.457 }
+	}
+}
+#Yugoslavia accepts
+country_event = {
+	id = germany.456
+	title = germany.456.t
+	desc = germany.456.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		GER = {
+			transfer_state = 102
+		}
+		ITA = {
+			transfer_state = 913
+			transfer_state = 916
+		}
+		set_country_flag = slovenia_acquired
+	}
+	
+	option = {
+		name = germany.456.a	#Excellent
+	}
+}
+
+#Yugoslavia refuses
+country_event = {
+	id = germany.457
+	title = germany.457.t
+	desc = germany.457.d
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.457.a	
+		GER = {
+				declare_war_on = { target = YUG type = annex_everything }
+			}
+			if = {
+				limit = {
+					ITA = { is_in_faction_with = GER }
+				}
+			ITA = { add_to_war = { targeted_alliance = GER enemy = YUG }}
+		}
+			if = {
+				limit = {
+					HUN = { is_in_faction_with = GER }
+				}
+			HUN = { add_to_war = { targeted_alliance = GER enemy = YUG }}
+		}
+		if = {
+				limit = {
+					ROM = { is_in_faction_with = GER }
+				}
+			ROM = { add_to_war = { targeted_alliance = GER enemy = YUG }}
+		}
+		if = {
+				limit = {
+					BUL = { is_in_faction_with = GER }
+				}
+			BUL = { add_to_war = { targeted_alliance = GER enemy = YUG }}
+		}
+		if = {
+				limit = {
+					GRE = { is_in_faction_with = GER }
+				}
+			GRE = { add_to_war = { targeted_alliance = GER enemy = YUG }}
+		}
+	}
+
+	option = {
+		name = germany.457.b	
+		
+	}
+}
+country_event = {
+	id = germany.458
+	title = germany.458.t
+	desc = germany.458.d
+	picture = GFX_report_event_german_politician_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		YUG = { surrender_progress > 0.6 }
+		has_war_with = YUG
+		has_completed_focus = GER_first_ljubljana_award
+		}
+	
+	option = {
+		name = germany.458.a
+		ai_chance = {
+			factor = 100
+		}
+		CRO = {
+				transfer_state = 103
+				transfer_state = 104  
+				transfer_state = 109
+				transfer_state = 902
+				transfer_state = 908
+				transfer_state = 917
+				transfer_state = 901
+				transfer_state = 915
+				transfer_state = 900
+			}
+			GER = {
+				puppet = CRO
+				transfer_state = 102
+					transfer_state = 907
+					transfer_state = 108
+					transfer_state = 107
+					transfer_state = 906
+			}
+			HUN = {
+					transfer_state = 914
+					transfer_state = 45
+				}
+				BUL = {
+					transfer_state = 106
+					transfer_state = 905
+				}
+				ITA = {
+					transfer_state = 913
+					transfer_state = 916
+				}
+				if = {
+					limit = {
+						ITA = { controls_state = 44 }
+						}
+					ITA = {
+						transfer_state = 105
+						transfer_state = 904
+						transfer_state = 903
+					}
+				}
+				if = {
+					limit = {
+						ITA = { NOT = { controls_state = 44 }}
+						}
+					GER = {
+						transfer_state = 105
+						transfer_state = 904
+						transfer_state = 903
+					}
+				}
+	}
+
+	option = {
+		name = germany.458.b	
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 ### EOF ###

@@ -10,6 +10,8 @@ add_namespace = rom_eer
 
 ##mon dictatorship focuses should cost and require a lot of PP
 
+#maybe 2-5 april 1936 event for student meeting?
+
 #event for 1936 demotion of Titulescu
 
 #event for Mihai Stelescu's assassination (16 july 1936) https://en.wikipedia.org/wiki/Iron_Guard_death_squads
@@ -18,23 +20,29 @@ add_namespace = rom_eer
 
 #############1937############
 
-#event for Ion Mota and Vasile Marin's deaths in SCW (13 january 1937) and funerals (13 february 1937); triggered by SCW and gives ROM_eer_majadahonda spirit between those 2 dates
+#event for Ion(el) Mota and Vasile Marin's deaths in SCW (13 january 1937) and funerals (13 february 1937); triggered by SCW and gives ROM_eer_majadahonda spirit between those 2 dates; romania gave them a train to get them to spain before they went there;
+
+#maybe an event for when Carol asked Codreanu to become the leader of the legion with Codreanu as prime minister
+
+#iron guard starts restaurant chains which would increase fascism support; maybe ahistorical option to outlaw them if you're a dictatorship?
 
 #event for local elections 26-30 may 1937
 
 #maybe an event for michael becoming a sublieutenant on 25 october 1937?
 
 #event chain for 1937 election, first the electoral pact, electoral campaign officialy starts on 19 november, elections take place on 20 december; results published on 30 december
+#offficially, the goga government was declaredly aimed at organizing new elections
+#if new elections were to actually happen, the iron guard would've gotten even more votes; they excel in electoral campaigns;
 
 ############1938############
 
-#goga gov lasted 44 days
+#Goga govt lasted 44 or 40 days or so
 
 #mon dictatorship, 10 feb new gov, 24 feb plebiscite, 27 feb new constitution
 
-#event for arresting Codreanu on 16 april 1938 (calumny letter against Iorga and other officials supporting carol, like Miron Cristea; sent to Iorga on 26 march 1938; sentenced on 19 april 1938 to 6 months in jail, then to 10 years)
-
-#11 march 1938 anschluss increases tension and is important
+#11 march 1938 anschluss increases tension and is important; Codreanu tried to send a letter to Hitler to congratulate him but the romanian post service denies it, so 2 legionnaires personally deliver it to the german embassy; because of this, Iorga starts a campaign against the Iron Guard and (tries? succeeds?) to get their restaurants closed; Codreanu sends him a letter on 26 march accusing Iorga; Iorga files a lawsuit against Codreanu; Carol uses this to get Codreanu arrested and condemned (at Jilava prison at first then moved between prisons)
+#event for arresting Codreanu on 16 april 1938 (calumny letter against Iorga and other officials supporting carol, like Miron Cristea; sent to Iorga on 26 march 1938; sentenced on 19 april 1938 to 6 months in jail, then to 10 years on a new session on 23 may and takes 4?? days in a kangaroo court); Antonescu resigns because he opposes this arrest;
+#other legionnaires are arrested as well and their support drops because of this
 
 #event for banning all parties on 30 march 1938
 
@@ -46,17 +54,22 @@ add_namespace = rom_eer
 
 #event for death of the queen mom 18 july 1938
 
+#29 september sudetenland tension is important and eventually triggers the event chain where Carol goes to britain, then france then germany
+
 #Averescu dies in early october 1938
 
 #event for the inauguration of the endless column and other Brancusi works (27 october 1938)
 
-#maybe an 18-day focus between 10-28 november 1938 for Carol going to britain, then france, then germany, negotiating for guarantees or such)
+#maybe an 18-day focus between 10-28 november 1938 for Carol going to britain, then france, then his advisors adivise him to go to germany, negotiating for guarantees or such); Hitler tells Carol that he favors Codreanu and, from unverified sources could've asked him to release Codreanu
 
-#event for killing Codreanu (29-30 night november 1938) (maybe triggered by 3-day focus starting on 28?)
+#event for killing Codreanu (29-30 night november 1938) (maybe triggered by 3-day focus starting on 28?); some students shooting some guy despite Codreanu's intentions may have helped Carol to decide upon this
+#this significantly lowers fascism support
 
 ################1939###################
 
-#event for Miron Cristea's 2 heart attacks (january 1939) retirement (1 february 1938), arrival in france and contracting pneumonia on the same day (24 february 1939) and death (6 march 1939)
+#police kills Vasile Cristescu on 26 jan 1939 after he had escaped from prison and taken leadership of the legion
+
+#event for Miron Cristea's 2 heart attacks (january 1939) retirement (1 february 1938), arrival in france and contracting pneumonia on the same day (24 february 1939) and death (6 march 1939), buried on 12 march
 
 #february 1939 meeting of the balkan pact coucil in bucharest; carol considered that turkey should become romania's new czechoslovakia somehow
 
@@ -68,19 +81,26 @@ add_namespace = rom_eer
 
 #maybe an event for 9 may 1939 inauguration of the Carol I statue?
 
+#10 june 1939; Nicoleta Niculescu, leader of the female legionary association is arrested and killed, less fascism support
+
 #carol ii hesitated to sign some german cooperation contracts and had a dual position on france/britain and germany
 
-#maybe a special event for M-R Pact? according to that pact, bessarabia (secretly, and nobody in romania knew about it) belonged to the USSR
+#maybe a special romanian event for M-R Pact? according to that pact, bessarabia (secretly, and nobody in romania knew about it) belonged to the USSR
 
-#maybe event for polish refugees and polish request for romania to store their gold, hitler finds out and doesn't like it; carol and calinescu allow the gold to get sent a way through Constanta port
+#remember to make sure that the new/german event for the invasion of poland mentions the first fired shots at the Westerplatte
 
-#event for Armand Calinescu's assassination (then the perpertrators force the entry to the national radio and try to announce it but get cut out, after which they surrender to the authorities) and its retaliation, killing 352 legionnaires across the country without sentencing and arresting many others, all on the same day (21 september 1939); Calinescu was the prime minister when Codreanu was killed so maybe that should be a requirement; https://en.wikipedia.org/wiki/Iron_Guard_death_squads
+#maybe event for polish refugees and polish request for romania to store their gold; also romania allowed transit of the polish govt; hitler finds out and doesn't like it; carol and calinescu allow the gold to get sent away through Constanta port
+
+#event for Armand Calinescu's assassination (then the perpertrators force the entry to the national radio and try to announce it but get cut out, after which they surrender to the authorities) and its retaliation, killing 256-352 legionnaires across the country without sentencing and arresting many others, all on the same day (21 september 1939); Calinescu was the prime minister when Codreanu was killed so maybe that should be a requirement; https://en.wikipedia.org/wiki/Iron_Guard_death_squads
 
 #4 dec 1939 inauguration of a new (bar? building? section? HQ?) of the war school
 
 ###########1940##########
 
 #12 march 1940; Romanian Mineral Oil Gmbh is founded in germany
+
+#15 march 1940; Nae Ionescu apparently died poisoned
+#apparently even after all this the iron guard is still strong and some of its representants are hiding in germany; Carol decides to improve relations with gemany through trade treaties because of this; he also starts to focus on mil factories even more
 
 #29 march 1940 molotov declares that the bessarabia issue is still an unsolved issue between USSR and Romania
 
@@ -89,24 +109,60 @@ add_namespace = rom_eer
 #22 june 1940 capitulation of france is concerning and important; on the same day carol ii signs a decree declaring "defence of unique and totalitarian order of the romanian state" and turning FRN into PN; turning from authoritarian monarchy to royal dictatorship?
 
 #26 june 1940 USSR sends ultimatum asking for evacuation of bessarabia and bukovina; king asks germany but germany suggests that romania accepts (link this to M-R Pact?) after a new ultimative note on 27, the crown council votes to accept; romania takes some of the refugees; occupied/invaded on 28 june(-3 july???)
-#carol makes 180 degree turn in politics; renounces the anglo-french guarantees and declares orientation towars axis; in order to improve relations with germany he reconciles with the legionnaires and Sima is introduced in the govt. on 28 june
+#carol makes 180 degree turn in politics; renounces the anglo-french guarantees and declares orientation towars axis; in order to improve relations with germany he reconciles with the legionnaires and Sima is introduced in the govt. on 28 june; after 4 days SIma resigns because the king didn't wanna form a legionnary goverment
 #after ceding bessarabia hungary intensifies their territorial claims
+#Carol is seen as the person to blame for the ceding
+#make sure that it won't happen while romania and SOV are at war
 
-#romania accepts ceding southern dobruja on 21 august 1940; signs the treaty on 7 sept; population transfer
+#29 june Antonescu writes a letter to Carol offering "to save what could still be saved of the crown, order and borders"; Antonescu is arrested on 9 july; where he resigns from the army on 12 july
+
+#if romania is in the axis and denies any of the territorial demands then they should get kicked out of the axis
+
+#romania accepts ceding southern dobruja on 21 august 1940; signs the treaty on 7 sept; population transfer; romania joining the axis before the treaty of craiova makes bulgaria declare war on romania, fix it.
 
 #29 august second vienna award in belvedere palace in vienna; ceded after 30 august
 
-#the events for ceding territory give war support, decrease stability and ruling party support and include refugees/population transfers; in less than 3 months romania loses almost 100.000 km2 and 6.8 million inhabitants, over a third of the surface and population; mass demonstrations and carol is seen as the guilty one; the king has no other choice but to choose the one man with good relations with the army and the legion, antonescu
-#antonescu accepts on 4 september; gets full power on 5 september and forces carol to abdicate on 6 september when mihai becomes king; carol leaves romania on 7 september miraculously escaping the legionnaires who shot at his train
+#the events for ceding territory give war support, decrease stability and ruling party support and include refugees/population transfers; in less than 3 months romania loses almost 100.000 km2 and 6.8 million inhabitants, over a third of the surface and population; mass demonstrations against Carol, especially from the legionnaires, who clash with the gendarmerie; the king has no other choice but to choose the one man with good relations with the army and the legion, antonescu
+#antonescu accepts on 4 september; asks the liberal and the taranist parties for help in forming a government but they both refuse, asking the king to abdicate; Antonescu gets full power on 5 september and forces carol to abdicate on 6 september when mihai becomes king; demonstration of sympathy towards king mihai on 6 september; carol discreetly leaves romania on 7 september miraculously escaping the legionnaires who shot at his train (in Timisoara)
+#sometime between 5-6 sept: Antonescu demotes and arrests some royalist generals (Paul Teodorescu and Gheorghe Mihail) before asking the king to abdicate. he did it because these generals asked the king to resist through force
 #don't forget to use a pic of the new smaller romania as an event picture
 
-#event for the 10 november 1940 vrancea earthquake
+#Codreanu's death weakened the iron guard since the founding leaders considered Sima to be the rightful leader while the legionary senate considered Codreanu's dad to be the rightful leader
 
-#event for the (26-27 night november 1940) jilava prison massacre; supposed to be a 2-year anniversary of codreanu's death??; cells 1-19 only if fascism support not ridiculously high. if fascism support really high then more cells get "cleaned" and ceausescu dies
+#14 september; coalition with iron gurad is announced; new regime maybe slowly builds stability for a short time? should probably have really low PP gain because of this dual leadership coalition
+
+#Mihai's mom returns to the country on 15 september
+
+#16 september, Antonescu's retirement from the army is annuled and he's advanced to army corps general
+
+#6 october parade and speeches?
+
+#german advisor (& military access) focus should be completed on 8-10 october
+
+#maybe romanianization committees as a focus?
+
+#16-28 october, Sima and Antonescu complain about each other's policies in letters to each other; Sima complains that he doesn't have full power
+
+#on 27 october there were over 64 prisoners at jilava prison; Antonescu is accused of delaying their judging in order to pardon them; at this point Sima doesn't have that much control of the legion and the legionnaires sometimes act without the legion's permission; due to all these problems Sima no longer has much control of the legion
+
+#event for the 9-10 night november 1940 vrancea earthquake https://en.wikipedia.org/wiki/1940_Vrancea_earthquake
+#because of the ecnomic problems caused by the loss of territory and because of the weak crop that year, the effects of the earthquake are more relevant
+#a city called panciu is completely destroyed, Mihai visits it
+
+#Antonescu visits italy 14-16 november, protests the 2nd vienna award
+
+#Antonescu visits germany on 21 november, doesn't invite Sima probably because Sima spoke german and he didn't; convinces Hitler that he's the man that should lead romania; Hitler advises Antonescu to make peace with the iron guard and govern with them
+
+#join axis focus should be finished on 23 november; apparently done because japan recently joined the axis
+
+#event for the (26-27 maybe 27-28? night november 1940) jilava prison massacre; first, a person who knew some info from the royal dictatorship regime reveals the location of the buried assassinated legionnaires: Jilava. apparently when they unearthed the bodies they were angered by the atrocities committed on those bodies. the legionnaires enter the prison and assassinate all those who were considered guilty of crimes against the iron guard; supposed to be a 2-year anniversary of codreanu's death??; because of this massacre, Sima and the iron guard agree to legalizing the death penalty for this kind of crimes. cells 1-19 only if fascism support not ridiculously high. if fascism support really high then more cells get "cleaned" and ceausescu dies
+#Madgearu and then Iorga get killed separately from this massacre both by the same legionnary team
+
+#30 november; Antonescu still didn't have full support from Hitler while Sima was trying to gain more time knowing how little control he had over the iron guard and that the iron guard was still too weak to oppose Antonescu; that's why the coalition was still on-going
 
 ##############1941######################
 
-#event for Antonescu asking hitler for support in case of legionary rebellion
+#14 january 1941; event for Antonescu asking hitler for support in case of legionary rebellion; Antonescu wanted to take Sima with him to Hitler so Hitler would decide which one should rule romania; or that the romanian people should choose; but Sima refused to go to Berlin with Antonescu even tho he was asked to; Hitler is infuriated by Sima not wanting to visit him and decides that he'll never invite Sima again. Hitler needed the romanian army more than the iron guard, so he allows Antonescu to get rid the iron guard if needed to; Hitler wanted romania to be in order; at the time when the documentary was made (1996) it's still unknown why Sima refused.; this should probably give a spirit quickly reducing fascism support
 
 #event for legionary rebellion (may include iorga and madgearu's deaths?) (21 january 1941)
 
@@ -114,12 +170,18 @@ add_namespace = rom_eer
 
 #event for being asked to join barbarossa (one before and one after barbarossa starts) (add franz liszt barbarossa theme for barbarossa event)
 
-#event for joining barbarossa with special sound for antonescu speech
+#event for joining barbarossa with special sound for Antonescu speech
 
 ##############1944#####################
 
 #event for 23 august 1944 coup (NOT triggered by decision, but by not being able to control the internal situation and getting arrested by michael) (also anniversary event that would become the new national day)
 
+##############1945######################
+
+#28 march 1945; "free" elections
+
 ##############1946######################
+
+#event for kangaroo court and execution of Antonescu (1 june 1946)
 
 #event for 1946 frauded election; might be unfrauded if Tatarescu is not corrupted???

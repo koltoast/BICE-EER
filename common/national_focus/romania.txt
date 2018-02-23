@@ -732,7 +732,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_demand_a_western_guarantee
-		icon = GFX_focus_ENG_alliance
+		icon = GFX_ENG_alliance
 		prerequisite = { focus = ROM_flexible_foreign_policy }
 		x = 2
 		y = 0

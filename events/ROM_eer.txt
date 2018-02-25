@@ -4,7 +4,7 @@
 
 add_namespace = rom_eer
 
-####make sure romania doesn't join the allies
+####make sure romania doesn't join the allies; make sure romania has enough infra to move troops on its own territory and maybe barbarossa
 
 #introductory event explaining the 1937 election mechanics
 
@@ -155,26 +155,114 @@ add_namespace = rom_eer
 
 #join axis focus should be finished on 23 november; apparently done because japan recently joined the axis
 
-#event for the (26-27 maybe 27-28? night november 1940) jilava prison massacre; first, a person who knew some info from the royal dictatorship regime reveals the location of the buried assassinated legionnaires: Jilava. apparently when they unearthed the bodies they were angered by the atrocities committed on those bodies. the legionnaires enter the prison and assassinate all those who were considered guilty of crimes against the iron guard; supposed to be a 2-year anniversary of codreanu's death??; because of this massacre, Sima and the iron guard agree to legalizing the death penalty for this kind of crimes. cells 1-19 only if fascism support not ridiculously high. if fascism support really high then more cells get "cleaned" and ceausescu dies
+#event for the (26-27 maybe 27-28? night november 1940) jilava prison massacre; first, a person who knew some info from the royal dictatorship regime reveals the location of the buried assassinated legionnaires: Jilava. apparently when they unearthed the bodies they were angered by the atrocities committed on those bodies. the legionnaires enter the prison and assassinate all those who were considered guilty of crimes against the iron guard; supposed to be a 2-year anniversary of codreanu's death??; because of this massacre, Sima and the iron guard agree to legalizing the death penalty for the kind of crimes committed by these legionnaires. cells 1-19 only if fascism support not ridiculously high. if fascism support really high then more cells get "cleaned" and ceausescu dies
 #Madgearu and then Iorga get killed separately from this massacre both by the same legionnary team
 
 #30 november; Antonescu still didn't have full support from Hitler while Sima was trying to gain more time knowing how little control he had over the iron guard and that the iron guard was still too weak to oppose Antonescu; that's why the coalition was still on-going
 
 ##############1941######################
 
-#14 january 1941; event for Antonescu asking hitler for support in case of legionary rebellion; Antonescu wanted to take Sima with him to Hitler so Hitler would decide which one should rule romania; or that the romanian people should choose; but Sima refused to go to Berlin with Antonescu even tho he was asked to; Hitler is infuriated by Sima not wanting to visit him and decides that he'll never invite Sima again. Hitler needed the romanian army more than the iron guard, so he allows Antonescu to get rid the iron guard if needed to; Hitler wanted romania to be in order; at the time when the documentary was made (1996) it's still unknown why Sima refused.; this should probably give a spirit quickly reducing fascism support
+#14 january 1941; event for Antonescu asking hitler for support in case of legionary rebellion; Antonescu wanted to take Sima with him to Hitler so Hitler would decide which one should rule romania; or that the romanian people should choose; but Sima refused to go to Berlin with Antonescu even tho he was asked to; Hitler is infuriated by Sima not wanting to visit him and decides that he'll never invite Sima again. Hitler needed the romanian army more than the iron guard, so he allows Antonescu to get rid the iron guard if needed to; Hitler wanted romania to be in order; At the time when the documentary was made (1996) it's still unknown why Sima refused.; this should probably give a spirit quickly reducing fascism support
 
-#event for legionary rebellion (may include iorga and madgearu's deaths?) (21 january 1941)
+#18 january, antonescu ends the "committees for romanianization"
 
+#20 january, Dohring/Duhring (a german officer) is assassinated by a british MI6 agent in bucharest, both the legionnaires and Antonescu blame each other; general Petrovicescu and Alexandru Ghica, (iron guard trustees/members) are demoted from his minister position and respectively from his country-wide police chief position by Antonescu and blamed for not having been able to take care of the german officer by Antonescu;
+#the iron guard feels insulted by this and starts protests
+
+#event for legionary rebellion (may include iorga and madgearu's deaths?) (21 january 1941);
+#21: legionnaires gather in bucharest and occupy bucharest police prefecture, radio and others
+#public guardian barracks next to the minister council is occupied by legionnaires
+#legionnaire delegates negotiate with Antonescu and demand Sima to become prime minister, but of course Antonescu refuses; this gives Antonescu time to bring his troops to Bucharest
+#at some point the council of ministers that Antonescu was in was under fire
+#in his book, Antonescu accuses the legionnaires of having tried to kill him. at that point, in the palace of the council of ministers there was only the gendarmerie and the legionnaires (over 700 rebels) could've stormed it but didn't
+#somehow no generals defected to the iron guard
+#since he has the support of the germany (and of their army) Antonescu orders his army to start firing on everyone wearing a green-coat (the iron guard uniform)
+#since Antonescu has better armament (MGs, cannons and tanks) while the legionnaires are armed with handguns, rifles and a few SMGs at most
 #event for ending the legionary rebellion (23-24 january 1941?)
+#23: horia sima understands that all hope is lost and orders the iron guard to stop combating and resisting; apparently the fighting stops on 23; Sima escapes to germany and is kept for germany's interests waiting for the iron guard to resurface
 
-#event for being asked to join barbarossa (one before and one after barbarossa starts) (add franz liszt barbarossa theme for barbarossa event)
+#the royal decree for the abolishment of the national legionnaire state only comes out on 14 feb even tho de-facto it stopped existing on 23 jan
 
-#event for joining barbarossa with special sound for Antonescu speech
+#12 june, Antonescu goes to germany and is informed by hitler regarding barbarossa ;event for being asked to join barbarossa (one before (12 june) and one after barbarossa starts (22 june)) (add franz liszt barbarossa theme for barbarossa event)
+#event for joining barbarossa on june 22 with special sound for Antonescu speech
+#Antonescu joins barbarossa despite not being forced to
+#bridges over the Prut river were improvised by the german pontooniers
+
+#24 july romanian army reaches dniester river and keeps going; stalin line??
+
+#22 august; Antonescu is promoted to marshal
+
+#"October 16, following a two-month siege, the Germans and Romanians captured Odessa. A time-delayed bomb placed by the Soviets detonated on the 22nd in the Romanian headquarters, killing 67 people including General Ioan Glogojeanu, the Romanian commander, 16 other Romanian officers and four German naval officers."
+
+#7 december; UK declares war on romania; 3 days later the italian and german ambassadors try to get romania to declare war on the USA based on the 2nd article of the tripartite pact; seemed that not even Antonescu understood the importance of USA joining the war
+
+##############1942#####################
+
+#inflation; decrease of industrial production (civ production)
+
+#17 january 1942, general Iosif Iacobici asks to be demoted claiming that he wasn't consulted when the number of romanian units on the eastern front was increased upon germany's request. gets demoted and criticized by Antonescu 
+
+#15 february; Antonescu returns from another visit to Hitler; germany needed more romanian divisions and the previously promised 10 divisions weren't enough
+
+#the new early 1942 army divisions had 3 times less men than they should have, reason being that romania wouldn't be defenseless from hungary, especially since hungary barely contributed to barbarossa; this was done secretly without germany's knowledge
+
+#Antonescu and Mihai disagree more and more
+
+##############1943#####################
+
+#10 jan; Antonescu visits Hitler; Antonescu apparently thinks that germany has practically already lost the war and that know "romania must concentrate on its own war"
+
+#(9 feb maybe?) huge shocking losses at stalingrad; loss of war support
+
+#beginning of july; before 18 july; Mihai Antonescu (another Antonescu) visits italy and meets mussolini, king edward iii, and the pope. tells mussolini that both italy and romania should sign peace with the allies; mussolini says that they should just wait 2 more months before thinking about that
+
+#war support keeps decreasing; king Mihai, general Sanatescu and lib and con party leaders want romania out of the war; Antonescu doesn't heed warnings from secret services led by Eugen Cristescu at that time and thinks that he has the country under control
+#basically, if you did the coup at such an early point, germany and its soldiers all over the country would just annex you and screw romania
+
+#1 august; americans bomb Ploesti oil fields
+
+#Antonescu authorized secret negotiations at Ankara regarding a possible allied landing in the balkans and the opening of another front
 
 ##############1944#####################
 
+#allies give up on the idea of an allied landing in the balkans, despite churchill's support for it
+
+#march; Antonescu authorizes his opposition to start secret negotiations with the allies and tells Iuliu Maniu that he accepts to lose his position if Maniu can find a convenient way for romania to exit the war; but to no avail
+#Antonescu negotiates with the allies and soviets to find a solution to prevent a soviet invasion of romania
+
+#germany occupies hungary in march
+
+#late march Antonescu visits Hitler. Hitler promises to use "revolutionary weapons that will change the fate of war" in a few months
+
+#4 april, USA bombs bucharest; big loss of war support
+
+#june; opposition forces form National Democratic Bloc (BND) with the con, lib, soc and communist parties; its purpose is to topple the Antonescu government
+#general Sanatescu contacts different generals asking who they would side with in case of a regime change; they say they would side with Mihai
+
+#1 august; Antonescu is asked to go to "Oberkommando Wehrmacht"
+#arrives on 4 august and is asked by Hitler whether Romania would side with germany to the bitter end
+#Antonescu tells him that he can't say until he knows for certain: german intentions on the souhtern front, the issue of american bombings and lack of defence against them, the risk of turkey joining the war on the allies' side, hungary's future policy
+#the meeting ends before anything is decided
+
+#20 august; soviet forces start an offensive on the Iasi-Kishinev line. this breaks the romanian-german front on the same day; incredibly low war support and morale;
+
+#21 august; soviet troops reach Iasi; the preparations for the plot are finished and it was supposed to take place between 24-26 august
+
+#23 august morning, Antonescu tells some opposition leaders and the german embassy that he's decided to sign an armistice
+#then the king invites Antonescu to the palace; Antonescu doesn't accept to immediately sign the armistice; so he is arrested;
 #event for 23 august 1944 coup (NOT triggered by decision, but by not being able to control the internal situation and getting arrested by michael) (also anniversary event that would become the new national day)
+#finding out about Antonescu being arrested, general Jienescu asks Petre Strihan whether he can paratroop a team to save Antonescu. Petre Strihan chooses to obey the king.
+#first romania white peaces everyone, then gets ~21% communism support for joining faction (?), then joins comintern (?), then declares war on germany and hungary; marzescu law and codreanu spirits are removed/fixed
+#Sima forms a romanian govt in exile in Vienna that lasts until germany's capitulation
+#on 6 september 1940 romania had 10 railroad coaches of gold and on 23 august 1944 romania had 40. the extra 30 resulting almost exclusively from trading with germany
+
+#german generals are given the possibility to retreat if they do so without fighting. they initially accept but then Hitler orders them to attack bucharest; especially the royal palace; germans desperately try to take bucharest
+
+#29/31 august; soviet soldiers enter bucharest; romania becomes an occupied country (soviet puppet)
+
+#Antonescu is handed to the romanian communists and then to the soviets who send him to moscow; maybe it costs the soviets a bit of PP to get him?; after a year and a half of investigation and/or legal process they hand him back to romania to judge him even tho the soviets already decided his fate
+
+#12 september; official armistice with soviets is signed
 
 ##############1945######################
 
@@ -182,6 +270,6 @@ add_namespace = rom_eer
 
 ##############1946######################
 
-#event for kangaroo court and execution of Antonescu (1 june 1946)
+#event for kangaroo court (6 may 1946; Process "of Grand National Treason") and execution of Antonescu (1 june 1946)
 
 #event for 1946 frauded election; might be unfrauded if Tatarescu is not corrupted???

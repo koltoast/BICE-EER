@@ -219,7 +219,7 @@ bookmarks = {
 		"ROM"={
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = liberalism
 			ideas = {
 				ROM_king_carol_ii_hedonist
 				neutrality_idea

@@ -34,7 +34,7 @@ add_namespace = rom_eer
 #offficially, the goga government was declaredly aimed at organizing new elections
 #if new elections were to actually happen, the iron guard would've gotten even more votes; they excel in electoral campaigns;
 
-############1938############
+############1938############ #maybe a sentinel of the motherland focus this year? #this year 25% of the budget went to the army
 
 #Goga govt lasted 44 or 40 days or so
 
@@ -64,6 +64,8 @@ add_namespace = rom_eer
 
 #event for killing Codreanu (29-30 night november 1938) (maybe triggered by 3-day focus starting on 28?); some students shooting some guy despite Codreanu's intentions may have helped Carol to decide upon this
 #this significantly lowers fascism support
+
+#16 december; FRN is founded https://en.wikipedia.org/wiki/National_Renaissance_Front
 
 ################1939###################
 
@@ -106,6 +108,8 @@ add_namespace = rom_eer
 
 #27 may 1940 weaponry-petrol pact with germany, also signed by Neubacher
 
+#14 june 1940 germany enters Paris
+
 #22 june 1940 capitulation of france is concerning and important; on the same day carol ii signs a decree declaring "defence of unique and totalitarian order of the romanian state" and turning FRN into PN; turning from authoritarian monarchy to royal dictatorship?
 
 #26 june 1940 USSR sends ultimatum asking for evacuation of bessarabia and bukovina; king asks germany but germany suggests that romania accepts (link this to M-R Pact?) after a new ultimative note on 27, the crown council votes to accept; romania takes some of the refugees; occupied/invaded on 28 june(-3 july???)
@@ -120,7 +124,7 @@ add_namespace = rom_eer
 
 #romania accepts ceding southern dobruja on 21 august 1940; signs the treaty on 7 sept; population transfer; romania joining the axis before the treaty of craiova makes bulgaria declare war on romania, fix it.
 
-#29 august second vienna award in belvedere palace in vienna; ceded after 30 august
+#29-30 august second vienna award in belvedere palace in vienna; ceded on/after 30 august
 
 #the events for ceding territory give war support, decrease stability and ruling party support and include refugees/population transfers; in less than 3 months romania loses almost 100.000 km2 and 6.8 million inhabitants, over a third of the surface and population; mass demonstrations against Carol, especially from the legionnaires, who clash with the gendarmerie; the king has no other choice but to choose the one man with good relations with the army and the legion, antonescu
 #antonescu accepts on 4 september; asks the liberal and the taranist parties for help in forming a government but they both refuse, asking the king to abdicate; Antonescu gets full power on 5 september and forces carol to abdicate on 6 september when mihai becomes king; demonstration of sympathy towards king mihai on 6 september; carol discreetly leaves romania on 7 september miraculously escaping the legionnaires who shot at his train (in Timisoara)
@@ -183,10 +187,14 @@ add_namespace = rom_eer
 
 #the royal decree for the abolishment of the national legionnaire state only comes out on 14 feb even tho de-facto it stopped existing on 23 jan
 
+#april 1941 census: 13.5M people
+
 #12 june, Antonescu goes to germany and is informed by hitler regarding barbarossa ;event for being asked to join barbarossa (one before (12 june) and one after barbarossa starts (22 june)) (add franz liszt barbarossa theme for barbarossa event)
 #event for joining barbarossa on june 22 with special sound for Antonescu speech
 #Antonescu joins barbarossa despite not being forced to
 #bridges over the Prut river were improvised by the german pontooniers
+
+#16 july kishinev under romanian administration once again
 
 #24 july romanian army reaches dniester river and keeps going; stalin line??
 
@@ -236,6 +244,8 @@ add_namespace = rom_eer
 
 #4 april, USA bombs bucharest; big loss of war support
 
+#15 may brits and americans firebomb romania
+
 #june; opposition forces form National Democratic Bloc (BND) with the con, lib, soc and communist parties; its purpose is to topple the Antonescu government
 #general Sanatescu contacts different generals asking who they would side with in case of a regime change; they say they would side with Mihai
 
@@ -249,27 +259,97 @@ add_namespace = rom_eer
 #21 august; soviet troops reach Iasi; the preparations for the plot are finished and it was supposed to take place between 24-26 august
 
 #23 august morning, Antonescu tells some opposition leaders and the german embassy that he's decided to sign an armistice
-#then the king invites Antonescu to the palace; Antonescu doesn't accept to immediately sign the armistice; so he is arrested;
+#then the king invites Antonescu to the palace; Antonescu arrives at 4PM. Antonescu doesn't accept to immediately sign the armistice; so he is arrested at 5PM; https://en.wikipedia.org/wiki/King_Michael%27s_Coup
 #event for 23 august 1944 coup (NOT triggered by decision, but by not being able to control the internal situation and getting arrested by michael) (also anniversary event that would become the new national day)
 #finding out about Antonescu being arrested, general Jienescu asks Petre Strihan whether he can paratroop a team to save Antonescu. Petre Strihan chooses to obey the king.
-#first romania white peaces everyone, then gets ~21% communism support for joining faction (?), then joins comintern (?), then declares war on germany and hungary; marzescu law and codreanu spirits are removed/fixed
+#first romania white peaces everyone, then gets ~21% communism support for joining faction (?), then joins comintern (?), then declares war on germany and hungary; marzescu law and codreanu spirits are removed/fixed; also change owner of northern bukovina, bessarabia and budjak to SOV; maybe sov puppets romania now?
 #Sima forms a romanian govt in exile in Vienna that lasts until germany's capitulation
 #on 6 september 1940 romania had 10 railroad coaches of gold and on 23 august 1944 romania had 40. the extra 30 resulting almost exclusively from trading with germany
 
-#german generals are given the possibility to retreat if they do so without fighting. they initially accept but then Hitler orders them to attack bucharest; especially the royal palace; germans desperately try to take bucharest
+#german generals are given the possibility to retreat if they do so without fighting. they initially accept but then Hitler orders them to attack bucharest; especially the royal palace
 
-#29/31 august; soviet soldiers enter bucharest; romania becomes an occupied country (soviet puppet)
+#24 august; germans desperately try to take bucharest, to free Antonescu and capture king Mihai; if germans get to take all of romania then maybe they can start a goverment under Sima (ahistorical)
+
+#29 after sunset/31 august; soviet soldiers enter bucharest; romania becomes an occupied country (soviet puppet)
+#add red army occupation national spirit, and at some later point add inflation and war reparations spirits
+#romanian army is drastically reduced after this, so recruiting factor malus?
 
 #Antonescu is handed to the romanian communists and then to the soviets who send him to moscow; maybe it costs the soviets a bit of PP to get him?; after a year and a half of investigation and/or legal process they hand him back to romania to judge him even tho the soviets already decided his fate
 
-#12 september; official armistice with soviets is signed
+#11-12 night september; official armistice with soviets is signed; took so long because the soviets waited to occupy all of romania beforehand; romania is now supervised by a soviet commission
+
+#october: Maniu realizes that democracy was basically no longer a possible choice
+
+#mid-october: churchill meets stalin in moscow and romania's, greece's and bulgaria's fates are decided
+
+#9 november visit of vishinsky in romania
 
 ##############1945######################
 
+#24 february; demonstration against Radescu government by FND; blamed Radescu for "opposing democratic reforms"
+
+#27 feb; vishinsky arrives in romania and demands a soviet-friendly gov
+
+#6 march Groza gov
+
+#8-9 march second vienna award reversed; north transylvania officialy changes owner from hungary to romania; this may be because the hungarians fought to the bitter end?
+
+#23 march 1945 agrarian reform law enacted; and collectivisation; done badly and some land is left unused which caused starvation
+
 #28 march 1945; "free" elections
+
+#26 april; Tudor Vladimirescu division originally made by the USSR becomes a ROM division
+
+#17 june; event were railway workers are given better work conditions; improvements in social security
+
+#july 17; first sovrom: sovrompetrol https://en.wikipedia.org/wiki/SovRom
+
+#21 august; king stops official relations with the Groza govt which starts the Royal Strike
+#summer 1945; king Mihai tries to remove the Groza gov; for almost 5 months there was no official contact between the king and the gov and the gov's acts weren't validated because of this
+#since the Groza gov was unremovable romania basically entered the comintern sphere of influence; it was unremovable because of soviet pressure; maybe soviets should pay PP for subjugating eastern europe?
+
+#22 august; new sovier ambassador Sergei Ivanovich Kaftaradze arrives in romania and stays there
+
+#23 august parade without Mihai because he's on royal strike
+
+#15 october; royal strike still going;
+
+#7 november: PCR was still called PCR
+
+#8 november palace square shootings
 
 ##############1946######################
 
+#5 february: Groza govt is recognized by UK and USA; maybe this increases PP/PP gain?
+
 #event for kangaroo court (6 may 1946; Process "of Grand National Treason") and execution of Antonescu (1 june 1946)
 
-#event for 1946 frauded election; might be unfrauded if Tatarescu is not corrupted???
+#event for 19 november 1946 frauded election; might be unfrauded if Tatarescu is not corrupted???
+
+##############1947######################
+
+#10 feb 1947 paris peace treaty might be an event?
+
+#second phase of collectivisation
+
+#15 august 1947 old money is forcefully exchanged; in 2 days 94% of the money is confiscated/exchanged
+
+#25 august paris treaty is ratified
+
+#30 dec 1947; Dej and Groza go to Mihai's residence and demand abdication through blackmail and threat; PCR is renamed to PMR?
+
+##############1948######################
+
+#maybe focus for decomintern-ization of the communist party?
+
+#11 june, a ton of companies are nationalized
+
+##############1949######################
+
+#may 25 https://en.wikipedia.org/wiki/Danube%E2%80%93Black_Sea_Canal
+
+#third phase of collectivisation; collectivisation is less intensive starting with 1953, starts again in 1956 and is finished in 1962
+
+##############1950###################### huge funding for mechanized agriculture before this
+
+##############notes##################### Ceausescu has 2 ways to die before 1965: jilava prison massacre and 4 november 1957 plane accident that he survived

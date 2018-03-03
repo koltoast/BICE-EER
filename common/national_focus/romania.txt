@@ -376,9 +376,9 @@ focus_tree = {
 	focus = {
 		id = ROM_invite_german_advisors
 		icon = GFX_goal_military_agreement_germany
-		prerequisite = { focus = ROM_trade_treaty_with_germany }
-		x = 0
-		y = 1
+		prerequisite = { focus = ROM_appoint_german_friendly_government }
+		x = -1
+		y = 3
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 10
@@ -457,7 +457,7 @@ focus_tree = {
 	focus = {
 		id = ROM_join_axis
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ROM_iron_guard }
+		prerequisite = { focus = ROM_invite_german_advisors }
 		x = 0
 		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
@@ -1986,7 +1986,7 @@ focus_tree = {
 		id = ROM_king_michaels_coup
 		icon = GFX_focus_rom_coup
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 6
+		x = 4
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
@@ -2047,7 +2047,7 @@ focus_tree = {
 		id = ROM_fortify_the_borders
 		icon = GFX_goal_generic_construct_military_purple
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 4
+		x = 0
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
@@ -2253,7 +2253,7 @@ focus_tree = {
 		icon = GFX_focus_research_purple
 		prerequisite = { focus = ROM_revise_the_constitution }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = ROM_revise_the_constitution
 
 		cost = 10
@@ -2454,8 +2454,8 @@ focus_tree = {
 	focus = {
 		id = ROM_appoint_german_friendly_government
 		icon = GFX_focus_ROM_anto
-		prerequisite = { focus = ROM_revise_the_constitution }
-		prerequisite = { focus = ROM_invite_german_advisors }
+		prerequisite = { focus = ROM_institute_royal_dictatorship }
+		prerequisite = { focus = ROM_trade_treaty_with_germany }
 		x = 0
 		y = -2
 		relative_position_id = ROM_join_axis
@@ -2555,7 +2555,7 @@ focus_tree = {
 		id = ROM_iron_guard
 		icon = GFX_focus_ROM_iron_guard
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ROM_appoint_german_friendly_government
 

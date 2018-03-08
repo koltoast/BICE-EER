@@ -262,7 +262,7 @@ add_namespace = rom_eer
 #then the king invites Antonescu to the palace; Antonescu arrives at 4PM. Antonescu doesn't accept to immediately sign the armistice; so he is arrested at 5PM; https://en.wikipedia.org/wiki/King_Michael%27s_Coup
 #event for 23 august 1944 coup (NOT triggered by decision, but by not being able to control the internal situation and getting arrested by michael) (also anniversary event that would become the new national day)
 #finding out about Antonescu being arrested, general Jienescu asks Petre Strihan whether he can paratroop a team to save Antonescu. Petre Strihan chooses to obey the king.
-#first romania white peaces everyone, then gets ~21% communism support for joining faction (?), then joins comintern (?), then declares war on germany and hungary; marzescu law and codreanu spirits are removed/fixed; also change owner of northern bukovina, bessarabia and budjak to SOV; maybe sov puppets romania now?
+#first romania leaves axis; then white peaces everyone, then gets ~21% communism support for joining faction (?), then joins comintern (?), then declares war on germany and hungary; marzescu law and codreanu spirits are removed/fixed; also change owner of northern bukovina, bessarabia and budjak to SOV; maybe sov puppets romania now?
 #Sima forms a romanian govt in exile in Vienna that lasts until germany's capitulation
 #on 6 september 1940 romania had 10 railroad coaches of gold and on 23 august 1944 romania had 40. the extra 30 resulting almost exclusively from trading with germany
 
@@ -282,7 +282,7 @@ add_namespace = rom_eer
 
 #mid-october: churchill meets stalin in moscow and romania's, greece's and bulgaria's fates are decided
 
-#9 november visit of vishinsky in romania
+#9 november visit of vyshinski in romania
 
 ##############1945######################
 
@@ -324,23 +324,61 @@ add_namespace = rom_eer
 
 #event for kangaroo court (6 may 1946; Process "of Grand National Treason") and execution of Antonescu (1 june 1946)
 
-#event for 19 november 1946 frauded election; might be unfrauded if Tatarescu is not corrupted???
+#drought in the summer, maybe 0 population growth?
+
+# approx 8 oct; Constantin Titel Petrescu is removed from PSD
+
+#Ion Mihalache was the vice-president of PNT; PCR was called PCR
+
+#14 nov Dej BPD speech saying he is confident about winning the election
+
+#event for 19 november 1946 frauded election; the results were already decided beforehand; BPD gets over 74%; ~might be unfrauded if Tatarescu is not corrupted???~
+
+#1 dec; king doesn't get any signals from UK and USA so he inaugurates the new parliament
+
+#following 4 months: Dej consolidates his position in the party
 
 ##############1947######################
 
+#maybe a focus for syndicates? CGM?
+
 #10 feb 1947 paris peace treaty might be an event?
 
+#UTM focuses?
+
 #second phase of collectivisation
+
+#14 july; https://en.wikipedia.org/wiki/T%C4%83m%C4%83d%C4%83u_Affair ; PNT leaders tried to leave the country via plane but it was a trap and they got arrested
 
 #15 august 1947 old money is forcefully exchanged; in 2 days 94% of the money is confiscated/exchanged
 
 #25 august paris treaty is ratified
 
-#30 dec 1947; Dej and Groza go to Mihai's residence and demand abdication through blackmail and threat; PCR is renamed to PMR?
+#29 october; legal process against arrested PNT leaders; they are accused of betraying the country and are condemned to life sentence in prison; with this process the historical parties: PNT and PNL are removed from politics
+
+#7 nov; PCR was still called PCR
+
+#28 nov; communists take full control of the economy apparently
+
+#30 dec 1947; Dej and Groza go to Mihai's residence and demand abdication through blackmail and threat; maybe PCR is renamed to PMR?
 
 ##############1948######################
 
 #maybe focus for decomintern-ization of the communist party?
+
+#Patrascanu is removed from the party
+
+#4 feb treaty of friendship and colaboration between soviets and romania
+
+#21 feb first congress of PMR; new communization policies adopted; now the only rivals in the party are Dej and Pauker
+
+#28 march elections of MAN that will make a new constitution
+
+#7 april; MAN of RPR is inaugurated
+
+#13 april; https://en.wikipedia.org/wiki/1948_Constitution_of_Romania
+
+#sovrom focuses for building factories with overpriced german equipment
 
 #11 june, a ton of companies are nationalized
 

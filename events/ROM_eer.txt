@@ -6,6 +6,10 @@ add_namespace = rom_eer
 
 ####make sure romania doesn't join the allies; make sure romania has enough infra to move troops on its own territory and maybe barbarossa
 
+####make events/decisions for romania to give those ukrainian states to germany during barbarossa
+
+####remember to add refineries in muntenia and give romania refinery tech
+
 #introductory event explaining the 1937 election mechanics
 
 ##mon dictatorship focuses should cost and require a lot of PP
@@ -182,7 +186,7 @@ add_namespace = rom_eer
 #somehow no generals defected to the iron guard
 #since he has the support of the germany (and of their army) Antonescu orders his army to start firing on everyone wearing a green-coat (the iron guard uniform)
 #since Antonescu has better armament (MGs, cannons and tanks) while the legionnaires are armed with handguns, rifles and a few SMGs at most
-#event for ending the legionary rebellion (23-24 january 1941?)
+#event for ending the legionary rebellion (23-24 january 1941?) #ROOT = { divisions_in_state = { state = PREV size > 0 } }
 #23: horia sima understands that all hope is lost and orders the iron guard to stop combating and resisting; apparently the fighting stops on 23; Sima escapes to germany and is kept for germany's interests waiting for the iron guard to resurface
 
 #the royal decree for the abolishment of the national legionnaire state only comes out on 14 feb even tho de-facto it stopped existing on 23 jan

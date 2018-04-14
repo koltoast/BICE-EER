@@ -475,7 +475,10 @@ focus_tree = {
 		}
 
 		available = {
-			GER = { is_faction_leader = yes }
+			GER = { 
+				is_faction_leader = yes
+				has_government = fascism
+			}
 			is_in_faction = no
 			NOT = { has_war_with = GER }
 			is_subject = no
@@ -681,7 +684,7 @@ focus_tree = {
 #
 #		cancel_if_invalid = yes
 #		continue_if_invalid = no
-#		available_if_capitulated = yes
+#		available_if_capitulated = no
 #
 #		complete_tooltip = {
 #
@@ -696,6 +699,7 @@ focus_tree = {
 #				limit = {
 #					CZE = { 
 #						exists = yes 
+#						has_capitulated = no
 #						is_subject = no
 #						is_puppet = no
 #						is_in_faction = no
@@ -707,8 +711,9 @@ focus_tree = {
 #				limit = {
 #					POL = { 
 #						exists = yes 
+#						has_capitulated = no
 #						is_subject = no
-#						#is_puppet = no
+#						is_puppet = no
 #						is_in_faction = no
 #					}
 #				}
@@ -2100,8 +2105,8 @@ focus_tree = {
 				has_country_leader = { id = 550 }
 			}
 			monarchism > 0.99
-			has_national_unity > 89
-			#has_war_support > 99
+			has_stability > 0.99
+			has_war_support > 0.99
 		}
 
 		bypass = {
@@ -2392,7 +2397,7 @@ focus_tree = {
 				popularity = 0.35
 				ideology = communism
 			}
-			add_national_unity = -0.05
+			add_stability = -0.05
 			add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = SOV }
 			SOV = { add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = ROOT } }
 		}
@@ -2523,7 +2528,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ROM_mihail_sturdza
-			add_national_unity = -0.05
+			add_stability = -0.05
 			add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GER }
 			GER = { add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = ROOT } }
 			
@@ -2795,7 +2800,7 @@ focus_tree = {
 				popularity = 0.35
 				ideology = conservatism
 			}
-			add_national_unity = -0.05
+			add_stability = -0.05
 			add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ENG }
 			ENG = { add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ROOT } }
 		}
@@ -3074,7 +3079,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = ROM_ground_support
+				name = ROM_air_defense
+				#name = ROM_ground_support
 				bonus = 0.5
 				uses = 2
 				category = cat_operational_integrity
@@ -3618,6 +3624,10 @@ focus_tree = {
 					gfx = GFX_Portrait_romania_barbu_paraianu
 					traits = {  }
 					skill = 2
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 3
+					logistics_skill = 1
 				}
 			}
 		}
@@ -3699,7 +3709,7 @@ focus_tree = {
 				division_template = {
 					name = "Vanatori de munte"
 					priority = 2
-	
+					division_names_group = ROM_MTN_01
 					regiments = {
 						mountaineers = { x = 0 y = 0 }
 						mountaineers = { x = 0 y = 1 }
@@ -3897,8 +3907,8 @@ focus_tree = {
 					}
 					division_template = {
 						name = "Royal Guards Division"
-						priority = 2
-		
+						division_names_group = ROM_INF_01
+						
 						regiments = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
@@ -3909,19 +3919,23 @@ focus_tree = {
 							infantry = { x = 1 y = 2 }
 				
 		    	   		 	infantry = { x = 2 y = 0 }
-							artillery_brigade = { x = 2 y = 1 }
-							artillery_brigade = { x = 2 y = 2 }
+							
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
 						}
+						
 						support = {
 							engineer = { x = 0 y = 0 }
 							recon = { x = 0 y = 1 }
 						}
+						
+						priority = 2
 					}
 					else = {
 						division_template = {
 							name = "Royal Guards Division"
 							priority = 2
-			
+							division_names_group = ROM_INF_01
 							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -3932,8 +3946,9 @@ focus_tree = {
 								infantry = { x = 1 y = 2 }
 					
 			    	   		 	infantry = { x = 2 y = 0 }
-								artillery_brigade = { x = 2 y = 1 }
-								artillery_brigade = { x = 2 y = 2 }
+								
+								artillery_brigade = { x = 3 y = 0 }
+								artillery_brigade = { x = 3 y = 1 }
 							}
 							support = {
 								engineer = { x = 0 y = 0 }
@@ -4032,7 +4047,7 @@ focus_tree = {
 					division_template = {
 						name = "Blindata Pz Division"
 						priority = 2
-		
+						division_names_group = ROM_ARM_01
 						regiments = {
 							medium_armor_axis = { x = 0 y = 0 }
 							medium_armor_axis = { x = 0 y = 1 }
@@ -4062,7 +4077,7 @@ focus_tree = {
 							division_template = {
 								name = "Blindata Division"
 								priority = 2
-				
+								division_names_group = ROM_ARM_01
 								regiments = {
 									medium_armor = { x = 0 y = 0 }
 									medium_armor = { x = 0 y = 1 }
@@ -4092,7 +4107,7 @@ focus_tree = {
 									division_template = {
 										name = "Lt Blindata Pz Division"
 										priority = 2
-						
+										division_names_group = ROM_ARM_01
 										regiments = {
 											light_armor_axis = { x = 0 y = 0 }
 											light_armor_axis = { x = 0 y = 1 }
@@ -4122,7 +4137,7 @@ focus_tree = {
 										division_template = {
 											name = "Lt Blindata Division"
 											priority = 2
-							
+											division_names_group = ROM_ARM_01
 											regiments = {
 												light_armor = { x = 0 y = 0 }
 												light_armor = { x = 0 y = 1 }
@@ -4173,7 +4188,8 @@ focus_tree = {
 					has_tech = tech_recon
 					}
 				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } 
+					limit = {
+						ROOT = { has_full_control_of_state = PREV } 
 					}
 					
 					prioritize = { 46 }
@@ -4473,7 +4489,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = ROM_torpedo_bombers
+				name = ROM_modern_destroyers
+				#name = ROM_torpedo_bombers
 				bonus = 0.75
 				uses = 1
 				category = dd_tech

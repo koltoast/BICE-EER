@@ -2,4 +2,16 @@
 # Romanian Eastern Europe Rework Decisions
 ###########################
 
-#decision for turning arms against germany, only if the current power does it, whatever that power may be i guess
+#decision for arresting Codreanu; needs a lot of PP and will be harder if he isn't already on trial/accused
+
+#decision for killing Codreanu; costs a lot of PP
+
+#decision for appointing Antonescu as prime minister (as Carol II)
+
+#decision for giving full power to Antonescu (as Carol II)
+
+#decision for making Carol II abdicate in favor of his son (as Antonescu)
+
+#decision for ending the legionnaire revolt; needs/costs some PP and requires troops in bucharest
+
+#decision for turning arms against germany, only if the current power does it, whatever that power may be i guess; would probably need to include a surrender; maybe it can be done in a generic way so it works in ahistorical scenarios too?

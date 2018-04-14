@@ -155,7 +155,7 @@ country_event = {
 		}
 		monarchism_minus_20 = yes
 		fascism_plus_5 = yes
-		add_national_unity = -0.10
+		add_stability = -0.10
 		add_political_power = -35
 	}
 }

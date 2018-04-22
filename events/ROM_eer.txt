@@ -366,7 +366,7 @@ add_namespace = rom_eer
 
 #30 dec 1947; Dej and Groza go to Mihai's residence and demand abdication through blackmail and threat; maybe PCR is renamed to PMR?
 
-##############1948######################
+##############1948###################### #add a focus for work collectives?? more UTM focuses?
 
 #maybe focus for decomintern-ization of the communist party?
 

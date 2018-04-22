@@ -4,6 +4,12 @@ oob = "ROM_1936"
 
 set_research_slots = 4
 
+set_convoys = 250
+
+set_stability = 0.6
+
+set_war_support = 0.25
+
 set_cosmetic_tag = ROM_MONARCHY
 
 #special characters: ăâşŞţŢ
@@ -11,10 +17,8 @@ set_cosmetic_tag = ROM_MONARCHY
 # Starting tech
 set_technology = {
 	BICE_sub_balance = 1
-	#BICE_airrange_balance = 1
 	################### infantry ################
 	infantry_weapons = 1
-	
 	infantry_weapons1 = 1
 	tech_mountaineers = 1
 	semi_motorised_infantry = 1
@@ -51,62 +55,57 @@ set_technology = {
 	generic_naval = 1
 	early_destroyer = 1
 	################# economy #################
-	
+	################# WW1 doctrines #################
 	ww1_infantry = 1
 	infantry_charge = 1
 	small_unit_raids = 1
 	night_patrols = 1
-	
 	complex_trench_systems = 1
 	barbed_wire = 1
 	pillboxes = 1
 	basic_MG_defences = 1
-	
 	ww1_artillery = 1
 	artillery_concentration = 1
 	artillery_observers = 1
 	balloon_observers = 1
 	foot_runners = 1
 	carrier_pidgeons = 1
-
-
 	mobile_doctrines = 1
 	cavalry_charges = 1
 	cavalry_dismounting = 1
-	
-
 	ww1_battlefield_support = 1
 	weather_reporting = 1
 	terrain_mapping = 1
-	
 	first_aid_stations = 1
-	}
-
- #Ideas
-add_ideas = { 	
-		constitutional_monarchy
-		export_focus
-		tax_average
-		tariffs_average
-		
-		civilian_economy
-		press_free
-		key_industries
-		labor_none
-		fdi_regulated
-		
-		cons_volunteer
-		foreign_volunteers
-		mob_reserve
-		train_low
-		age_19
-		security_minor_restrictions
-		officer_train_low
-		edu_low
-		
-		unity_divided_nation	
-		foreign_neutral
+	################# doctrines #################
 }
+#Ideas
+add_ideas = { 	
+	constitutional_monarchy
+	export_focus
+	tax_average
+	tariffs_average
+	
+	civilian_economy
+	press_free
+	key_industries
+	labor_none
+	fdi_regulated
+	
+	cons_volunteer
+	foreign_volunteers
+	mob_reserve
+	train_low
+	age_19
+	security_minor_restrictions
+	officer_train_low
+	edu_low
+	
+	unity_divided_nation	
+	foreign_neutral
+	neutrality_idea
+}
+
 if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
@@ -122,7 +121,6 @@ if = {
 	give_guarantee = GRE
 	give_guarantee = TUR
 }
-add_ideas = neutrality_idea
 
 #Kick off kings crazy life #removed since events are too random and the king wasn't really hated THAT much
 #if = {
@@ -136,6 +134,7 @@ add_ideas = neutrality_idea
 #		}
 #	}
 #}
+
 set_country_flag = constitutional_monarchy
 set_country_flag = export_focus
 set_country_flag = tax_average
@@ -156,124 +155,6 @@ set_country_flag = edu_low
 set_country_flag = unity_divided_nation
 set_country_flag = foreign_neutral
 
-set_convoys = 250
-1939.1.1 = {
-	
-	remove_ideas = neutrality_idea
-
-	add_political_power = 1198
-	
-	if = {
-		limit = {
-			has_dlc = "Death or Dishonor"
-		}
-		complete_national_focus = ROM_preserve_greater_romania
-		complete_national_focus = ROM_army_maneuvers
-		complete_national_focus = ROM_expand_the_air_force
-		complete_national_focus = ROM_civil_works
-		complete_national_focus = ROM_agrarian_reform
-		complete_national_focus = ROM_local_development
-		complete_national_focus = ROM_army_war_college
-		complete_national_focus = ROM_danubian_transport_network
-		complete_national_focus = ROM_malaxa
-		complete_national_focus = ROM_flexible_foreign_policy
-		complete_national_focus = ROM_air_superiority
-		complete_national_focus = ROM_expand_the_galati_shipyards
-		complete_national_focus = ROM_trade_treaty_with_germany
-		complete_national_focus = ROM_iar_80
-		complete_national_focus = ROM_appoint_allied_friendly_government
-		complete_national_focus = ROM_cas
-		complete_national_focus = ROM_royal_guards_divisions
-		complete_national_focus = ROM_the_zb_53
-		complete_national_focus = ROM_vanatori_de_munte
-		complete_national_focus = ROM_hunedoara_steel_works
-		complete_national_focus = ROM_appoint_german_friendly_government
-		complete_national_focus = ROM_invite_german_advisors
-		complete_national_focus = ROM_iron_guard
-
-		#King stuff
-		unlock_national_focus = ROM_institute_royal_dictatorship
-		unlock_national_focus = ROM_revise_the_constitution
-		create_country_leader = {
-			name = "Carol II"
-			desc = "POLITICS_CAROL_II_DESC"
-			picture = GFX_Portrait_romania_Carol_II	
-			expire = "1965.1.1"
-			ideology = despotism
-			traits = {
-				neutral
-				hedonist
-				camarilla_leader
-			}
-			id = 551 ##or maybe 550?
-		}
-		#ROM = {
-		#	#Pick from list of the sane events first
-		#	random_list = {
-		#		100 = { country_event = { id = DOD_romania.80 days = 2 random = 20 } }
-		#	}
-		#}
-
-		else = {		
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = large_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
-	
-	oob = "ROM_1939"
-	set_technology = {
-		fighter1 = 1
-		early_bomber = 1
-		tactical_bomber1 = 1
-		basic_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
-		tech_recon = 1
-		infantry_weapons2 = 1
-		hmg = 1
-		basic_submarine = 1
-
-		#doctrines
-		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-		
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
-
 set_politics = {
 
 	parties = {
@@ -291,7 +172,7 @@ set_politics = {
 			popularity = 16
 		}
 		communism = {
-			popularity = 0
+			popularity = 0 #communism was banned and the party only had ~800 members and functioned in great secrecy
 		}
 		monarchism = { 
 			popularity = 14
@@ -306,49 +187,15 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			conservatism = { 
-				popularity = 40
-			}
-
-			fascism = {
-				popularity = 44
-			}
-			
-			communism = {
-				popularity = 2
-			}
-			
-			monarchism = { 
-				popularity = 2
-			}
-
-		    neutrality = { 
-			   popularity = 12		
-			}
-		}
-		
-		ruling_party = fascism
-		last_election = "1939.7.15"
-		election_frequency = 48
-		elections_allowed = no
-	}
-}
+##### Country Leaders #####
 create_country_leader = {
 	name = "Carol II"
 	desc = "POLITICS_CAROL_II_DESC"
 	picture = GFX_Portrait_romania_Carol_II			
 	expire = "1965.1.1"
 	ideology = absolutism
-	traits = {
-		hedonist
-		camarilla_leader
-	}
-	id = 550 ##maybe 551??
+	traits = { hedonist camarilla_leader }
+	id = 2200 ##maybe 2201; 550 or 551??
 }
 create_country_leader = {
 	name = "Gheorghe Tătărescu"
@@ -357,75 +204,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = center_right
 	traits = {
-		#
 	}
-	id = 552
-}
-create_country_leader = {
-	name = "Gheorghe Gheorghiu-Dej"
-	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
-	picture = "Portrait_Romania_Gheorghe_Gheorghiu_Dej.tga"
-	expire = "1965.3.19"
-	ideology = stalinism
-	traits = {
-		#
-	}
-	id = 554
-}
-
-create_country_leader = {
-	name = "Constantin Titel Petrescu"
-	desc = "Leader of the Social Democrats"
-	picture = "gfx/leaders/ROM/Portrait_Constantin_Titel_Petrescu.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy
-	traits = {
-		socialist
-	}
-	id = 555
-}
-create_country_leader = {
-	name = "Armand Călinescu"
-	desc = "POLITICS_ARMAND_CALINESCU_DESC"
-	picture = "gfx/leaders/ROM/Portrait_Romania_Armand_Calinescu.dds"
-	expire = "1965.1.1"
-	ideology = social_conservatism
-	traits = {
-		conservative
-	}
-	id = 556
-}
-create_country_leader = {
-	name = "Ion Antonescu"
-	desc = "POLITICS_ION_ANTONESCU_DESC"
-	picture = "Portrait_Romania_Ion_Antonescu.dds"
-	expire = "1965.1.1"
-	ideology = military_dictatorship
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Octavian Goga"
-	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
-	picture = "Portrait_Romania_Octavian_Goga.dds"
-	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-		#
-	}
-	id = 557
-}
-create_country_leader = {
-	name = "Corneliu Zelea Codreanu"
-	desc = "Leader of the Fascists"
-	picture = "gfx/leaders/ROM/Portrait_Corneliu_Zelea_Codreanu.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		fascist
-	}
-	id = 553
+	id = 2202 #552
 }
 create_country_leader = {
 	name = "Horia Sima"
@@ -439,37 +219,92 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "Corneliu Zelea Codreanu"
-	desc = "POLITICS_CORNELIU_CODREANU_DESC"
-	picture = "Portrait_Romania_Corneliu_Zelea_Codreanu.tga"
-	expire = "1938.11.11"
+	desc = "Leader of the Fascists" #POLITICS_CORNELIU_CODREANU_DESC
+	picture = "gfx/leaders/ROM/Portrait_Corneliu_Zelea_Codreanu.dds" #Portrait_Romania_Corneliu_Zelea_Codreanu.tga
+	expire = "1965.1.1" #1938.11.29/30
 	ideology = legionnairism
-	traits = {
-		#
-	}
-	id = 558
+	traits = { fascist } #charismatic
+	id = 2203 #553
 }
-###ARMY / AIRFORCE / NAVY
+create_country_leader = {
+	name = "Constantin Ion Parhon"
+	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
+	picture = "Portrait_Romania_Constantin_Parhon.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = { communist }
+	#id = 2204; used to be 554
+}
+create_country_leader = {
+	name = "Gheorghe Gheorghiu-Dej"
+	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
+	picture = "Portrait_Romania_Gheorghe_Gheorghiu_Dej.tga"
+	expire = "1965.3.19"
+	ideology = stalinism
+	traits = { communist } #?
+	id = 2204
+}
+create_country_leader = {
+	name = "Constantin Titel Petrescu"
+	desc = "Leader of the Social Democrats"
+	picture = "gfx/leaders/ROM/Portrait_Constantin_Titel_Petrescu.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = { socialist }
+	id = 2205 #555
+}
+create_country_leader = {
+	name = "Armand Călinescu"
+	desc = "POLITICS_ARMAND_CALINESCU_DESC"
+	picture = "gfx/leaders/ROM/Portrait_Romania_Armand_Calinescu.dds"
+	expire = "1965.1.1"
+	ideology = social_conservatism
+	traits = { conservative }
+	id = 2206 #556
+}
+create_country_leader = {
+	name = "Ion Antonescu"
+	desc = "POLITICS_ION_ANTONESCU_DESC"
+	picture = "Portrait_Romania_Ion_Antonescu.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	#traits = { fascist } general
+	id = 2208 #558
+}
+create_country_leader = {
+	name = "Octavian Goga"
+	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
+	picture = "Portrait_Romania_Octavian_Goga.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism #corporatism
+	traits = {
+	}
+	id = 2207 #557
+}
+##### Field Marshals #####
 create_field_marshal = {
 	name = "Petre Dumitrescu"
 	gfx = GFX_Portrait_romania_petre_dumitrescu
 	traits = { offensive_doctrine_FM logistics_wizard_FM }
 	skill = 4
-	id = 559
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+	id = 2209
 }
 create_field_marshal = {
 	name = "Ion Antonescu"
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
 	traits = { offensive_doctrine_FM }
 	skill = 4
-	id = 560
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+	id = 2210
 }
-create_corps_commander = {
-	name = "Ioan Mihail Racoviţă"
-	gfx = GFX_Portrait_romania_ioan_mihail_racovita
-	traits = { Competent_General  hill_fighter_CC }
-	skill = 3
-}
-
+##### Corps Commanders #####
 create_corps_commander = {
 	name = "Nicolae Ciupercă"
 	picture = "Portrait_romania_ciuperca.tga"
@@ -488,20 +323,7 @@ create_corps_commander = {
 	traits = { }
 	skill = 1
 }
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-
 create_corps_commander = {
-		name = "Gheorghe Avramescu"
-		gfx = GFX_Portrait_romania_gheorghe_avramescu
-		traits = { }
-		skill = 3
-	}
-
-}
-	create_corps_commander = {
 	name = "Constantin Constantinescu"
 	portrait_path = "gfx/leaders/ROM/Portrait_Romania_Constantin_Constantinescu_Claps.tga"
 	traits = {}
@@ -551,789 +373,879 @@ create_corps_commander = {
 	}
 	skill = 1
 }	
-
 create_corps_commander = {
-	name = "Aldea"
+	name = "Aldea, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Decent_General }
 	skill = 3
-	id = 561
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+	id = 2211
 }
-
 create_corps_commander = {
-	name = "Alexiu"
+	name = "Alexiu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Decent_General defensive_doctrine_CC fortress_buster_CC }
+	traits = { Decent_General infantry_officer defensive_doctrine_CC fortress_buster }
 	skill = 2
-	id = 562
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 2212
 }
-
 create_corps_commander = {
-	name = "Antonescu  I.A."
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { Bad_General }
-	skill = 1
-	id = 563
-}
-
-create_corps_commander = {
-	name = "Antonescu  I.V."
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Awesome_General }
-	skill = 4
-	id = 564
-}
-
-create_corps_commander = {
-	name = "Antonescu  P."
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Bad_General fortress_buster_CC }
-	skill = 1
-	id = 565
-}
-
-create_corps_commander = {
-	name = "Argeseanu"
+	name = "Argeseanu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Decent_General }
+	traits = { Decent_General infantry_officer }
 	skill = 2
-	id = 566
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 2213
 }
-
 create_corps_commander = {
-	name = "Argetoianu"
+	name = "Argetoianu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { Bad_General }
 	skill = 1
-	id = 567
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2214
 }
-
 create_corps_commander = {
-	name = "Avramescu"
+	name = "Avramescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { Competent_General offensive_doctrine_CC }
+	traits = { Competent_General infantry_officer offensive_doctrine_CC }
 	skill = 3
-	id = 568
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 2215
 }
-
 create_corps_commander = {
-	name = "Badescu"
+	name = "Badescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	traits = { Bad_General }
 	skill = 1
-	id = 569
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2216
 }
-
 create_corps_commander = {
-	name = "Baldescu"
+	name = "Baldescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Decent_General }
+	traits = { Decent_General infantry_officer trait_cautious }
 	skill = 3
-	id = 570
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 1
+	id = 2217
 }
-
 create_corps_commander = {
-	name = "Bardan"
+	name = "Bardan, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Competent_General }
+	traits = { Competent_General armor_officer }
 	skill = 2
-	id = 571
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 2218
 }
-
 create_corps_commander = {
-	name = "Boiteanu"
+	name = "Boiteanu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { Decent_General offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 2219
 }
-
 create_corps_commander = {
-	name = "Bratescu"
+	name = "Bratescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Bad_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2220
 }
-
 create_corps_commander = {
-	name = "Bucliu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Bad_General }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Calotescu"
+	name = "Calotescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	traits = { Bad_General }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2221
 }
-
 create_corps_commander = {
-	name = "Caracas"
+	name = "Caracas, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Bad_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2222
 }
-
 create_corps_commander = {
-	name = "Carlaont"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Bad_General }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Ceausu"
+	name = "Ceausu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { Decent_General fortress_buster_CC }
+	traits = { Decent_General fortress_buster }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2223
 }
-
 create_corps_commander = {
-	name = "Chirnoaga"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Bad_General }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Cialâk"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Bad_General }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Ciuperca"
+	name = "Ciuperca, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Competent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 2224
 }
-
 create_corps_commander = {
-	name = "Codreanu  I."
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Bad_General offensive_doctrine_CC old_guard }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Constantinescu-Claps"
+	name = "Constantinescu-Claps, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Awesome_General defensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 2225
 }
-
 create_corps_commander = {
-	name = "Cosma"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Competent_General engineer_CC fortress_buster_CC }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Dascalescu"
+	name = "Dascalescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Competent_General }
+	traits = { Competent_General armor_officer }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 2226
 }
-
 create_corps_commander = {
-	name = "Dimitriu"
+	name = "Dimitriu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Bad_General }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2227
 }
-
 create_corps_commander = {
-	name = "Dobre"
+	name = "Dobre, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Competent_General panzer_leader }
+	traits = { Competent_General armor_officer panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 2228
 }
-
 create_corps_commander = {
-	name = "Dragalina"
+	name = "Dragalina, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Decent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 2229
 }
-
 create_corps_commander = {
-	name = "Dragomir"
+	name = "Dragomir, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Bad_General }
+	traits = { old_guard Bad_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2230
 }
-
 create_corps_commander = {
-	name = "Dumitrache"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Decent_General commando_CC }
-	skill = 2
-}
-
-create_corps_commander = {
-
-	name = "Eftimiu"
+	name = "Eftimiu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Bad_General }
+	traits = { Bad_General commando }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2231
 }
-
 create_corps_commander = {
-	name = "Enescu"
+	name = "Enescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-
-	traits = { Decent_General defensive_doctrine_CC old_guard }
+	traits = { old_guard Decent_General defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 2232
 }
-
 create_corps_commander = {
-	name = "Florescu"
+	name = "Florescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Decent_General defensive_doctrine_CC old_guard }
-	skill = 1
+	traits = { old_guard Decent_General defensive_doctrine_CC }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 2233
 }
-
 create_corps_commander = {
 	name = "Georgescu  A.I.I."
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Competent_General defensive_doctrine_CC old_guard }
+	traits = { old_guard Competent_General infantry_officer defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+	id = 2234
 }
-
 create_corps_commander = {
-	name = "Georgescu  I.G."
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Decent_General fortress_buster_CC old_guard }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Gherghe"
+	name = "Gherghe,"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Decent_General panzer_leader }
+	traits = { Decent_General armor_officer panzer_leader }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+	id = 2235
 }
-
 create_corps_commander = {
-	name = "Ghineraru"
+	name = "Ghineraru, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Bad_General defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2236
 }
-
 create_corps_commander = {
-	name = "Glimnitz"
+	name = "Glimnitz, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	traits = { Decent_General trickster_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2237
 }
-
 create_corps_commander = {
-	name = "Glogojanu"
+	name = "Glogojanu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	traits = { Decent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2238
 }
-
 create_corps_commander = {
-	name = "Greceanu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Bad_General commando_CC }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Iacobici"
+	name = "Iacobici, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { Decent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2239
 }
-
 create_corps_commander = {
-	name = "Iliescu"
+	name = "Iliescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Bad_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2240
 }
-
 create_corps_commander = {
-	name = "Ilcusu"
+	name = "Ilcusu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Bad_General defensive_doctrine_CC old_guard }
+	traits = { old_guard Bad_General defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2241
 }
-
 create_corps_commander = {
-	name = "Ioanitiu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Bad_General }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Ionascu"
+	name = "Ionascu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Competent_General fortress_buster_CC }
+	traits = { Competent_General fortress_buster }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 2242
 }
-
 create_corps_commander = {
-	name = "Ionescu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Bad_General offensive_doctrine_CC }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Ionescu-Sinaia"
+	name = "Ionescu-Sinaia, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { Competent_General commando_CC }
+	traits = { Competent_General infantry_officer commando }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 2243
 }
-
 create_corps_commander = {
-	name = "Korne"
+	name = "Korne, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Awesome_General offensive_doctrine_CC panzer_leader }
+	traits = { Awesome_General armor_officer offensive_doctrine_CC panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 2244
 }
-
 create_corps_commander = {
-	name = "Lacatusu"
+	name = "Lacatusu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Competent_General fortress_buster_CC commando_CC }
+	traits = { Competent_General infantry_officer fortress_buster commando }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 2245
 }
-
 create_corps_commander = {
-	name = "Lascar"
+	name = "Lascar, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Masterful_General }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	id = 2246
 }
-
 create_corps_commander = {
-	name = "Leoveanu"
+	name = "Leoveanu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { Competent_General }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 2247
 }
-
 create_corps_commander = {
-	name = "Leventi"
+	name = "Leventi, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { Decent_General defensive_doctrine_CC old_guard }
+	traits = { old_guard Decent_General defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 2248
 }
-
 create_corps_commander = {
-	name = "Lindeiner"
+	name = "Lindeiner, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Competent_General commando_CC }
+	traits = { Competent_General commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 2249
 }
-
 create_corps_commander = {
-	name = "Macici"
+	name = "Macici, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	traits = { Decent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2250
 }
-
 create_corps_commander = {
-	name = "Manafu"
+	name = "Manafu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Competent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 2251
 }
-
 create_corps_commander = {
-	name = "Mazareanu"
+	name = "Mazareanu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Decent_General commando_CC }
+	traits = { Decent_General commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2252
 }
-
 create_corps_commander = {
-	name = "Mazarini"
+	name = "Mazarini, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Bad_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2253
 }
-
 create_corps_commander = {
-	name = "Mihail"
+	name = "Mihail, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Decent_General logistics_wizard_CC old_guard }
+	traits = { old_guard Decent_General logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 2254
 }
-
 create_corps_commander = {
-	name = "Mitranescu"
+	name = "Nasta, "
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { Decent_General fortress_buster }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2255
+}
+create_corps_commander = {
+	name = "Nedelea, "
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = { Competent_General logistics_wizard_CC trait_engineer }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 2256
+}
+create_corps_commander = {
+	name = "Nicolescu-Cociu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	traits = { Competent_General }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 2257
 }
-
 create_corps_commander = {
-	name = "Mociulschi"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Decent_General commando_CC }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Mosiu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Bad_General fortress_buster_CC }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Nasta"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { Decent_General fortress_buster_CC }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Nedelea"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Competent_General logistics_wizard_CC engineer_CC }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Nicolescu-Cociu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Competent_General }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Opris"
+	name = "Opris, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Bad_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2258
 }
-
 create_corps_commander = {
-	name = "Palangeanu"
+	name = "Palangeanu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { Bad_General }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2259
 }
-
 create_corps_commander = {
-	name = "Pantazi"
+	name = "Pantazi, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Competent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 2260
 }
-
 create_corps_commander = {
-	name = "Pascu"
+	name = "Pascu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Competent_General commando_CC }
+	traits = { Competent_General infantry_officer trait_reckless commando }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 1
+	id = 2261
 }
-
 create_corps_commander = {
-	name = "Petrescu"
+	name = "Petrescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Competent_General engineer_CC }
+	traits = { Competent_General trait_engineer }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 2262
 }
-
 create_corps_commander = {
-	name = "Phleps"
+	name = "Phleps, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Masterful_General offensive_doctrine_CC }
+	traits = { Masterful_General infantry_officer career_officer offensive_doctrine_CC }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	id = 2263
 }
-
 create_corps_commander = {
-	name = "Popescu  D."
+	name = "Popescu, D."
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Decent_General offensive_doctrine_CC old_guard }
+	traits = { old_guard Decent_General offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 2264
 }
-
 create_corps_commander = {
-	name = "Popescu  T.D."
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { Competent_General offensive_doctrine_CC }
-	skill = 2
+	name = "Ioan Mihail Racoviţă"
+	gfx = GFX_Portrait_romania_ioan_mihail_racovita
+	traits = { Competent_General infantry_officer hill_fighter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 2265
 }
-
 create_corps_commander = {
-	name = "Potopeanu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Bad_General }
-	skill = 1
-}
-
-
-create_corps_commander = {
-	name = "Radescu"
+	name = "Radescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Bad_General old_guard }
+	traits = { old_guard Bad_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2266
 }
-
 create_corps_commander = {
-	name = "Radulescu"
+	name = "Radulescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Bad_General fortress_buster_CC }
+	traits = { Bad_General fortress_buster }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2267
 }
-
 create_corps_commander = {
-	name = "Rascu"
+	name = "Rascu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Decent_General }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2268
 }
-
 create_corps_commander = {
-	name = "Rosetti-Balanescu"
+	name = "Rosetti-Balanescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Bad_General fortress_buster_CC }
+	traits = { Bad_General fortress_buster }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2269
 }
-
 create_corps_commander = {
-	name = "Rozin"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Competent_General offensive_doctrine_CC }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Saidac"
+	name = "Saidac, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Decent_General }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2270
 }
-
 create_corps_commander = {
-	name = "Sanatescu"
+	name = "Sanatescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { Awesome_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+	id = 2271
 }
-
 create_corps_commander = {
-	name = "Savoia"
+	name = "Savoia, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { Competent_General offensive_doctrine_CC old_guard }
+	traits = { old_guard Competent_General offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 2272
 }
-
 create_corps_commander = {
-	name = "Schmidt"
+	name = "Schmidt, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Decent_General panzer_leader }
+	traits = { Decent_General armor_officer panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 2273
 }
-
 create_corps_commander = {
-	name = "Schwab"
+	name = "Schwab, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Competent_General offensive_doctrine_CC }
+	traits = { Competent_General infantry_officer offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 2274
 }
-
 create_corps_commander = {
-	name = "Seracin"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Bad_General }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Sion"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Decent_General panzer_leader }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Sova"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { Decent_General }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Stavrat"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { Decent_General }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Stavrescu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { Competent_General offensive_doctrine_CC }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Steflea"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { Decent_General }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Stoenescu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Decent_General }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Stoicanescu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { Bad_General }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Tataranu"
+	name = "Tataranu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	traits = { Competent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 2275
 }
-
 create_corps_commander = {
-	name = "Tatarescu"
+	name = "Tatarescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	traits = { Bad_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2276
 }
-
 create_corps_commander = {
-	name = "Tenescu"
+	name = "Tenescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Competent_General defensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 2277
 }
-
 create_corps_commander = {
-	name = "Teodorini"
+	name = "Teodorini, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { Decent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2278
 }
-
 create_corps_commander = {
-	name = "Trincu"
+	name = "Trincu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { Decent_General defensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2279
 }
-
 create_corps_commander = {
-	name = "Vasiliu"
+	name = "Vasiliu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	traits = { Bad_General }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2280
 }
-
 create_corps_commander = {
-	name = "Visarion"
+	name = "Visarion, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	traits = { Decent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2281
 }
-
 create_corps_commander = {
-	name = "Voiculescu"
+	name = "Voiculescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	traits = { Bad_General }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 2282
+}
+create_corps_commander = {
+	name = "Zaharescu,"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { Decent_General trait_engineer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 2283
 }
 
 create_corps_commander = {
-	name = "Zaharescu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { Decent_General engineer_CC }
+	name = "Avramescu, Gheorghe"
+	gfx = GFX_Portrait_romania_gheorghe_avramescu
+	traits = { }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+	id = 2284
 }
-
 create_navy_leader = {
-	name = "Caranfil"
+	name = "Macellariu, Horia"
+	gfx = "GFX_Portrait_romania_horia_macellariu"
+	traits = { spotter }
+	skill = 2
+	id = 2285
+}
+##### Navy Leaders #####
+create_navy_leader = {
+	name = "Caranfil, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 2286
 }
-
 create_navy_leader = {
-	name = "Colesca"
+	name = "Colesca, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 2287
 }
-
 create_navy_leader = {
-	name = "Georgescu"
+	name = "Georgescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
 	traits = { }
 	skill = 1
+	id = 2288
 }
-
 create_navy_leader = {
-	name = "Iliesca"
+	name = "Iliesca, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 2289
 }
-
 create_navy_leader = {
-	name = "Macellariu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { blockade_runner }
-	skill = 1
-}
-
-create_navy_leader = {
-	name = "Nicolai Duca di Silvania"
+	name = "Silvania, Nicolai Duca di"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
 	traits = { }
 	skill = 1
+	id = 2290
 }
-
 create_navy_leader = {
-	name = "Rosca"
+	name = "Rosca, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 2291
 }
-
 create_navy_leader = {
-	name = "Zacliescu"
+	name = "Zacliescu, "
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 2292
 }
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-
-create_navy_leader = {
-		name = "Horia Macellariu"
-		gfx = "GFX_Portrait_romania_horia_macellariu"
-		traits = { spotter }
-		skill = 2
-	}
-}
-### Ship Variants ###
+##### Ship Variants #####
 ####################################################
 ## BICE Variants
 ####################################################
@@ -1347,3 +1259,4 @@ create_equipment_variant = {
 		ship_anti_air_upgrade = 1
 	}
 }
+### EOF ###

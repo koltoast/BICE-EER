@@ -529,7 +529,7 @@ units = {
 
 ### Fortele Aeriene Regale ale României (FFAR) ###
 air_wings = {
-	46 = {
+	969 = {
 		# Grup 1 Avion de Vanatoare -- PZL P.11 fighters
 		fighter_equipment_0 = {
 			owner = "ROM" 
@@ -538,13 +538,15 @@ air_wings = {
 		}
 
 	
-			ace = { # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+		ace = { # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
 			modifier="fighter_genius"
 			name="Alexandru"
-			surname="Şerbănescu"
+			surname="Serbanescu"
+			#surname="Şerbănescu" #special characters will cause the portrait to not work
 			callsign="Alecu"
 			portrait = 1
-			}
+			#portrait = GFX_ROM_ace_Alexandru_Serbanescu #apparently using GFX interface files for ace portraits doesn't work
+		}
 	}
 	
 	79 = {
@@ -560,6 +562,7 @@ air_wings = {
 			surname="Cantacuzino"
 			callsign="Bâzu"
 			portrait = 2 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+			#portrait = GFX_ROM_ace_Constantin_Cantacuzino #2 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
 		}
 		
 	}
@@ -578,6 +581,7 @@ air_wings = {
 			surname="Dicezare"
 			callsign="Arici"
 			portrait = 3
+			#portrait = GFX_ROM_ace_Ioan_Dicezare #3
 		}
 	}
 

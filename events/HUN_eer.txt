@@ -1,9 +1,11 @@
 ﻿###########################
-# Hungarian Events
+# antihungary Events
 ###########################
 
+add_namespace = antihungary
 add_namespace = hungary
 
+#CRO gets HUN_expansion country flag
 country_event = {
 	id = hungary.8
 	title = hungary.8.t
@@ -14,24 +16,25 @@ country_event = {
 	
 	trigger = {
 		OR = {
-		tag = SER
-		tag = CRO
+			tag = SER
+			tag = CRO
 		}
 		is_ai = yes
 		CRO = { is_in_faction_with = GER }
 		HUN = {
-		any_owned_state = {
-		is_core_of = SER
-		}}
+			any_owned_state = {
+				is_core_of = YUG
+			}
+		}
 	}
 	
 	option = {
 		name = hungary.7.a
-		CRO = {
-		set_country_flag = HUN_expansion
-		}
+		CRO = { set_country_flag = HUN_expansion }
 	}
 }
+
+#The German Reich stood up loyally to its ally Hungary and has declined our demands.
 country_event = {
 	id = hungary.16
 	title = hungary.16.t
@@ -44,14 +47,16 @@ country_event = {
 	
 	option = {
 		name = hungary.16.a
-		add_national_unity = -0.05
-		
+		add_stability = -0.05
+		add_war_support = 0.05
 	}
 	option = {
 		name = hungary.16.b
 		set_global_flag = war_after_barbarossa
+		add_war_support = 0.05
 	}
 }
+
 #Event for members to join the pact
 country_event = {
 	id = hungary.12
@@ -71,9 +76,10 @@ country_event = {
 	}
 	option = {
 		name = hungary.12.b
-		add_national_unity = -0.05
+		add_stability = -0.05
 	}
 }
+
 #Event if Hun attacks a member
 country_event = {
 	id = hungary.13
@@ -126,9 +132,11 @@ country_event = {
 	}
 	option = {
 		name = hungary.13.f
-		add_national_unity = -0.10
+		#add_stability = -0.05
 	}
 }
+
+#The Kingdom of Romania as well as their allies have demanded that Hungary gives up every bit of land gained through Hitlers decisions such as the Second Vienna Award.
 country_event = {
 	id = hungary.14
 	title = hungary.14.t
@@ -301,9 +309,7 @@ country_event = {
 		ROM = { country_event = hungary.16 }
 		HUN = { add_opinion_modifier = large_increase }
 		if = {
-			limit = {
-			has_country_flag = anti_hungary
-			}
+			limit = { has_country_flag = anti_hungary }
 			GER = { add_opinion_modifier = large_decrease }
 		}
 	}

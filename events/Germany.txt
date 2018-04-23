@@ -6173,7 +6173,7 @@ country_event = {
 	
 	option = { #Danzig or War
 		name = germany.340.a
-		add_named_threat = { threat = 5 name = GER_danzig_or_war }
+		add_named_threat = { threat = 6 name = GER_danzig_or_war }
 			if = {
 				limit = {
 					85 = {
@@ -8863,56 +8863,7 @@ country_event = {
 		}
 	}
 }
-####### AI Autarky
-country_event = {
-	id = germany.232
-	title = germany.232.t
-	desc = germany.232.d
-	picture = GFX_...
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = GER
-		not = { has_country_flag = GER_aiautarky }
-		has_war = yes	
-		is_ai = yes
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = germany.232.a
-		ai_chance = { factor = 100 }
-		
-		hidden_effect = {
-		add_resource = {
-				type = rubber
-				amount = 60
-				state = 58
-			}
-		add_resource = {
-				type = tungsten
-				amount = 30
-				state = 53
-			}
-		add_resource = {
-				type = chromium
-				amount = 30
-				state = 64
-			}
-		add_resource = {
-				type = oil
-				amount = 80
-				state = 59
-			}
-			set_country_flag =  GER_aiautarky 
-		}
-	}
-	
-}
 country_event = {
 	id = germany.233
 	title = germany.233.t

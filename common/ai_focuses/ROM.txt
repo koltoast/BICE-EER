@@ -27,11 +27,10 @@ ai_historical_focus_list_ROM = {
 		#27 July - 6 Oct					
 		ROM_malaxa																	#	DoD9i
 		#7 Oct - 17 Dec					
-		#__
+		ROM_eer_1937_general_election									#	eer_P					#79   days
 		
 		##1938																		_1938		#maybe a sentinel of the motherland focus this year? #this year 25% of the budget went to the army
 		#18 Dec - 27 Feb				
-		ROM_eer_1937_general_election									#	eer_P					#9   days
 		ROM_institute_royal_dictatorship 								#	DoD10_P			#44 days
 		ROM_revise_the_constitution 										#	DoD11_P			#17 days
 		#28 Feb - 7 May					

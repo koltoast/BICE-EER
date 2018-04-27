@@ -96,7 +96,8 @@ focus_tree = {
 
 	focus = {
 		id = ROM_a_deal_with_the_devil
-		icon = GFX_goal_generic_dangerous_deal
+		#icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = ROM_flexible_foreign_policy }
 		x = 1
 		y = 1
@@ -365,7 +366,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_popularity = { ideology = fascism popularity = 0.05 }
+			#add_popularity = { ideology = fascism popularity = 0.05 }
 			add_opinion_modifier = { target = GER modifier = ROM_trade_treaty_with_germany }
 			GER = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_germany } }
 		}
@@ -413,7 +414,8 @@ focus_tree = {
 
 	focus = {
 		id = ROM_license_german_equipment
-		icon = GFX_focus_generic_license_production
+		#icon = GFX_focus_generic_license_production
+		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = ROM_invite_german_advisors }
 		x = 2
 		y = 0
@@ -1325,9 +1327,10 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #uses wrong state! (random state)
 		id = ROM_hunedoara_steel_works
-		icon = GFX_goal_generic_construct_civilian
+		#icon = GFX_goal_generic_construct_civilian
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = ROM_invite_foreign_motor_companies focus = ROM_malaxa }
 		x = 0
 		y = 4
@@ -2303,7 +2306,7 @@ focus_tree = {
 			is_subject = no
 			OR = {
 				has_war = yes
-				threat > 0.05
+				threat > 0.04
 				has_government = communism
 				has_government = fascism
 				has_government = neutrality
@@ -3588,7 +3591,8 @@ focus_tree = {
 
 	focus = {
 		id = ROM_army_war_college
-		icon = GFX_goal_generic_construct_military
+		#icon = GFX_goal_generic_construct_military
+		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = ROM_army_maneuvers }
 		x = -1
 		y = 1
@@ -3621,7 +3625,7 @@ focus_tree = {
 			custom_effect_tooltip = ROM_war_college_tt
 			hidden_effect = {
 				create_corps_commander = { 
-					name = "Barbu Paraianu"
+					name = "Barbu Părăianu" #TODO: make sure that his name has proper characters everywhere it's encountered
 					gfx = GFX_Portrait_romania_barbu_paraianu
 					traits = {  }
 					skill = 2
@@ -4281,7 +4285,8 @@ focus_tree = {
 
 	focus = {
 		id = ROM_the_maresal
-		icon = GFX_goal_generic_army_tanks
+		#icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = ROM_mobile_tank_destroyers }
 		x = 1
 		y = 3
@@ -4460,7 +4465,8 @@ focus_tree = {
 
 	focus = {
 		id = ROM_modern_destroyers
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_focus_generic_destroyer
+		#icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = ROM_coastal_defense_navy focus = ROM_black_sea_dominance }
 		x = 1
 		y = 1
@@ -4838,12 +4844,16 @@ focus_tree = {
 			has_global_flag = war_after_barbarossa
 			is_in_faction_with = GER
 			OR = {
-			CRO = { has_country_flag = anti_hungary
+				CRO = {
+					has_country_flag = anti_hungary
 					is_in_faction_with = GER
-					has_capitulated = no }
-			SLO = { has_country_flag = anti_hungary
+					has_capitulated = no
+				}
+				SLO = {
+					has_country_flag = anti_hungary
 					is_in_faction_with = GER
-					has_capitulated = no }
+					has_capitulated = no
+				}
 			}
 			OR = {
 			HUN = {

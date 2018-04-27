@@ -1,5 +1,5 @@
 spriteTypes = {
-#apparently this whole file doesn't work & is useless??
+
 	spriteType = {
 		name = "GFX_ROM_ace_Ioan_Dicezare"
 		texturefile = "gfx/aces/ROM_ace_Ioan_Dicezare.dds"

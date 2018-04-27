@@ -1,5 +1,7 @@
 ﻿l_english:
 
- #Hungarian Expansion
- HUN_anti_hungary:0 "Croatian - Romanian - Slovak friendship proclamation"
- HUN_anti_hungary_desc:0 "Hungary has regained lots of land very fast during the course of WW2 which led to Romania forming an alliance with Croatia and Slovakia against any further Hungarian Expansion"
+ 
+ war_after_barbarossa:0 "Resolving territorial conflicts during Peace"
+ demands_declined:0 "Romanian demands declined"
+
+ anti_HUN_TT:0 "§Join a defensive Alliance against further Hungarian Expansion\n\n§!"

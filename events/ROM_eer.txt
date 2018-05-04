@@ -10,6 +10,10 @@ add_namespace = rom_eer
 
 ####remember to add refineries in muntenia and give romania refinery tech
 
+####make sure romanian AI cedes southern dobruja (and maybe other states?) instead of going to war with BUL (or other neighbours?)
+
+####make sure romanian AI joins axis AFTER hungary and before BUL and doesn't refuse territorial demands based on axis membership
+
 #introductory event explaining the 1937 election mechanics
 
 ##mon dictatorship focuses should cost and require a lot of PP

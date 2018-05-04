@@ -1,0 +1,11 @@
+#################
+#### ROMANIA ####
+#################
+
+ROM_eer_category = {
+	icon = rom_eer
+
+	allowed = {
+		original_tag = ROM
+	}
+}

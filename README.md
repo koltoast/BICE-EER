@@ -9,6 +9,8 @@
 
 	list of things taken from stapanu's files: common/names; aces; focus icons; portraits; generals; and some loc adjusts for dod_events
 	
+	MUST REMOVE KR PORTRAITS
+	
 	list of things taken from turning point: ~events~, ~common/ideas~, ~gfx/event_pictures~, ~history~, ~interface~ and ~loc~ 
 	likely nothing from turning point left??
 	("~" means already removed from this mod)

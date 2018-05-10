@@ -6,6 +6,10 @@ add_namespace = rom_eer
 
 ####make sure romania doesn't join the allies; make sure romania has enough infra to move troops on its own territory and maybe barbarossa
 
+####make sure romanian AI doesn't join axis too early "In 12th jan 1940 romania want's to join the axis....i accepted....on 14th jan romania leaves the axis"
+
+####make sure the new state IDs are used properly
+
 ####make events/decisions for romania to give those ukrainian states to germany during barbarossa
 
 ####remember to add refineries in muntenia and give romania refinery tech

@@ -7,11 +7,15 @@ ROM_eer_category = {
 	#decision for arresting Codreanu; needs a lot of PP and will be harder if he isn't already on trial/accused
 	ROM_eer_arrest_codreanu = {
 		icon = generic_independence
+		#ROM_eer_codreanu_alive
+		#ROM_eer_codreanu_arrested
 	}
 	
 	#decision for killing Codreanu; costs a lot of PP
 	ROM_eer_kill_codreanu = {
 		icon = oppression
+		#ROM_eer_codreanu_arrested
+		#ROM_eer_codreanu_dead
 	}
 	
 	#decision for appointing Antonescu as prime minister (as Carol II)

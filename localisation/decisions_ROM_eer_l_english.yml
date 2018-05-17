@@ -4,3 +4,9 @@
  #
  ROM_eer_category:0 "Romanian Decisions"
  ROM_eer:0 "Romanian Decisions"
+ 
+ ROM_eer_arrest_codreanu:0 "Arrest Codreanu"
+ ROM_eer_kill_codreanu:0 "Kill Codreanu"
+ 
+ ROM_eer_crush_legionnaire_rebellion:0 "Crush Legionnaire Rebellion"
+ ROM_eer_pro_ally_coup:0 "Pro-Ally Coup"

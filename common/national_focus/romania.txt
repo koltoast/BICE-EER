@@ -119,8 +119,8 @@ focus_tree = {
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
 			}
-			owns_state = 962
-			962 = {
+			owns_state = 939
+			939 = {
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
 			}
@@ -137,13 +137,13 @@ focus_tree = {
 					has_government = communism
 				}
 				owns_state = 76
-				owns_state = 963
+				owns_state = 938
 			}
 			76 = {
 				is_owned_by = HUN
 				is_controlled_by = HUN
 			}
-			963 = {
+			938 = {
 				is_owned_by = HUN
 				is_controlled_by = HUN
 			}

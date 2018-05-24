@@ -41,6 +41,8 @@ add_namespace = rom_eer_1948
 
 ##these could be events https://ro.wikipedia.org/wiki/Consiliul_de_Coroan%C4%83
 
+##http://www.vho.org/GB/Journals/JHR/7/2/RonnettBradescu193-228.html
+
 #template:
 #country_event = {
 #	id = rom_eer.X
@@ -83,10 +85,62 @@ country_event = {
 }
 
 #maybe 2-5 april 1936 event for student meeting? where they make a list of people that are a danger to the iron guard
+country_event = {
+	id = rom_eer_1936.20
+	title = "1936 Iron Guard Student Meeting"
+	desc = rom_eer_1936.20.desc
+	picture = GFX_report_event_romania
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		date > 1936.4.2
+		tag = ROM
+	}
+	
+	option = {
+		name = "Worrying"
+	}
+}
 
 #event for Mihai Stelescu's assassination (16 july 1936) https://en.wikipedia.org/wiki/Iron_Guard_death_squads
+country_event = {
+	id = rom_eer_1936.30
+	title = "Mihai Stelescu's assassination"
+	desc = rom_eer_1936.30.desc
+	picture = GFX_report_event_romania_decemviri
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		date > 1936.7.16
+		tag = ROM
+	}
+	
+	option = {
+		name = "Rest In Peace"
+	}
+}
 
-#event for 29 august 1936 demotion of Titulescu
+#event for 29 august 1936 demotion of Titulescu AND forming of another Tatarescu govt #triggered by rheinland and SCW basically
+country_event = {
+	id = rom_eer_1936.40
+	title = "Nicolae Titulescu's demotion"
+	desc = rom_eer_1936.40.desc
+	picture = GFX_report_event_romania
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		date > 1936.8.29
+		tag = ROM
+	}
+	
+	option = {
+		name = "Demote him"
+		#remove_idea = somethingsomething_foreign_minister_nicolae_titulescu
+	}
+}
 
 #event for the inauguration of the new arch of triumph facade, sep, maybe 1 december 1936
 
@@ -95,6 +149,29 @@ country_event = {
 #############################
 
 #event for Ion(el) Mota and Vasile Marin's deaths in SCW (13 january 1937) and funerals (13 february 1937); triggered by SCW and gives ROM_eer_majadahonda spirit between those 2 dates; romania gave them a train to get them to spain before they went there;
+country_event = {
+	id = rom_eer_1937.10
+	title = "Death of Ion Moţa and Vasile Marin"
+	desc = rom_eer_1937.10.desc
+	picture = GFX_report_event_romania_majadahonda
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		date > 1937.1.13
+		tag = ROM
+		OR = {
+			SPA = { has_war_with = D01 }
+			SPA = { has_war_with = SPR }
+			SPR = { has_war_with = D01 }
+		}
+	}
+	
+	option = {
+		name = "Rest In Peace"
+		#set_timed_idea = { idea = rom_eer_majadahonda days = 30 }
+	}
+}
 
 #maybe an event for when Carol asked Codreanu to become the leader of the legion with Codreanu as prime minister
 
@@ -105,14 +182,14 @@ country_event = {
 #maybe an event for michael becoming a sublieutenant on 25 october 1937?
 
 #event chain for 1937 election, first the electoral pact, electoral campaign officialy starts on 19 november, elections take place on 20 december; results published on 30 december
-#offficially, the goga government was declaredly aimed at organizing new elections
+#officially, the goga government was declaredly aimed at organizing new elections
 #if new elections were to actually happen, the iron guard would've gotten even more votes; they excel in electoral campaigns;
 
 #############################
 ############1938############ #maybe a sentinel of the motherland focus this year? #this year 25% of the budget went to the army
 #############################
 
-#Goga govt lasted 44 or 40 days or so
+#Goga govt lasted 45 or 44 or 40 days or so
 
 #mon dictatorship, 10 feb new gov, 24 feb plebiscite, 27 feb new constitution
 
@@ -124,7 +201,7 @@ country_event = {
 
 #beginning of april, diosti village of romanati region is destroyed in a fire, carol and calinescu arrive on 6 april
 
-#event for Goga's death triggered by royal dictatorship focus after ~90 days?? (was it really a suspect death?) (died on 7 may 1938)
+#event for Goga's death (maybe not triggered by royal dictatorship focus after ~90 days??) (was it really a suspect death?) (died on 7 may 1938)
 
 #event for parade for 8th anniversary of carol's reign in june (8?)
 
@@ -167,6 +244,7 @@ country_event = {
 #carol ii hesitated to sign some german cooperation contracts and had a dual position on france/britain and germany
 
 #23 august: maybe a special romanian event for M-R Pact? according to that pact, bessarabia (secretly, and nobody in romania knew about it) belonged to the USSR
+#23 august: france guarantees romania's borders in a conference. this is probably unrelated to the M-R Pact
 
 #remember to make sure that the new/german event for the invasion of poland mentions the first fired shots at the Westerplatte
 
@@ -361,6 +439,7 @@ country_event = {
 #Sima forms a romanian govt in exile in Vienna that lasts until germany's capitulation
 #on 6 september 1940 romania had 10 railroad coaches of gold and on 23 august 1944 romania had 40. the extra 30 resulting almost exclusively from trading with germany
 #if Antonescu switches side before this maybe the soviets would let him stay prime minister for a while? probably not? (check bulgaria's case, maybe slovakia's case too)
+#Antonescu's plan was https://foaienationala.ro/ne-puteam-opri-pe-nistru-2.html that's why he didn't switch sides
 
 #german generals are given the possibility to retreat if they do so without fighting. they initially accept but then Hitler orders them to attack bucharest; especially the royal palace
 

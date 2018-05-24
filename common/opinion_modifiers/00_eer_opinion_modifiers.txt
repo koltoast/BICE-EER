@@ -1,0 +1,27 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	#Eastern Europe Rework
+
+	hun_pact_against_us= {
+		value = -50
+	}
+
+	hun_worse_pact_against_us= {
+		value = -75
+	}
+
+	anti_hungary = {
+		value = -75
+	}
+
+}	

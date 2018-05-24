@@ -76,11 +76,11 @@ country_event = {
 	trigger = {
 		date > 1936.1.1
 		tag = ROM
-		is_ai = no
 	}
 	
 	option = {
 		name = "Understood"
+		hidden_effect = { country_event = { days = 93 id = rom_eer_1936.20 } }
 	}
 }
 
@@ -100,6 +100,7 @@ country_event = {
 	
 	option = {
 		name = "Worrying"
+		hidden_effect = { country_event = { days = 105 id = rom_eer_1936.30 } }
 	}
 }
 
@@ -119,6 +120,7 @@ country_event = {
 	
 	option = {
 		name = "Rest In Peace"
+		hidden_effect = { country_event = { days = 44 id = rom_eer_1936.40 } }
 	}
 }
 
@@ -161,15 +163,15 @@ country_event = {
 		date > 1937.1.13
 		tag = ROM
 		OR = {
-			SPA = { has_war_with = D01 }
-			SPA = { has_war_with = SPR }
+			D01 = { has_war_with = SPA }
+			SPR = { has_war_with = SPA }
 			SPR = { has_war_with = D01 }
 		}
 	}
 	
 	option = {
 		name = "Rest In Peace"
-		#set_timed_idea = { idea = rom_eer_majadahonda days = 30 }
+		add_timed_idea = { idea = ROM_eer_majadahonda days = 30 }
 	}
 }
 

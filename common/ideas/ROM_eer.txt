@@ -63,7 +63,7 @@ ideas = {
 		
 		ROM_eer_majadahonda = {
 
-			#picture = anti_soviet_pact
+			picture = ROM_eer_majadahonda
 			
 			removal_cost = -1
 

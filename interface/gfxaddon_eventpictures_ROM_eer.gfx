@@ -8,6 +8,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_romania_decemviri_gfxaddon.tga"
 	}
 	spriteType = {
+		name = "GFX_report_event_romania_titulescu"
+		texturefile = "gfx/event_pictures/report_event_romania_titulescu_gfxaddon.tga"
+	}
+	spriteType = {
 		name = "GFX_report_event_romania_majadahonda"
 		texturefile = "gfx/event_pictures/report_event_romania_majadahonda_gfxaddon.tga"
 	}

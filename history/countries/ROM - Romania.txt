@@ -161,21 +161,20 @@ set_politics = {
 		conservatism = { 
 			popularity = 20
 		}
-
 		liberalism = { 
-			popularity = 40
+			popularity = 41
 		}
 		socialism  = { 
 			popularity = 1
 		}
 		fascism = {
-			popularity = 16
+			popularity = 7
 		}
 		communism = {
 			popularity = 0 #communism was banned and the party only had ~800 members and functioned in great secrecy
 		}
 		monarchism = { 
-			popularity = 14
+			popularity = 22
 		}
 		neutrality = { 
 			popularity = 9			

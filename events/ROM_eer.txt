@@ -129,7 +129,7 @@ country_event = {
 	id = rom_eer_1936.40
 	title = "Nicolae Titulescu's demotion"
 	desc = rom_eer_1936.40.desc
-	picture = GFX_report_event_romania
+	picture = GFX_report_event_romania_titulescu
 	
 	#is_triggered_only = yes
 	fire_only_once = yes
@@ -141,6 +141,7 @@ country_event = {
 	option = {
 		name = "Demote him"
 		#remove_idea = somethingsomething_foreign_minister_nicolae_titulescu
+		#add_idea = somethingsomething_foreign_minister_victor_antonescu
 	}
 }
 
@@ -251,6 +252,7 @@ country_event = {
 #remember to make sure that the new/german event for the invasion of poland mentions the first fired shots at the Westerplatte
 
 #maybe event for polish refugees and polish request for romania to store their gold; also romania allowed transit of the polish govt; hitler finds out and doesn't like it; carol and calinescu allow the gold to get sent away through Constanta port
+#event for romania receiving polish R-35s
 
 #event for Armand Calinescu's assassination (then the perpertrators force the entry to the national radio and try to announce it but get cut out, after which they surrender to the authorities) and its retaliation, killing 256-352 legionnaires across the country without sentencing and arresting many others, all on the same day (21 september 1939); Calinescu was the prime minister when Codreanu was killed so maybe that should be a requirement; https://en.wikipedia.org/wiki/Iron_Guard_death_squads
 
@@ -436,7 +438,7 @@ country_event = {
 #23 august morning, Antonescu tells some opposition leaders and the german embassy that he's decided to sign an armistice
 #then the king invites Antonescu to the palace; Antonescu arrives at 4PM. Antonescu doesn't accept to immediately sign the armistice; so he is arrested at 5PM; https://en.wikipedia.org/wiki/King_Michael%27s_Coup
 #event for 23 august 1944 coup (NOT triggered by decision, but by not being able to control the internal situation and getting arrested by michael) (also anniversary event that would become the new national day)
-#finding out about Antonescu being arrested, general Jienescu asks Petre Strihan whether he can paratroop a team to save Antonescu. Petre Strihan chooses to obey the king.
+#finding out about Antonescu being arrested, general Jienescu asks Petre Strihan whether he can paratroop a team to save Antonescu. Petre Strihan chooses to obey the king. #has_template_containing_unit for finding whether there's paratrooper divisions
 #first romania leaves axis; then white peaces everyone, then gets ~21% communism support for joining faction (?), then joins comintern (?), then declares war on germany and hungary; marzescu law and codreanu spirits are removed/fixed; also change owner of northern bukovina, bessarabia and budjak to SOV; maybe sov puppets romania now?
 #Sima forms a romanian govt in exile in Vienna that lasts until germany's capitulation
 #on 6 september 1940 romania had 10 railroad coaches of gold and on 23 august 1944 romania had 40. the extra 30 resulting almost exclusively from trading with germany

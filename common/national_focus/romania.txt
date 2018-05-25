@@ -1,6 +1,8 @@
 focus_tree = {
 	id = romanian_focus
-	
+	#TODO: FIND ALL ID = 550s AND SOLVE THEM
+	#TODO: FIND ALL RIDICULOUS BYPASS CODE AND SOLVE IT
+	#TODO: HUNGARY.TXT EVENTS USE WRONG STATE IDs AND CRASH THE GAME
 	country = {
 		factor = 0
 		
@@ -650,7 +652,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_popularity = { ideology = conservatism popularity = 0.05 }
+			add_popularity = { ideology = liberalism popularity = 0.03 }
 			POL = { country_event = DOD_romania.1 }
 		}
 	}
@@ -2234,10 +2236,10 @@ focus_tree = {
 		}
 
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = ROM_carol_not_leader_trigger
-				NOT = { has_country_leader = { id = 550 } }
-			}
+			#custom_trigger_tooltip = {
+			#	tooltip = ROM_carol_not_leader_trigger
+			#	NOT = { has_country_leader = { id = 550 } }
+			#}
 		}
 
 		cancel_if_invalid = yes

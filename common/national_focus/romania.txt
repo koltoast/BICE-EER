@@ -4301,7 +4301,16 @@ focus_tree = {
 		}
 
 		available = {
-
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+			OR = {
+				has_war = yes
+				any_cored_state = {
+					NOT  = { is_owned_by = ROM }
+				}
+			}
 		}
 
 		bypass = {

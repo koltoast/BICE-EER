@@ -96,7 +96,7 @@ add_ideas = {
 	foreign_volunteers
 	mob_reserve
 	train_low
-	age_19
+	age_18 #age_19
 	security_minor_restrictions
 	officer_train_low
 	edu_low
@@ -149,7 +149,7 @@ set_country_flag = foreign_volunteers
 set_country_flag = mob_reserve
 set_country_flag = train_low
 set_country_flag = officer_train_low
-set_country_flag = age_19
+set_country_flag = age_18 #set_country_flag = age_19
 set_country_flag = security_minor_restrictions
 set_country_flag = edu_low
 set_country_flag = unity_divided_nation

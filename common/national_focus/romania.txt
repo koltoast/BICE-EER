@@ -4307,8 +4307,13 @@ focus_tree = {
 			}
 			OR = {
 				has_war = yes
-				any_cored_state = {
-					NOT  = { is_owned_by = ROM }
+				any_state = {
+					is_core_of = ROM
+					NOT = { is_controlled_by = ROM }
+				}
+				any_state = {
+					is_core_of = ROM
+					NOT = { is_owned_by = ROM }
 				}
 			}
 		}

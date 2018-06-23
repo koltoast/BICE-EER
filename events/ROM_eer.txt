@@ -163,10 +163,13 @@ country_event = {
 	trigger = {
 		date > 1937.1.13
 		tag = ROM
-		OR = {
-			D01 = { has_war_with = SPA }
-			SPR = { has_war_with = SPA }
-			SPR = { has_war_with = D01 }
+		AND = {
+			has_global_flag = spanish_civil_war
+			OR = {
+				D01 = { has_war_with = SPA }
+				SPR = { has_war_with = SPA }
+				SPR = { has_war_with = D01 }
+			}
 		}
 	}
 	

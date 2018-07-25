@@ -101,7 +101,7 @@ add_ideas = {
 	officer_train_low
 	edu_low
 	
-	unity_divided_nation	
+	#unity_divided_nation	
 	foreign_neutral
 	neutrality_idea
 }
@@ -152,7 +152,7 @@ set_country_flag = officer_train_low
 set_country_flag = age_18 #set_country_flag = age_19
 set_country_flag = security_minor_restrictions
 set_country_flag = edu_low
-set_country_flag = unity_divided_nation
+#set_country_flag = unity_divided_nation
 set_country_flag = foreign_neutral
 
 set_politics = {

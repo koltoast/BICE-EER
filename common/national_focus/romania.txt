@@ -4,6 +4,11 @@ focus_tree = {
 	#TODO: FIND ALL RIDICULOUS BYPASS CODE AND SOLVE IT
 	#TODO: HUNGARY.TXT EVENTS USE WRONG STATE IDs AND CRASH THE GAME
 	#TODO: COMPARE vanilla's common/national_focus/romania.txt 1.4 vs. 1.4.2 and see if BICE has those differences
+	#create_import = {
+	#	resource = oil
+	#	amount = 12
+	#	exporter = ROM
+	#}
 	country = {
 		factor = 0
 		
@@ -2643,15 +2648,15 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_country_flag = constitutional_monarchy
-				has_country_flag = constitutional_monarchy2
+				has_idea = constitutional_monarchy
+				has_idea = constitutional_monarchy2
 			}
 			OR = {
-				conservatism > 0.35
-				socialism > 0.35
-				liberalism > 0.35
+				#conservatism > 0.35
+				#socialism > 0.35
+				#liberalism > 0.35
 				communism > 0.35
-				fascism > 0.35
+				#fascism > 0.35
 			}
 			is_subject = no
 		}
@@ -2675,43 +2680,43 @@ focus_tree = {
 				limit = { has_country_leader = { id = 550 } }
 				retire_country_leader = yes
 			}
-			if = {
-				limit = {
-					conservatism > 0.30
-				}
-				set_politics = {
-					ruling_party = conservatism
-					elections_allowed = yes
-				}
-				limit = {
-					socialism > 0.30
-				}
-				set_politics = {
-					ruling_party = socialism
-					elections_allowed = yes
-				}
-				limit = {
-					liberalism > 0.30
-				}
-				set_politics = {
-					ruling_party = liberalism
-					elections_allowed = yes
-				}
-				limit = {
-					communism > 0.35
-				}
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-				}
-				limit = {
-					fascism > 0.35
-				}
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
-			}
+#			if = { #removed since this is a republican abdication done by communists
+#				limit = {
+#					conservatism > 0.30
+#				}
+#				set_politics = {
+#					ruling_party = conservatism
+#					elections_allowed = yes
+#				}
+#				limit = {
+#					socialism > 0.30
+#				}
+#				set_politics = {
+#					ruling_party = socialism
+#					elections_allowed = yes
+#				}
+#				limit = {
+#					liberalism > 0.30
+#				}
+#				set_politics = {
+#					ruling_party = liberalism
+#					elections_allowed = yes
+#				}
+#				limit = {
+#					communism > 0.35
+#				}
+#				set_politics = {
+#					ruling_party = communism
+#					elections_allowed = no
+#				}
+#				limit = {
+#					fascism > 0.35
+#				}
+#				set_politics = {
+#					ruling_party = fascism
+#					elections_allowed = no
+#				}
+#			}
 			if = {
 				limit = {
 					has_idea = ROM_constitutional_guarantees
@@ -2730,7 +2735,7 @@ focus_tree = {
 			}
 			remove_ideas = ROM_the_sentinel_of_the_motherland
 			#add_political_power = -120
-			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 360 }
+			#add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 360 } #removed since it would be overstated for the 6 sept 1940 abdication and it'd make no sense for the communist abdication
 			set_cosmetic_tag = ROM
 			set_cosmetic_tag = ROM_REPUBLIC
 			hidden_effect = {

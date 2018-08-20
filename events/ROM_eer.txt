@@ -25,6 +25,8 @@ add_namespace = rom_eer_1948
 
 ####make sure the new state IDs are used properly
 
+####sort through OperationBarbarossa events
+
 ####make events/decisions for romania to give those ukrainian states to germany during barbarossa (maybe RKU?)
 
 ####remember to add refineries in muntenia and give romania refinery tech

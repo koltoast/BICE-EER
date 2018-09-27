@@ -5,7 +5,7 @@
 	https://steamcommunity.com/sharedfiles/filedetails/?id=707136443
 	https://steamcommunity.com/workshop/filedetails/?id=842834893
 	
-	Currently compatible with BICE v3.0.4 and v3.0.5beta
+	Currently updated to latest BICE beta as of latest commit's date
 
 	list of things taken from stapanu's files: common/names; aces; focus icons; portraits; generals; and some loc adjusts for dod_events
 	

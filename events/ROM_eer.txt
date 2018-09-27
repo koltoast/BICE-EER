@@ -45,6 +45,8 @@ add_namespace = rom_eer_1948
 
 ##http://www.vho.org/GB/Journals/JHR/7/2/RonnettBradescu193-228.html
 
+##Operation Autonomous https://www.telegraph.co.uk/culture/books/3643645/A-king-and-his-coup.html https://www.washingtonpost.com/local/obituaries/michael-i-last-king-of-romania-and-a-cold-war-exile-dies-at-96/2017/12/05/6549aec8-d9b2-11e7-b859-fb0995360725_story.html?utm_term=.87e5b19a85af
+
 #template:
 #country_event = {
 #	id = rom_eer.X
@@ -383,8 +385,9 @@ country_event = {
 #april 1941 census: 13.5M people
 
 #12 june, Antonescu goes to germany and is informed by hitler regarding barbarossa ;event for being asked to join barbarossa (one before (12 june) and one after barbarossa starts (22 june)) (add franz liszt barbarossa theme for barbarossa event)
-#event for joining barbarossa on june 22 with special sound for Antonescu speech
+#event for joining barbarossa on june 22 with special sound for Antonescu speech. make double-sure that romania will join
 #Antonescu joins barbarossa despite not being forced to
+#TODO: MAKE SURE HUN ALSO JOINS
 #bridges over the Prut river were improvised by the german pontooniers
 
 #16 july kishinev under romanian administration once again

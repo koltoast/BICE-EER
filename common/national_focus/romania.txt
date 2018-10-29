@@ -380,7 +380,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #actually give land access to germany... and get advisors of course; https://en.wikipedia.org/wiki/Invasion_of_Yugoslavia#Deployment_in_Romania
 		id = ROM_invite_german_advisors
 		icon = GFX_goal_military_agreement_germany
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
